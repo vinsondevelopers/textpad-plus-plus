@@ -1,0 +1,6 @@
+# Build output (rebuild with `make`)
+/build/
+/dist/
+.DS_Store
+*.o
+*.dSYM/

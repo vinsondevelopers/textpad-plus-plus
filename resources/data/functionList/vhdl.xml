@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================================================\
+|
+|   To learn how to make your own language parser, please check the following
+|   link:
+|
+\=========================================================================== -->
+<NotepadPlus>
+	<functionList>
+		<!-- ======================================================== [ VHDL ] -->
+		<!--
+		|   Derived from :
+		\-->
+		<parser
+			displayName="VHDL"
+			id         ="vhdl_syntax"
+		>
+			<function
+				mainExpr="(?x)                                          # free-spacing (see `RegEx - Pattern Modifiers`)
+					  ^                                             # match at beginning of line
+					  \h*                                           # optional leading whitespace
+					  (\w+\h*:)?                                    # ID of process
+					  (?:\h(?!END)\w+\h)*                           # make sure this is not the end of a module
+					  \h*
+					  (?(1)(?:ENTITY|BLOCK|PROCESS)|                # keywords if ':' was detected before
+					  (?:ENTITY|COMPONENT|ARCHITECTURE))            # keywords else
+					  [\h\(]+                                       # expect at least one blank or parentheses
+					  [A-Za-z0-9_\(\)., ]+                          # ID or sensitivity list
+					  (?!\;)"
+			>
+				<functionName>
+					<nameExpr expr=".*" />
+				</functionName>
+			</function>
+		</parser>
+	</functionList>
+</NotepadPlus>

@@ -1,0 +1,505 @@
+<!doctype html>
+<!-- Textpad++ — Live Preview for Markdown: renders the document block by block (each block remembers its source
+     lines), lets the reader edit any block in place and sends the edited block back as Markdown.
+     GPL-3.0-or-later. -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<style>
+:root {
+  --fg: #1f2328; --muted: #59636e; --bg: #ffffff; --soft: #f6f8fa; --line: #d1d9e0; --link: #0969da;
+  --mark: #fff8c5; --edit: rgba(9, 105, 218, 0.07); --editline: rgba(9, 105, 218, 0.35);
+}
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --soft: #151b23; --line: #3d444d; --link: #4493f8;
+          --mark: #bb800926; --edit: rgba(68, 147, 248, 0.10); --editline: rgba(68, 147, 248, 0.45); }
+}
+html { background: var(--bg); }
+body { margin: 0; padding: 22px 28px 60vh; color: var(--fg); background: var(--bg);
+       font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; word-wrap: break-word; }
+#doc { max-width: 860px; margin: 0 auto; }
+.tp-block { outline: none; border-radius: 6px; margin-left: -8px; margin-right: -8px; padding-left: 8px; padding-right: 8px;
+            transition: background-color .12s; }
+.tp-block[contenteditable]:hover { background: var(--edit); }
+.tp-block[contenteditable]:focus { background: var(--edit); box-shadow: inset 3px 0 0 var(--editline); }
+h1, h2, h3, h4, h5, h6 { margin: 24px 0 14px; font-weight: 600; line-height: 1.25; }
+h1 { font-size: 2em; padding-bottom: .3em; box-shadow: inset 0 -1px 0 var(--line); }
+h2 { font-size: 1.5em; padding-bottom: .3em; box-shadow: inset 0 -1px 0 var(--line); }
+h1.tp-block:focus, h2.tp-block:focus { box-shadow: inset 3px 0 0 var(--editline), inset 0 -1px 0 var(--line); }
+h3 { font-size: 1.25em; } h4 { font-size: 1em; } h5 { font-size: .875em; } h6 { font-size: .85em; color: var(--muted); }
+p, ul, ol, blockquote, pre, table, details { margin: 0 0 16px; }
+a { color: var(--link); text-decoration: none; } a:hover { text-decoration: underline; }
+ul, ol { padding-left: 2em; } li + li { margin-top: .25em; } li > ul, li > ol { margin-bottom: 0; }
+li.task { list-style: none; } li.task > input { margin: 0 .5em 0 -1.5em; vertical-align: -1px; accent-color: var(--link); }
+blockquote { padding: 0 1em; color: var(--muted); border-left: .25em solid var(--line); }
+code, pre, kbd { font: 12.5px/1.45 ui-monospace, "SF Mono", Menlo, monospace; }
+code { padding: .2em .4em; background: var(--soft); border-radius: 6px; }
+pre { padding: 14px 16px; overflow: auto; background: var(--soft); border-radius: 8px; }
+pre code { padding: 0; background: none; }
+kbd { padding: 2px 5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; background: var(--soft); }
+hr { height: 3px; margin: 24px 0; border: 0; background: var(--line); }
+table { border-collapse: collapse; display: block; overflow: auto; }
+th, td { padding: 6px 13px; border: 1px solid var(--line); } th { font-weight: 600; background: var(--soft); }
+img { max-width: 100%; }
+mark { background: var(--mark); color: inherit; }
+.front { font-size: 12px; color: var(--muted); }
+.empty { color: var(--muted); text-align: center; margin-top: 30vh; font-size: 14px; }
+.tk-k { color: #cf222e; } .tk-s { color: #0a3069; } .tk-c { color: #59636e; font-style: italic; } .tk-n { color: #0550ae; }
+@media (prefers-color-scheme: dark) { .tk-k { color: #ff7b72; } .tk-s { color: #a5d6ff; } .tk-c { color: #9198a1; } .tk-n { color: #79c0ff; } }
+</style>
+</head>
+<body>
+<div id="doc"></div>
+<script>
+"use strict";
+const TP = (() => {
+  const doc = document.getElementById('doc');
+  const post = m => { try { window.webkit.messageHandlers.tp.postMessage(m); } catch (e) {} };
+  let baseDir = '', pendingRender = null, editing = null, userScrollUntil = 0, syncing = false;
+
+  // ------------------------------------------------------------ helpers
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const unesc = s => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+  const isBlank = l => /^\s*$/.test(l);
+  const slug = t => t.toLowerCase().replace(/<[^>]+>/g, '').replace(/[^\p{L}\p{N}\s-]/gu, '').trim().replace(/\s+/g, '-');
+  const resolve = src => {
+    if (!src || /^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith('//') || src.startsWith('#')) return src;
+    if (src.startsWith('/')) return 'file://' + encodeURI(src);
+    return baseDir ? 'file://' + encodeURI(baseDir.replace(/\/$/, '') + '/' + src) : src;
+  };
+
+  const reFence = /^ {0,3}(`{3,}|~{3,})[ \t]*([^`\s]*)[^`]*$/;
+  const reAtx = /^ {0,3}(#{1,6})(?:[ \t]+(.*?))?(?:[ \t]+#+)?[ \t]*$/;
+  const reHr = /^ {0,3}((\*[ \t]*){3,}|(-[ \t]*){3,}|(_[ \t]*){3,})$/;
+  const reBq = /^ {0,3}> ?/;
+  const reUl = /^( {0,3})([-*+])(?:([ \t]+)(.*)|[ \t]*)$/;
+  const reOl = /^( {0,3})(\d{1,9})([.)])(?:([ \t]+)(.*)|[ \t]*)$/;
+  const reTableSep = /^ {0,3}\|?[ \t]*:?-+:?[ \t]*(\|[ \t]*:?-+:?[ \t]*)*\|?[ \t]*$/;
+  const reHtml = /^ {0,3}<(\/?[a-zA-Z][a-zA-Z0-9-]*[\s/>]|!--)/;
+  const reSetext = /^ {0,3}(=+|-+)[ \t]*$/;
+  const startsBlock = l => reFence.test(l) || reAtx.test(l) || reHr.test(l) || reBq.test(l) || reUl.test(l) || /^ {0,3}1[.)]([ \t]|$)/.test(l) || reHtml.test(l);
+
+  // ------------------------------------------------------------ inline Markdown
+  function inline(src) {
+    const store = [];
+    const keep = h => '\u0000' + (store.push(h) - 1) + '\u0000';
+    let s = src;
+    s = s.replace(/(`+)([\s\S]*?[^`])\1(?!`)/g, (m, t, c) => keep('<code>' + esc(/^ .* $/.test(c) ? c.slice(1, -1) : c) + '</code>'));
+    s = s.replace(/\\([!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~])/g, (m, c) => keep(esc(c)));
+    s = s.replace(/<((?:https?|mailto|ftp):[^\s>]+)>/g, (m, u) => keep(`<a href="${esc(u)}">${esc(u)}</a>`));
+    s = s.replace(/<(\/?)(br|kbd|sub|sup|b|i|u|em|strong|mark|s|del|ins|small|code)[ \t]*\/?>/gi, (m, sl, t) => keep(`<${sl}${t.toLowerCase()}>`));
+    s = esc(s);
+    s = s.replace(/!\[([^\]]*)\]\([ \t]*(?:&lt;)?([^)\s]*?)(?:&gt;)?(?:[ \t]+&quot;(.*?)&quot;)?[ \t]*\)/g, (m, alt, href, title) => {
+      const raw = unesc(href);
+      return keep(`<img src="${esc(resolve(raw))}" data-src="${esc(raw)}" alt="${alt}"${title ? ` title="${title}"` : ''}>`);
+    });
+    s = s.replace(/\[([^\]]+)\]\([ \t]*(?:&lt;)?([^)\s]*?)(?:&gt;)?(?:[ \t]+&quot;(.*?)&quot;)?[ \t]*\)/g,
+                  (m, text, href, title) => `<a href="${href}" data-md-href="${href}"${title ? ` title="${title}"` : ''}>${text}</a>`);
+    s = s.replace(/(^|[\s(])((?:https?:\/\/|www\.)[^\s<]+[^\s<.,:;"')\]])/g, (m, pre, u) => pre + keep(`<a href="${u.startsWith('www.') ? 'http://' + u : u}">${u}</a>`));
+    s = s.replace(/(\*\*|__)(?=\S)([\s\S]*?\S)\1/g, '<strong>$2</strong>');
+    s = s.replace(/(^|[^\w*\\])\*(?=\S)([\s\S]*?\S)\*(?!\*)/g, '$1<em>$2</em>');
+    s = s.replace(/(^|[^\w_])_(?=\S)([\s\S]*?\S)_(?![\w_])/g, '$1<em>$2</em>');
+    s = s.replace(/~~(?=\S)([\s\S]*?\S)~~/g, '<del>$1</del>');
+    s = s.replace(/==(?=\S)([\s\S]*?\S)==/g, '<mark>$1</mark>');
+    s = s.replace(/(?: {2,}|\\)\n/g, '<br>\n');
+    for (let k = 0; k < 3 && s.includes('\u0000'); ++k) s = s.replace(/\u0000(\d+)\u0000/g, (m, n) => store[+n]);
+    return s;
+  }
+
+  // ------------------------------------------------------------ code highlighting (small, language-neutral)
+  const KEYWORDS = new Set(('abstract and as async await break case catch class const continue def default del do elif else enum export extends ' +
+    'false final finally fn for from func function go if impl import in interface is let match mod module mut new nil none not null or ' +
+    'package pass private protected pub public raise return self select static struct super switch this throw throws trait true try type ' +
+    'typeof undefined use var void where while with yield SELECT FROM WHERE AND OR INSERT INTO VALUES UPDATE SET DELETE JOIN ON GROUP BY ORDER').split(' '));
+  function highlight(code, lang) {
+    if (!lang || /^(text|plain|txt|md|markdown)$/i.test(lang)) return esc(code);
+    const re = /(\/\/[^\n]*|#[^\n]*|\/\*[\s\S]*?\*\/|--[^\n]*)|("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`)|\b(\d+(?:\.\d+)?)\b|\b([A-Za-z_]\w*)\b/g;
+    let out = '', last = 0, m;
+    const hashComments = /^(py|python|sh|bash|zsh|shell|rb|ruby|yaml|yml|toml|perl|r|makefile|dockerfile)$/i.test(lang);
+    const dashComments = /^(sql|lua|haskell|hs)$/i.test(lang);
+    while ((m = re.exec(code))) {
+      out += esc(code.slice(last, m.index));
+      let cls = '';
+      if (m[1]) cls = (m[1][0] === '#' && !hashComments) || (m[1][0] === '-' && !dashComments) ? '' : 'c';
+      else if (m[2]) cls = 's'; else if (m[3]) cls = 'n'; else if (m[4] && KEYWORDS.has(m[4])) cls = 'k';
+      if (m[1] && !cls) { out += esc(m[1][0]); re.lastIndex = m.index + 1; last = m.index + 1; continue; }
+      out += cls ? `<span class="tk-${cls}">${esc(m[0])}</span>` : esc(m[0]);
+      last = re.lastIndex;
+    }
+    return out + esc(code.slice(last));
+  }
+
+  // ------------------------------------------------------------ blocks: [{type, start, end (line numbers), ...}]
+  function parseBlocks(lines, nums, top) {
+    const out = [];
+    let i = 0;
+    const at = k => nums[Math.min(k, nums.length - 1)] + (k >= nums.length ? 1 : 0);
+    while (i < lines.length) {
+      const l = lines[i];
+      if (isBlank(l)) { ++i; continue; }
+      let m, j;
+      if (top && i === 0 && /^---[ \t]*$/.test(l)) {   // YAML front matter
+        for (j = 1; j < lines.length && !/^(---|\.\.\.)[ \t]*$/.test(lines[j]); ++j);
+        if (j < lines.length) { out.push({ type: 'front', text: lines.slice(1, j).join('\n'), start: nums[0], end: nums[j] + 1 }); i = j + 1; continue; }
+      }
+      if ((m = l.match(reFence))) {
+        const ch = m[1][0], n = m[1].length, close = new RegExp('^ {0,3}' + (ch === '`' ? '`' : '~') + '{' + n + ',}[ \\t]*$');
+        for (j = i + 1; j < lines.length && !close.test(lines[j]); ++j);
+        out.push({ type: 'code', lang: m[2] || '', fence: m[1], text: lines.slice(i + 1, j).join('\n'), start: nums[i], end: at(Math.min(j + 1, lines.length)) });
+        i = j + 1; continue;
+      }
+      if ((m = l.match(reAtx))) { out.push({ type: 'h', level: m[1].length, text: m[2] || '', start: nums[i], end: nums[i] + 1 }); ++i; continue; }
+      if (reHr.test(l)) { out.push({ type: 'hr', start: nums[i], end: nums[i] + 1 }); ++i; continue; }
+      if (reBq.test(l)) {
+        const inner = [], innerNums = [];
+        for (j = i; j < lines.length && !isBlank(lines[j]); ++j) {
+          if (reBq.test(lines[j])) inner.push(lines[j].replace(reBq, ''));
+          else if (inner.length && !startsBlock(lines[j])) inner.push(lines[j]);   // lazy continuation
+          else break;
+          innerNums.push(nums[j]);
+        }
+        out.push({ type: 'bq', children: parseBlocks(inner, innerNums, false), start: nums[i], end: at(j) });
+        i = j; continue;
+      }
+      if (reUl.test(l) || reOl.test(l)) { const r = parseList(lines, nums, i); out.push(r.block); i = r.next; continue; }
+      if (l.includes('|') && i + 1 < lines.length && reTableSep.test(lines[i + 1]) && lines[i + 1].includes('-')) {
+        const split = row => { let t = row.trim(); if (t.startsWith('|')) t = t.slice(1); if (t.endsWith('|') && !t.endsWith('\\|')) t = t.slice(0, -1);
+                               return t.split(/(?<!\\)\|/).map(c => c.trim().replace(/\\\|/g, '|')); };
+        const head = split(l), align = split(lines[i + 1]).map(c => c.startsWith(':') && c.endsWith(':') ? 'center' : c.endsWith(':') ? 'right' : c.startsWith(':') ? 'left' : '');
+        const rows = [];
+        for (j = i + 2; j < lines.length && !isBlank(lines[j]) && lines[j].includes('|'); ++j) rows.push(split(lines[j]));
+        out.push({ type: 'table', head, align, rows, start: nums[i], end: at(j) });
+        i = j; continue;
+      }
+      if (reHtml.test(l)) {
+        for (j = i; j < lines.length && !isBlank(lines[j]); ++j);
+        out.push({ type: 'html', text: lines.slice(i, j).join('\n'), start: nums[i], end: at(j) });
+        i = j; continue;
+      }
+      if (/^( {4}|\t)/.test(l)) {
+        for (j = i; j < lines.length && (/^( {4}|\t)/.test(lines[j]) || (isBlank(lines[j]) && j + 1 < lines.length && /^( {4}|\t)/.test(lines[j + 1]))); ++j);
+        out.push({ type: 'code', lang: '', indented: true, text: lines.slice(i, j).map(x => x.replace(/^( {4}|\t)/, '')).join('\n'), start: nums[i], end: at(j) });
+        i = j; continue;
+      }
+      // paragraph (or setext heading)
+      let level = 0;
+      for (j = i + 1; j < lines.length && !isBlank(lines[j]); ++j) {
+        if ((m = lines[j].match(reSetext))) { level = m[1][0] === '=' ? 1 : 2; break; }
+        if (startsBlock(lines[j])) break;
+      }
+      if (level) { out.push({ type: 'h', level, setext: true, text: lines.slice(i, j).map(x => x.trim()).join(' '), start: nums[i], end: nums[j] + 1 }); i = j + 1; continue; }
+      out.push({ type: 'p', text: lines.slice(i, j).map(x => x.replace(/^[ \t]+/, '')).join('\n'), start: nums[i], end: at(j) });
+      i = j;
+    }
+    return out;
+  }
+
+  function parseList(lines, nums, i) {
+    const first = lines[i].match(reUl) || lines[i].match(reOl);
+    const ordered = !lines[i].match(reUl);
+    const markerChar = ordered ? first[3] : first[2];
+    const items = [];
+    let j = i, loose = false, sawBlank = false;
+    while (j < lines.length) {
+      const m = ordered ? lines[j].match(reOl) : lines[j].match(reUl);
+      if (!m || (ordered ? m[3] : m[2]) !== markerChar) break;
+      const lead = m[1].length, markerLen = ordered ? m[2].length + 1 : 1;
+      const spaces = m[ordered ? 4 : 3] || ' ';
+      const indent = lead + markerLen + (spaces.length > 4 ? 1 : spaces.length);
+      const content = [m[ordered ? 5 : 4] || ''], contentNums = [nums[j]];
+      if (sawBlank) loose = true;
+      sawBlank = false;
+      let k = j + 1;
+      for (; k < lines.length; ++k) {
+        const t = lines[k];
+        if (isBlank(t)) {
+          let n = k; while (n < lines.length && isBlank(lines[n])) ++n;
+          if (n < lines.length && (lines[n].length - lines[n].trimStart().length) >= indent) { content.push(''); contentNums.push(nums[k]); loose = true; continue; }
+          sawBlank = true; break;
+        }
+        const ind = t.length - t.trimStart().length;
+        if (ind >= indent) { content.push(t.slice(indent)); contentNums.push(nums[k]); continue; }
+        if (reUl.test(t) || reOl.test(t) || startsBlock(t)) break;
+        content.push(t.trimStart()); contentNums.push(nums[k]);   // lazy continuation
+      }
+      let task = null;
+      const tm = content[0].match(/^\[([ xX])\][ \t]+/);
+      if (tm) { task = tm[1] !== ' '; content[0] = content[0].slice(tm[0].length); }
+      items.push({ start: ordered ? parseInt(m[2], 10) : 0, task, line: nums[j], children: parseBlocks(content, contentNums, false) });
+      j = k;
+      if (sawBlank) { let n = j; while (n < lines.length && isBlank(lines[n])) ++n; const nm = ordered ? (lines[n] || '').match(reOl) : (lines[n] || '').match(reUl);
+                      if (!nm || (ordered ? nm[3] : nm[2]) !== markerChar) break; j = n; }
+    }
+    let end = j;
+    while (end > i && isBlank(lines[end - 1])) --end;
+    return { block: { type: 'list', ordered, marker: markerChar, start: nums[i], end: nums[end - 1] + 1, first: items.length ? items[0].start : 1, loose, items }, next: j };
+  }
+
+  // ------------------------------------------------------------ HTML out
+  function sanitize(html) {
+    const t = document.createElement('template');
+    t.innerHTML = html;
+    const ok = /^(a|abbr|b|blockquote|br|caption|center|code|dd|del|details|div|dl|dt|em|figcaption|figure|h[1-6]|hr|i|img|ins|kbd|li|mark|ol|p|picture|pre|q|s|samp|small|source|span|strong|sub|summary|sup|table|tbody|td|tfoot|th|thead|tr|u|ul|var|video)$/i;
+    const attrs = /^(href|src|srcset|alt|title|width|height|align|colspan|rowspan|open|id|name|start|type|controls)$/i;
+    const walk = node => {
+      for (const c of [...node.childNodes]) {
+        if (c.nodeType === 8) { c.remove(); continue; }
+        if (c.nodeType !== 1) continue;
+        if (!ok.test(c.tagName)) { if (/^(script|style|iframe|object|embed|form|input|button|textarea|select|link|meta|base)$/i.test(c.tagName)) c.remove(); else { walk(c); c.replaceWith(...c.childNodes); } continue; }
+        for (const a of [...c.attributes]) {
+          if (!attrs.test(a.name) || /^\s*(javascript|data|vbscript):/i.test(a.value) && a.name !== 'src') c.removeAttribute(a.name);
+          else if (/^\s*javascript:/i.test(a.value)) c.removeAttribute(a.name);
+        }
+        if (c.hasAttribute('src')) { c.setAttribute('data-src', c.getAttribute('src')); c.setAttribute('src', resolve(c.getAttribute('src'))); }
+        walk(c);
+      }
+    };
+    walk(t.content);
+    return t.innerHTML;
+  }
+
+  function renderBlock(b, tight) {
+    switch (b.type) {
+      case 'h': { const h = inline(b.text); return `<h${b.level} id="${esc(slug(h))}">${h}</h${b.level}>`; }
+      case 'p': return tight ? inline(b.text) : `<p>${inline(b.text)}</p>`;
+      case 'hr': return '<hr>';
+      case 'code': return `<pre data-lang="${esc(b.lang)}"${b.indented ? ' data-indented="1"' : ''}><code>${highlight(b.text, b.lang)}</code></pre>`;
+      case 'front': return `<pre class="front"><code>${esc(b.text)}</code></pre>`;
+      case 'bq': return `<blockquote>${b.children.map(c => renderBlock(c, false)).join('\n')}</blockquote>`;
+      case 'html': return `<div class="html">${sanitize(b.text)}</div>`;
+      case 'table': {
+        const cell = (tag, c, k) => `<${tag}${b.align[k] ? ` style="text-align:${b.align[k]}" data-align="${b.align[k]}"` : ''}>${inline(c)}</${tag}>`;
+        return `<table><thead><tr>${b.head.map((c, k) => cell('th', c, k)).join('')}</tr></thead><tbody>` +
+               b.rows.map(r => `<tr>${b.head.map((_, k) => cell('td', r[k] || '', k)).join('')}</tr>`).join('') + '</tbody></table>';
+      }
+      case 'list': {
+        const tag = b.ordered ? 'ol' : 'ul';
+        const items = b.items.map(it => {
+          const body = it.children.map(c => renderBlock(c, !b.loose)).join(b.loose ? '\n' : '\n');
+          const box = it.task === null ? '' : `<input type="checkbox" data-line="${it.line}"${it.task ? ' checked' : ''}>`;
+          return `<li${it.task === null ? '' : ' class="task"'}>${box}${body}</li>`;
+        }).join('');
+        return `<${tag} data-marker="${esc(b.marker)}"${b.ordered && b.first !== 1 ? ` start="${b.first}"` : ''}>${items}</${tag}>`;
+      }
+    }
+    return '';
+  }
+
+  function render(text, opts) {
+    opts = opts || {};
+    if (opts.baseDir !== undefined) baseDir = opts.baseDir;
+    if (editing && document.hasFocus()) { pendingRender = [text, opts]; return; }   // the reader is typing in a block
+    pendingRender = null;
+    const y = window.scrollY;
+    const lines = text.replace(/\r\n?/g, '\n').split('\n');
+    const blocks = parseBlocks(lines, lines.map((_, k) => k), true);
+    if (!blocks.length) { doc.innerHTML = '<div class="empty">Start typing Markdown in the editor, or here.</div>'; doc.firstChild.contentEditable = 'false'; return; }
+    doc.innerHTML = blocks.map(b => {
+      const html = renderBlock(b, false);
+      const editable = b.type === 'html' || b.type === 'front' || b.type === 'hr' ? '' : b.type === 'code' ? ' contenteditable="plaintext-only"' : ' contenteditable="true"';
+      // the block element itself carries its source lines
+      return html.replace(/^<([a-z0-9]+)/, `<$1 class="tp-block${b.type === 'front' ? ' front' : ''}" data-type="${b.type}" data-start="${b.start}" data-end="${b.end}"${editable} spellcheck="false"`);
+    }).join('\n');
+    if (opts.scrollLine !== undefined) scrollToLine(opts.scrollLine); else window.scrollTo(0, y);
+  }
+
+  // ------------------------------------------------------------ preview -> Markdown
+  const escMd = t => t.replace(/\u00a0/g, ' ').replace(/([\\`*])/g, '\\$1').replace(/(^|\W)_|_(?=\W|$)/g, m => m.replace('_', '\\_')).replace(/\[/g, '\\[');
+  const codeSpan = t => { const n = Math.max(0, ...(t.match(/`+/g) || []).map(x => x.length)) + 1; const f = '`'.repeat(n); return f + (/^`|`$/.test(t) ? ' ' + t + ' ' : t) + f; };
+  const isBlockEl = n => n.nodeType === 1 && /^(DIV|P|UL|OL|BLOCKQUOTE|PRE|TABLE|H[1-6]|HR)$/.test(n.tagName);
+
+  function mdInline(node) {
+    let out = '', afterBreak = false;
+    for (const n of node.childNodes) {
+      if (n.nodeType === 3) { let t = n.nodeValue; if (afterBreak) t = t.replace(/^\n/, ''); afterBreak = false; out += escMd(t); continue; }
+      afterBreak = false;
+      if (n.nodeType !== 1) continue;
+      const t = n.tagName.toLowerCase();
+      const inner = () => mdInline(n);
+      const wrap = (w) => { const x = inner(); const m = x.match(/^(\s*)([\s\S]*?)(\s*)$/); return m[2] ? m[1] + w + m[2] + w + m[3] : x; };
+      if (t === 'strong' || t === 'b') out += wrap('**');
+      else if (t === 'em' || t === 'i') out += wrap('*');
+      else if (t === 'del' || t === 's' || t === 'strike') out += wrap('~~');
+      else if (t === 'mark') out += wrap('==');
+      else if (t === 'code') out += codeSpan(n.textContent);
+      else if (t === 'a') { const h = n.getAttribute('data-md-href') || n.getAttribute('href') || ''; const x = inner();
+                            out += x === h || 'http://' + x === h ? (/^https?:/.test(x) ? x : '<' + h + '>') : `[${x}](${h}${n.title ? ` "${n.title}"` : ''})`; }
+      else if (t === 'img') out += `![${n.getAttribute('alt') || ''}](${n.getAttribute('data-src') || n.getAttribute('src') || ''})`;
+      else if (t === 'br') { if (n.nextSibling) { out += '  \n'; afterBreak = true; } }
+      else if (t === 'input') continue;
+      else if (/^(kbd|sub|sup|u|small|ins)$/.test(t)) out += `<${t}>${inner()}</${t}>`;
+      else if (isBlockEl(n)) out += (out && !out.endsWith('\n') ? '\n' : '') + inner() + '\n';
+      else out += inner();
+    }
+    return out;
+  }
+
+  // the paragraphs of a contenteditable element: typing Enter in WebKit makes <div> lines
+  function paragraphs(el) {
+    const paras = [];
+    let run = document.createElement('span');
+    const flush = () => { const t = mdInline(run).replace(/\n+$/, ''); if (t.trim()) paras.push(t); run = document.createElement('span'); };
+    for (const n of [...el.childNodes]) {
+      if (isBlockEl(n)) { flush(); if (/^(UL|OL|BLOCKQUOTE|PRE|TABLE|H[1-6]|HR)$/.test(n.tagName)) paras.push(mdBlock(n)); else paras.push(...paragraphs(n)); }
+      else run.appendChild(n.cloneNode(true));
+    }
+    flush();
+    return paras.map(p => p.replace(/^([#>+-]|\d+[.)])(?=\s)/gm, '\\$1'));
+  }
+
+  function mdList(el, indent) {
+    const ordered = el.tagName === 'OL';
+    let n = parseInt(el.getAttribute('start') || '1', 10);
+    const bullet = el.getAttribute('data-marker') || (ordered ? '.' : '-');
+    const out = [];
+    for (const li of el.children) {
+      if (li.tagName !== 'LI') continue;
+      const marker = ordered ? `${n++}${bullet} ` : `${bullet} `;
+      const box = li.querySelector(':scope > input[type=checkbox]');
+      const pad = ' '.repeat(marker.length);
+      const parts = [];
+      let run = document.createElement('span');
+      const flush = () => { const t = mdInline(run).replace(/\n+$/, ''); if (t.trim() || !parts.length) parts.push({ text: t }); run = document.createElement('span'); };
+      for (const c of [...li.childNodes]) {
+        if (c.nodeType === 1 && (c.tagName === 'UL' || c.tagName === 'OL')) { flush(); parts.push({ text: mdList(c, ''), nested: true }); }
+        else if (c.nodeType === 1 && c.tagName === 'P') { flush(); parts.push({ text: mdInline(c).replace(/\n+$/, '') }); }
+        else if (c.nodeType === 1 && isBlockEl(c) && c.tagName !== 'DIV') { flush(); parts.push({ text: mdBlock(c) }); }
+        else run.appendChild(c.cloneNode(true));
+      }
+      flush();
+      let first = true;
+      const lines = [];
+      for (const p of parts) {
+        const ls = p.text.split('\n');
+        ls.forEach((l, k) => {
+          if (first) { lines.push(indent + marker + (box ? (box.checked ? '[x] ' : '[ ] ') : '') + l); first = false; }
+          else lines.push(l ? indent + pad + l : '');
+        });
+      }
+      out.push(lines.join('\n'));
+    }
+    return out.join('\n');
+  }
+
+  function mdBlock(el) {
+    const tag = el.tagName;
+    if (/^H[1-6]$/.test(tag)) {
+      const head = document.createElement('span'), rest = [];
+      for (const n of [...el.childNodes]) { if (isBlockEl(n)) rest.push(n); else head.appendChild(n.cloneNode(true)); }
+      let h = '#'.repeat(+tag[1]) + ' ' + mdInline(head).replace(/\s*\n\s*/g, ' ').trim();
+      for (const r of rest) { const p = paragraphs(r); if (p.length) h += '\n\n' + p.join('\n\n'); }
+      return h;
+    }
+    if (tag === 'UL' || tag === 'OL') return mdList(el, '');
+    if (tag === 'BLOCKQUOTE') return paragraphs(el).join('\n\n').split('\n').map(l => l ? '> ' + l : '>').join('\n');
+    if (tag === 'PRE') {
+      const t = el.textContent.replace(/\n$/, '');
+      if (el.getAttribute('data-indented')) return t.split('\n').map(l => '    ' + l).join('\n');
+      const n = Math.max(3, ...(t.match(/`{3,}/g) || []).map(x => x.length + 1));
+      return '`'.repeat(n) + (el.getAttribute('data-lang') || '') + '\n' + t + '\n' + '`'.repeat(n);
+    }
+    if (tag === 'TABLE') {
+      const rows = [...el.querySelectorAll('tr')];
+      if (!rows.length) return '';
+      const cells = tr => [...tr.children].map(c => mdInline(c).replace(/\n/g, ' ').replace(/\|/g, '\\|').trim());
+      const head = cells(rows[0]);
+      const al = [...rows[0].children].map(c => ({ center: ':---:', right: '---:', left: ':---' })[c.getAttribute('data-align')] || '---');
+      return ['| ' + head.join(' | ') + ' |', '| ' + al.join(' | ') + ' |', ...rows.slice(1).map(r => '| ' + cells(r).join(' | ') + ' |')].join('\n');
+    }
+    if (tag === 'HR') return '---';
+    return paragraphs(el).join('\n\n');
+  }
+
+  // ------------------------------------------------------------ editing
+  const blocks = () => [...doc.querySelectorAll(':scope > .tp-block')];
+  let timer = null;
+  function commit(block) {
+    if (!block || !block.isConnected) return;
+    const start = +block.dataset.start, end = +block.dataset.end;
+    const md = mdBlock(block);
+    if (md === block.dataset.md) return;
+    block.dataset.md = md;
+    post({ type: 'edit', start, end, text: md });
+    const delta = md.split('\n').length - (end - start);
+    block.dataset.end = start + md.split('\n').length;
+    if (delta) for (const b of blocks()) if (b !== block && +b.dataset.start >= end) { b.dataset.start = +b.dataset.start + delta; b.dataset.end = +b.dataset.end + delta; }
+  }
+  doc.addEventListener('focusin', e => { const b = e.target.closest('.tp-block'); if (b) { editing = b; if (b.dataset.md === undefined) b.dataset.md = mdBlock(b); } });
+  doc.addEventListener('focusout', e => {
+    const b = e.target.closest('.tp-block');
+    if (b) { clearTimeout(timer); commit(b); }
+    setTimeout(() => { if (!doc.contains(document.activeElement) || !document.activeElement.closest('.tp-block')) { editing = null; if (pendingRender) render(...pendingRender); } }, 0);
+  });
+  doc.addEventListener('input', e => {
+    const b = e.target.closest('.tp-block');
+    if (!b) return;
+    if (b.dataset.md === undefined) b.dataset.md = '';
+    clearTimeout(timer);
+    timer = setTimeout(() => commit(b), 250);
+  });
+  doc.addEventListener('keydown', e => {
+    // Enter at the end of a heading starts a new paragraph below it instead of a second heading line
+    if (e.key === 'Escape') { document.activeElement && document.activeElement.blur(); }
+  });
+  doc.addEventListener('click', e => {
+    const box = e.target.closest('input[type=checkbox][data-line]');
+    if (box) { post({ type: 'task', line: +box.dataset.line, checked: box.checked }); e.stopPropagation(); return; }
+    const a = e.target.closest('a[href]');
+    if (a && (e.metaKey || !a.closest('[contenteditable]') || a.closest('[contenteditable="false"]'))) {
+      e.preventDefault();
+      const h = a.getAttribute('data-md-href') || a.getAttribute('href');
+      if (h.startsWith('#')) { const t = document.getElementById(decodeURIComponent(h.slice(1))); if (t) t.scrollIntoView({ behavior: 'smooth' }); return; }
+      post({ type: 'link', href: h, base: baseDir });
+    }
+  }, true);
+  doc.addEventListener('paste', e => {   // paste as plain text: the block's Markdown stays clean
+    const t = e.clipboardData && e.clipboardData.getData('text/plain');
+    if (t === undefined || t === null) return;
+    e.preventDefault();
+    document.execCommand('insertText', false, t);
+  });
+
+  // ------------------------------------------------------------ scrolling, both ways
+  function scrollToLine(line) {
+    const bs = blocks();
+    if (!bs.length) return;
+    let b = bs[0];
+    for (const x of bs) { if (+x.dataset.start <= line) b = x; else break; }
+    const s = +b.dataset.start, e = Math.max(s + 1, +b.dataset.end);
+    const next = bs[bs.indexOf(b) + 1];
+    const top = b.getBoundingClientRect().top + window.scrollY;
+    const bottom = next ? next.getBoundingClientRect().top + window.scrollY : top + b.offsetHeight;
+    const f = Math.min(1, Math.max(0, (line - s) / (e - s)));
+    syncing = true;
+    window.scrollTo(0, Math.max(0, top + (bottom - top) * f - 12));
+    setTimeout(() => { syncing = false; }, 60);
+  }
+  const markUser = () => { userScrollUntil = Date.now() + 400; };
+  window.addEventListener('wheel', markUser, { passive: true });
+  window.addEventListener('keydown', markUser);
+  window.addEventListener('mousedown', markUser);
+  let scrollPost = null;
+  window.addEventListener('scroll', () => {
+    if (syncing || Date.now() > userScrollUntil) return;
+    cancelAnimationFrame(scrollPost);
+    scrollPost = requestAnimationFrame(() => {
+      const y = window.scrollY + 12;
+      const bs = blocks();
+      let b = null, next = null;
+      for (let k = 0; k < bs.length; ++k) { const top = bs[k].getBoundingClientRect().top + window.scrollY; if (top <= y) { b = bs[k]; next = bs[k + 1]; } else break; }
+      if (!b) { post({ type: 'scroll', line: 0 }); return; }
+      const top = b.getBoundingClientRect().top + window.scrollY, bottom = next ? next.getBoundingClientRect().top + window.scrollY : top + b.offsetHeight;
+      const s = +b.dataset.start, e = Math.max(s + 1, +b.dataset.end);
+      post({ type: 'scroll', line: s + (e - s) * Math.min(1, (y - top) / Math.max(1, bottom - top)) });
+    });
+  }, { passive: true });
+
+  window.addEventListener('load', () => post({ type: 'ready' }));
+  // exposed for the self-tests: Markdown <-> HTML without the editor
+  return { render, scrollToLine, toMarkdown: el => mdBlock(el), blocks, commit,
+           editBlock: (index, html) => { const b = blocks()[index]; b.innerHTML = html; b.dataset.md = b.dataset.md ?? ''; commit(b); return b.dataset.md; } };
+})();
+</script>
+</body>
+</html>

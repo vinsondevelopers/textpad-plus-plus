@@ -1,0 +1,1152 @@
+{
+ "_comment": "Hand-maintained status notes merged by gen_feature_matrix.py. 'status' here can only LOWER a command's status (Partial/Blocked/Not started) or add notes; 'Verified' always comes from test results.",
+ "commands": {
+  "IDM_FILE_OPEN_FOLDER": {
+   "mac": "Reveals the file in Finder",
+   "diff": "Finder instead of Explorer"
+  },
+  "IDM_FILE_OPEN_CMD": {
+   "mac": "Opens Terminal.app at the file's folder",
+   "diff": "Terminal instead of cmd.exe"
+  },
+  "IDM_FILE_OPEN_POWERSHELL": {
+   "mac": "Opens pwsh (PowerShell for macOS) in Terminal at the file's folder; disabled when pwsh is not installed",
+   "diff": "Needs PowerShell for macOS (for example brew install powershell)"
+  },
+  "IDM_FILE_CONTAININGFOLDERASWORKSPACE": {
+   "mac": "Adds the folder to Folder as Workspace (FSEvents keep it current)"
+  },
+  "IDM_FILE_OPENFOLDERASWORKSPACE": {
+   "mac": "Folder chooser, then Folder as Workspace"
+  },
+  "IDM_FILE_DELETE": {
+   "mac": "Moves the file to the macOS Trash",
+   "diff": "Trash instead of Recycle Bin"
+  },
+  "IDM_FILE_RENAME": {
+   "mac": "Untitled: renames the tab; file: moves the file via a save panel"
+  },
+  "IDM_FILE_PRINT": {
+   "mac": "macOS print system; Preferences > Print: colour mode, line numbers, margins, header/footer variables, form feed as page break"
+  },
+  "IDM_FILE_PRINTNOW": {
+   "mac": "Prints with the same settings without the print dialog"
+  },
+  "IDM_FILE_EXIT": {
+   "mac": "Also Quit Textpad++ (⌘Q) in the application menu"
+  },
+  "IDM_EDIT_AUTOCOMPLETE": {
+   "mac": "Function completion from the upstream API files (autoCompletion/<language>.xml, 34 bundled); user API files in the settings folder take precedence"
+  },
+  "IDM_EDIT_AUTOCOMPLETE_PATH": {
+   "mac": "Completes absolute paths (/… and ~/…), the macOS equivalent of upstream's C:\\… paths"
+  },
+  "IDM_EDIT_FUNCCALLTIP": {
+   "mac": "Function parameter hint from the API files; current parameter highlighted, overloads shown as 1 of N"
+  },
+  "IDM_EDIT_FUNCCALLTIP_PREVIOUS": {
+   "mac": "Previous overload of the hint shown"
+  },
+  "IDM_EDIT_FUNCCALLTIP_NEXT": {
+   "mac": "Next overload of the hint shown"
+  },
+  "IDM_EDIT_CHANGESEARCHENGINE": {
+   "mac": "Opens Preferences > Search Engine (DuckDuckGo, Google, Yahoo!, Stack Overflow or a custom URL with $(CURRENT_WORD))"
+  },
+  "IDM_EDIT_CHAR_PANEL": {
+   "mac": "Code page of the document (or the ANSI code page); double-click inserts the character or the HTML entity"
+  },
+  "IDM_EDIT_CLIPBOARDHISTORY_PANEL": {
+   "mac": "macOS has no clipboard-change event: the clipboard is checked every 0.5 s"
+  },
+  "IDM_EDIT_COLUMNMODE": {
+   "mac": "Column Editor dialog (text or numbers, dec/hex/oct/bin, leading zeros/spaces)"
+  },
+  "IDM_EDIT_COLUMNMODETIP": {
+   "mac": "Option+drag / Option+Shift+arrows for column selection",
+   "diff": "Alt is Option on macOS"
+  },
+  "IDM_EDIT_TOGGLESYSTEMREADONLY": {
+   "mac": "Toggles the POSIX owner-write bit",
+   "diff": "Windows read-only attribute -> POSIX permission"
+  },
+  "IDM_EDIT_OPENSELECTEDFILEFOLDERINEXPLORER": {
+   "mac": "Reveals in Finder",
+   "diff": "Finder instead of Explorer"
+  },
+  "IDM_EDIT_PASTE_AS_HTML": {
+   "mac": "Pastes the raw HTML markup from the pasteboard (public.html)"
+  },
+  "IDM_EDIT_PASTE_AS_RTF": {
+   "mac": "Pastes the raw RTF markup from the pasteboard (public.rtf)"
+  },
+  "IDM_SEARCH_FINDINCREMENT": {
+   "mac": "Bar above the status bar (or below the toolbar)"
+  },
+  "IDM_SEARCH_FINDCHARINRANGE": {
+   "mac": "Non-modal dialog with upstream's ranges, Up/Down and Wrap around",
+   "diff": "Selects the whole character (upstream selects one byte of a multi-byte UTF-8 character)"
+  },
+  "IDM_VIEW_POSTIT": {
+   "mac": "Hides toolbar, tabs, status bar and the window title bar (drag the window by its background)",
+   "diff": "The macOS menu bar is global and stays visible"
+  },
+  "IDM_VIEW_DISTRACTIONFREE": {
+   "mac": "Full screen, chrome hidden, side padding = view width / N (Preferences, N = 3–9, upstream default 4)"
+  },
+  "IDM_VIEW_IN_IE": {
+   "mac": "Safari",
+   "diff": "Internet Explorer does not exist on macOS; mapped to Safari"
+  },
+  "IDM_VIEW_HIDELINES": {
+   "mac": "Upstream hide-lines markers: adjacent sections merge, a click on a marker shows the lines, sections survive document switches"
+  },
+  "IDM_VIEW_GOTO_NEW_INSTANCE": {
+   "mac": "Starts a second Textpad++ (-multiInst -nosession <file>) and closes the document here"
+  },
+  "IDM_VIEW_LOAD_IN_NEW_INSTANCE": {
+   "mac": "Starts a second Textpad++ with the file (-multiInst -nosession <file>)"
+  },
+  "IDM_VIEW_PROJECT_PANEL_1": {
+   "mac": "Upstream workspace XML (<NotepadPlus><Project><Folder><File name=\"relative\"/>)"
+  },
+  "IDM_VIEW_PROJECT_PANEL_2": {
+   "mac": "Upstream workspace XML (<NotepadPlus><Project><Folder><File name=\"relative\"/>)"
+  },
+  "IDM_VIEW_PROJECT_PANEL_3": {
+   "mac": "Upstream workspace XML (<NotepadPlus><Project><Folder><File name=\"relative\"/>)"
+  },
+  "IDM_VIEW_FILEBROWSER": {
+   "mac": "Folder as Workspace panel (FSEvents)"
+  },
+  "IDM_VIEW_DOC_MAP": {
+   "mac": "Shares the document; zoom -10, proportional scrolling, click/drag scrolls the editor"
+  },
+  "IDM_VIEW_DOCLIST": {
+   "mac": "Name / Ext. / Path columns, sortable"
+  },
+  "IDM_VIEW_FUNC_LIST": {
+   "mac": "Upstream functionList/*.xml parser rules"
+  },
+  "IDM_EDIT_RTL": {
+   "status": "Blocked",
+   "diff": "Scintilla's bidirectional (RTL) mode is only implemented for Win32 DirectWrite"
+  },
+  "IDM_EDIT_LTR": {
+   "status": "Blocked",
+   "diff": "See Text Direction RTL"
+  },
+  "IDM_FORMAT_ANSI": {
+   "diff": "\"ANSI\" = Windows-1252 by default (configurable), because macOS has no system ANSI code page"
+  },
+  "IDM_FORMAT_CONV2_ANSI": {
+   "diff": "Unrepresentable characters are reported with a warning at save time instead of being replaced immediately"
+  },
+  "IDM_FORMAT_DOS_720": {
+   "mac": "Built-in table (macOS iconv has no CP720), generated from Windows' code page data",
+   "diff": "-"
+  },
+  "IDM_LANG_USER_DLG": {
+   "mac": "Opens the User Defined Language panel (upstream 2.1 XML; four tabs, Styler dialogs, import/export)",
+   "diff": "Docked mode not available; panel floats"
+  },
+  "IDM_LANG_USER": {
+   "mac": "Applies the UDL selected in the panel (or the first one) to the current document"
+  },
+  "IDM_SETTING_PREFERENCE": {
+   "mac": "Opens Preferences with all 24 upstream pages",
+   "diff": "Options that cannot work on macOS or depend on unbuilt features are shown disabled with the reason (see KNOWN_DIFFERENCES)"
+  },
+  "IDM_LANGSTYLE_CONFIG_DLG": {
+   "mac": "Upstream Style Configurator: theme, language, style, colours, font, user ext., user-defined keywords, Global override, Go to settings; Save & Close writes stylers.xml / themes/<name>.xml",
+   "diff": "No Transparency option (a Windows-only window feature)"
+  },
+  "IDM_SETTING_SHORTCUT_MAPPER": {
+   "mac": "Main menu / Macros / Run commands / Plugin commands / Scintilla commands; Modify, Clear, Delete, filter, conflict report; saved to shortcuts.xml (upstream format)",
+   "diff": "Plugin commands tab is empty (no plugin host); a 'Control' key flag is added for the macOS scheme"
+  },
+  "IDM_SETTING_IMPORTPLUGIN": {
+   "mac": "Imports native .tpplugin bundles (docs/PLUGINS.md) and loads them at once",
+   "diff": "Windows DLL plugins cannot run on macOS; Notepad++ asks for a restart, Textpad++ only when the plugin is already running"
+  },
+  "IDM_SETTING_EDITCONTEXTMENU": {
+   "mac": "Opens the user's contextMenu.xml (copied from the default first); changes apply when the menu next opens"
+  },
+  "IDM_SETTING_OPENPLUGINSDIR": {
+   "diff": "Opens the plugins folder; plugins are not loaded yet"
+  },
+  "IDM_EXECUTE": {
+   "mac": "Runs through /bin/sh with shell-quoted $(…) variables; URLs open in the browser; saved commands appear in the Run menu with their shortcuts"
+  },
+  "IDM_MACRO_SAVECURRENTMACRO": {
+   "mac": "Name + shortcut (upstream Shortcut dialog); the macro appears in the Macro menu with its shortcut"
+  },
+  "IDM_UPDATE_NPP": {
+   "mac": "Reads a GUP XML feed whose address is built in with make dmg UPDATE_URL=…; downloads the app zip, checks SHA-256 + ECDSA signature, replaces the app in place and relaunches (or at quit); DMG fallback",
+   "diff": "Signed in-place update instead of an installer. A build without UPDATE_URL says it has no update address"
+  },
+  "IDM_CONFUPDATERPROXY": {
+   "mac": "HTTP/HTTPS proxy server and port for the updater"
+  },
+  "IDM_HOMESWEETHOME": {
+   "status": "Removed",
+   "diff": "Opened the upstream project's web site; removed so the upstream name appears nowhere (by request)"
+  },
+  "IDM_PROJECTPAGE": {
+   "status": "Removed",
+   "diff": "Opened the upstream project's web site; removed so the upstream name appears nowhere (by request)"
+  },
+  "IDM_ONLINEDOCUMENT": {
+   "status": "Removed",
+   "diff": "Opened the upstream project's web site; removed so the upstream name appears nowhere (by request)"
+  },
+  "IDM_FORUM": {
+   "status": "Removed",
+   "diff": "Opened the upstream project's web site; removed so the upstream name appears nowhere (by request)"
+  },
+  "IDM_CMDLINEARGUMENTS": {
+   "mac": "Shows the upstream option list; all options are parsed at launch and forwarded to a running Textpad++ in mono-instance mode",
+   "diff": "-qn easter-egg quotes are not included; -L is accepted (English only); -systemtray starts hidden (no system tray on macOS); -openFoldersAsWorkspace adds the folders to Folder as Workspace"
+  },
+  "IDM_WINDOW_MRU_FIRST": {
+   "mac": "IDM_WINDOW_MRU_FIRST + i activate the current view's documents (\"1: path\", \"*\" when modified)"
+  },
+  "IDM_EDIT_AUTOCOMPLETE_CURRENTFILE": {
+   "mac": "Word completion; a single match is inserted directly (upstream)"
+  },
+  "IDM_SETTING_SHORTCUT_MAPPER_MACRO": {
+   "mac": "Opens the Shortcut Mapper on the Macros tab"
+  },
+  "IDM_SETTING_SHORTCUT_MAPPER_RUN": {
+   "mac": "Opens the Shortcut Mapper on the Run commands tab"
+  },
+  "IDM_LANG_UDLCOLLECTION_PROJECT_SITE": {
+   "status": "Removed",
+   "diff": "Opened the upstream project's web site; removed so the upstream name appears nowhere (by request)"
+  }
+ },
+ "features": [
+  [
+   "UI-001",
+   "UI",
+   "Main window",
+   "Toolbar (Standard icons: small, upstream button order)",
+   "Verified",
+   "T-PREF-006, T-PREF-TBCOLOR-001",
+   "Colourful (default, small/large), Standard, Fluent small/large (regular or filled) with Fluent colorization"
+  ],
+  [
+   "UI-002",
+   "UI",
+   "Main window",
+   "Document tab bar: icons for saved/unsaved/read-only/monitoring, close button, orange active indicator",
+   "Implemented",
+   "",
+   "Visual check via --snapshot"
+  ],
+  [
+   "UI-003",
+   "UI",
+   "Tab bar",
+   "Drag-and-drop tab reordering",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "UI-004",
+   "UI",
+   "Tab bar",
+   "Middle-click closes a tab; double-click empty area creates a new document",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "UI-005",
+   "UI",
+   "Tab bar",
+   "Pin / unpin tabs (pinned tabs move first)",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "UI-006",
+   "UI",
+   "Tab bar",
+   "Tab context menu (close variants, save, reveal, rename, trash, reload, print, read-only, copy paths, move/clone, colours, pin)",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "UI-007",
+   "UI",
+   "Tab bar",
+   "Vertical / multi-line tab bar options",
+   "Verified",
+   "T-UI-TABS-001",
+   "Vertical: the bar on the left edge with rotated labels; multi-line: rows wrap"
+  ],
+  [
+   "UI-008",
+   "UI",
+   "Tab bar",
+   "Drag a tab to the other view",
+   "Verified",
+   "T-UI-DND-001",
+   "Onto the other view moves (⌥ clones; Ctrl upstream); out of the window opens a new instance"
+  ],
+  [
+   "UI-009",
+   "UI",
+   "Status bar",
+   "Doc type | length/lines | Ln/Col/Pos/Sel | EOL | encoding | INS/OVR",
+   "Verified",
+   "T-EDIT-006, T-LANG-001, T-ENC-001",
+   ""
+  ],
+  [
+   "UI-010",
+   "UI",
+   "Margins",
+   "Line numbers (dynamic width), bookmark margin (click to toggle), box-tree fold margin, change-history margin",
+   "Verified",
+   "T-VIEW-003, T-SRCH-012",
+   ""
+  ],
+  [
+   "UI-011",
+   "UI",
+   "Editor",
+   "Brace matching highlight",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "UI-012",
+   "UI",
+   "Editor",
+   "Smart highlighting (whole word, visible range)",
+   "Verified",
+   "T-EDIT-012, T-PREF-007",
+   ""
+  ],
+  [
+   "UI-013",
+   "UI",
+   "Editor",
+   "Auto-indent (basic + brace / colon)",
+   "Verified",
+   "T-EDIT-012, T-PREF-005",
+   ""
+  ],
+  [
+   "UI-014",
+   "UI",
+   "Editor",
+   "Tag match highlighting (HTML/XML)",
+   "Verified",
+   "T-EDIT-TAG-001",
+   "Port of upstream XmlMatchedTagsHighlighter (pairs, attributes, self-closing)"
+  ],
+  [
+   "UI-015",
+   "UI",
+   "Editor",
+   "Auto-close brackets / quotes / HTML tags",
+   "Verified",
+   "T-PREF-008",
+   ""
+  ],
+  [
+   "UI-016",
+   "UI",
+   "Editor",
+   "Context menu (upstream default contextMenu.xml items)",
+   "Verified",
+   "T-UI-CTX-001",
+   "Built from contextMenu.xml (upstream default or the user copy); Settings > Edit Popup ContextMenu"
+  ],
+  [
+   "UI-017",
+   "UI",
+   "Main window",
+   "Two views (main/sub) side by side",
+   "Verified",
+   "T-VIEW-002, T-UI-LAYOUT-002",
+   "Side by side or stacked (right-click the splitter: Rotate to right / left)"
+  ],
+  [
+   "UI-018",
+   "UI",
+   "Main window",
+   "Search results panel (searchResult lexer, folding, double-click navigation, F4/Shift+F4)",
+   "Verified",
+   "T-SRCH-007, T-UI-LAYOUT-002",
+   "Docked at the bottom or floating (header menu)"
+  ],
+  [
+   "UI-019",
+   "UI",
+   "Main window",
+   "In-window Windows-style menu bar",
+   "Verified",
+   "T-UI-MENUBAR-001",
+   "Optional (Preferences > General > Menu); the macOS menu bar keeps the same menus; ＋ ▼ ✕ shortcuts; Hide toggled by ⌥ or F10"
+  ],
+  [
+   "UI-020",
+   "UI",
+   "Main window",
+   "Dark mode (UI chrome)",
+   "Verified",
+   "T-PREF-006, T-DARK-001",
+   "Follow macOS / Light / Dark; upstream tones (Black … Olive) and Customized colours"
+  ],
+  [
+   "FIO-001",
+   "File I/O",
+   "Open",
+   "Encoding detection: BOM (UTF-8/16LE/16BE), valid UTF-8, ANSI fallback",
+   "Verified",
+   "T-FILE-RT-*, ENC_015, T-ENC-DETECT-001",
+   "BOM, then uchardet (as bundled by Notepad++), then UTF-8 / ANSI"
+  ],
+  [
+   "FIO-002",
+   "File I/O",
+   "Open/Save",
+   "Byte-exact round trip for unmodified content (incl. invalid bytes, NUL, mixed EOL)",
+   "Verified",
+   "T-FILE-RT-*, ENC_007, ENC_008",
+   ""
+  ],
+  [
+   "FIO-003",
+   "File I/O",
+   "Save",
+   "Atomic save (temp file + fsync + rename) preserving permissions/ACL/xattrs and symlinks",
+   "Verified",
+   "T-FILE-002",
+   ""
+  ],
+  [
+   "FIO-004",
+   "File I/O",
+   "Save",
+   "Lossy-conversion warning before writing",
+   "Verified",
+   "T-FILE-010",
+   ""
+  ],
+  [
+   "FIO-005",
+   "File I/O",
+   "Monitoring",
+   "External change detection (reload prompt), deleted-file handling",
+   "Verified",
+   "T-FILE-006, T-FILE-007",
+   ""
+  ],
+  [
+   "FIO-006",
+   "File I/O",
+   "Open",
+   "Open from command line / Finder Open With / Dock drop (CFBundleDocumentTypes)",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "FIO-007",
+   "File I/O",
+   "Open",
+   "Drag and drop files onto the editor window",
+   "Verified",
+   "T-UI-DND-001",
+   "Files open; folders become Folder as Workspace roots (or their files open, per Preferences)"
+  ],
+  [
+   "FIO-008",
+   "File I/O",
+   "Large files",
+   "Large file handling (55 MB / 1M lines)",
+   "Verified",
+   "B-OPEN-50MB, B-FIND-50MB, B-SAVE-50MB, T-BIG-001, T-BIG-BENCH",
+   "Files from 32 MB load in the background (progress, Cancel); 3.2 GB log: open 14 s, find 4 s, save 4 s; growing logs append only new lines"
+  ],
+  [
+   "SES-001",
+   "Session",
+   "Session",
+   "Remember current session (session.xml, upstream layout + tp* attributes)",
+   "Verified",
+   "T-SESS-001",
+   ""
+  ],
+  [
+   "SES-002",
+   "Session",
+   "Backup",
+   "Session snapshot + periodic backup of unsaved buffers (default every 7 s)",
+   "Verified",
+   "T-SESS-002",
+   ""
+  ],
+  [
+   "SES-003",
+   "Session",
+   "Backup",
+   "Restore after abnormal termination (process kill)",
+   "Verified",
+   "T-SESS-KILL-001, T-SESS-002",
+   "A real child process is killed with SIGKILL and the next launch restores unsaved text and edits"
+  ],
+  [
+   "PRF-001",
+   "Preferences",
+   "General",
+   "General (localization, toolbar/tab/status bar visibility, menu options)",
+   "Verified",
+   "T-PREF-001, T-PREF-006, T-UI-MENUBAR-001, T-L10N-001, T-UI-LAYOUT-002",
+   "In-window menu bar (Hide, right shortcuts, F10 menu mode), 96 interface languages for menus and commands, custom dialog font"
+  ],
+  [
+   "PRF-002",
+   "Preferences",
+   "Toolbar",
+   "Toolbar icon set / colour",
+   "Verified",
+   "T-PREF-006, T-PREF-TBCOLOR-001",
+   "Icon sets and Fluent colorization switch live"
+  ],
+  [
+   "PRF-003",
+   "Preferences",
+   "Tab Bar",
+   "Tab bar options",
+   "Verified",
+   "T-PREF-006, T-UI-TABS-001",
+   "Including vertical and multi-line"
+  ],
+  [
+   "PRF-004",
+   "Preferences",
+   "Editing 1",
+   "Caret, current line, multi-editing, scrolling options",
+   "Verified",
+   "T-PREF-002, T-PREF-RCLICK-001",
+   "Right-click keeps selection option; touchpad option n/a"
+  ],
+  [
+   "PRF-005",
+   "Preferences",
+   "Editing 2",
+   "Non-printing characters, line wrap mode options",
+   "Verified",
+   "T-PREF-002, T-PREF-COLMULTI-001, T-PREF-C0-001",
+   "Column selection to multi-editing; C0 input prevention"
+  ],
+  [
+   "PRF-006",
+   "Preferences",
+   "Dark Mode",
+   "Dark mode options",
+   "Verified",
+   "T-DARK-001",
+   ""
+  ],
+  [
+   "PRF-007",
+   "Preferences",
+   "Margins/Border/Edge",
+   "Line number, fold style, edge, change-history display",
+   "Verified",
+   "T-PREF-003, T-UI-LAYOUT-002",
+   "Including border width and edge"
+  ],
+  [
+   "PRF-008",
+   "Preferences",
+   "New Document",
+   "Default EOL and encoding for new documents",
+   "Verified",
+   "T-PREF-004",
+   ""
+  ],
+  [
+   "PRF-009",
+   "Preferences",
+   "Default Directory",
+   "Default open/save directory",
+   "Implemented",
+   "",
+   "Used by open/save panels; no automated test (needs modal panels)"
+  ],
+  [
+   "PRF-010",
+   "Preferences",
+   "Recent Files History",
+   "Recent files count/display",
+   "Verified",
+   "T-PREF-011, T-FILE-008",
+   ""
+  ],
+  [
+   "PRF-011",
+   "Preferences",
+   "File Association",
+   "Register extensions",
+   "Implemented",
+   "",
+   "Sets Textpad++ as the macOS default app per extension via NSWorkspace; untested because it changes system settings"
+  ],
+  [
+   "PRF-012",
+   "Preferences",
+   "Language",
+   "Language menu compaction, tab settings per language",
+   "Verified",
+   "T-PREF-005",
+   "Hidden languages, compact menu and per-language tab settings"
+  ],
+  [
+   "PRF-013",
+   "Preferences",
+   "Indentation",
+   "Indent size / auto-indent",
+   "Verified",
+   "T-PREF-005",
+   ""
+  ],
+  [
+   "PRF-014",
+   "Preferences",
+   "Highlighting",
+   "Smart highlighting / tag match options",
+   "Verified",
+   "T-PREF-007, T-EDIT-TAG-001",
+   "Tag match options; \"Highlight comment/php/asp zone\" is stored but unused upstream too"
+  ],
+  [
+   "PRF-015",
+   "Preferences",
+   "Print",
+   "Print options",
+   "Verified",
+   "T-PRINT-001",
+   ""
+  ],
+  [
+   "PRF-016",
+   "Preferences",
+   "Searching",
+   "Search options",
+   "Implemented",
+   "",
+   "Applied by the Find dialog; covered indirectly by search tests"
+  ],
+  [
+   "PRF-017",
+   "Preferences",
+   "Backup",
+   "Remember session / snapshot / interval",
+   "Verified",
+   "T-PREF-009, T-SESS-002",
+   ""
+  ],
+  [
+   "PRF-018",
+   "Preferences",
+   "Auto-Completion",
+   "Auto-completion triggers",
+   "Verified",
+   "T-PREF-008, T-AUTOC-001, T-AUTOC-002, T-AUTOC-003",
+   ""
+  ],
+  [
+   "PRF-019",
+   "Preferences",
+   "Multi-Instance & Date",
+   "Multi-instance, custom date format",
+   "Verified",
+   "T-EDIT-008, T-CMD-003",
+   "Mono-instance forwards arguments to the running Textpad++; multi-instance and session-in-new-instance start a second process"
+  ],
+  [
+   "PRF-020",
+   "Preferences",
+   "Delimiter",
+   "Word delimiters",
+   "Verified",
+   "T-PREF-010",
+   ""
+  ],
+  [
+   "PRF-021",
+   "Preferences",
+   "Performance",
+   "Large file restrictions",
+   "Verified",
+   "T-PREF-009, T-PREF-2GB-001",
+   ""
+  ],
+  [
+   "PRF-022",
+   "Preferences",
+   "Cloud & Link",
+   "Settings in cloud folder, clickable links",
+   "Verified",
+   "T-PREF-010, T-CLOUD-001",
+   "Cloud folder holds preferences.plist, shortcuts.xml, themes, UDLs and API files; session and backups stay local; applies after a restart (as upstream)"
+  ],
+  [
+   "PRF-023",
+   "Preferences",
+   "Search Engine",
+   "Search on Internet engine",
+   "Verified",
+   "T-EDIT-SE-001",
+   "DuckDuckGo / Google / Yahoo! / Stack Overflow / custom URL"
+  ],
+  [
+   "PRF-024",
+   "Preferences",
+   "MISC.",
+   "Misc options (file auto-detection mode, etc.)",
+   "Verified",
+   "T-PREF-011, T-PREF-PEEK-001, T-PREF-TRAY-001, T-ENC-DETECT-001, T-UPD-001",
+   "Document Peeker, menu bar extra (system tray), encoding detection, auto-updater; rendering mode n/a"
+  ],
+  [
+   "EXT-001",
+   "Extensions",
+   "Plugins",
+   "macOS-native plugin API, discovery, enable/disable, Plugins Admin",
+   "Verified",
+   "T-PLUG-001, T-PLUG-002, T-PLUG-003, T-PLUG-004",
+   "Native .tpplugin bundles with the Windows entry points and message numbers (UTF-8); docking panels and toolbar icons; Plugins Admin with an online list"
+  ],
+  [
+   "EXT-002",
+   "Extensions",
+   "UDL",
+   "User Defined Languages: XML import/export, editor dialog",
+   "Verified",
+   "T-UDL-001, T-UDL-002, T-UDL-003, T-UDL-004, T-UI-LAYOUT-002",
+   "Upstream 2.1 XML; preinstalled Markdown UDLs; the dialog floats or docks (Dock / Undock)"
+  ],
+  [
+   "EXT-003",
+   "Extensions",
+   "Themes",
+   "Import style themes (copy XML into the themes folder)",
+   "Implemented",
+   "",
+   ""
+  ],
+  [
+   "PAN-001",
+   "Panels",
+   "Function List",
+   "Function List panel",
+   "Verified",
+   "T-PANEL-003",
+   "Upstream functionList parser rules, sort, filter, caret tracking"
+  ],
+  [
+   "PAN-002",
+   "Panels",
+   "Document Map",
+   "Document Map panel",
+   "Verified",
+   "T-PANEL-002",
+   ""
+  ],
+  [
+   "PAN-003",
+   "Panels",
+   "Document List",
+   "Document List panel",
+   "Verified",
+   "T-PANEL-001",
+   ""
+  ],
+  [
+   "PAN-004",
+   "Panels",
+   "Folder as Workspace",
+   "Folder as Workspace panel",
+   "Verified",
+   "T-PANEL-004",
+   ""
+  ],
+  [
+   "PAN-005",
+   "Panels",
+   "Project Panels",
+   "Project Panels 1-3",
+   "Verified",
+   "T-PANEL-005",
+   ""
+  ],
+  [
+   "PAN-006",
+   "Panels",
+   "Character Panel / Clipboard History",
+   "ASCII panel, clipboard history panel",
+   "Verified",
+   "T-PANEL-006",
+   ""
+  ],
+  [
+   "SRC-001",
+   "Search",
+   "Find dialog",
+   "Find in Projects tab",
+   "Verified",
+   "T-PANEL-005",
+   ""
+  ],
+  [
+   "SRC-002",
+   "Search",
+   "Find dialog",
+   "Live highlighting of 'Find what' matches while the dialog is open",
+   "Verified",
+   "T-SRCH-HL-001",
+   ""
+  ],
+  [
+   "SRC-003",
+   "Search",
+   "Find dialog",
+   "Transparency options",
+   "Verified",
+   "T-SRCH-HL-001",
+   "On losing focus / Always, 20–225"
+  ],
+  [
+   "ACC-001",
+   "Accessibility",
+   "Editor",
+   "VoiceOver for the editing area",
+   "Verified",
+   "T-ACC-001",
+   "Editor: Scintilla Cocoa accessibility; tab bar = tab group with Select/Close actions, labelled toolbar buttons, status bar texts"
+  ],
+  [
+   "KEY-001",
+   "Keyboard",
+   "Shortcuts",
+   "Upstream default shortcuts on menu items (macOS scheme: Ctrl -> Command, reserved combos on Control)",
+   "Verified",
+   "T-KEY-001",
+   ""
+  ],
+  [
+   "KEY-002",
+   "Keyboard",
+   "Shortcuts",
+   "Windows scheme (Ctrl = Control) switch",
+   "Implemented",
+   "",
+   "Preferences > Keyboard shortcut scheme"
+  ],
+  [
+   "KEY-003",
+   "Keyboard",
+   "Shortcuts",
+   "Scintilla command key bindings (scintKeyDefs)",
+   "Verified",
+   "T-KEYS-003",
+   "macOS scheme: Scintilla Cocoa native keys; Windows scheme: upstream scintKeyDefs; both editable in the Shortcut Mapper"
+  ],
+  [
+   "UI-021",
+   "UI",
+   "Tab bar",
+   "Document Peeker: peek on tab (floating view) / on the Document Map",
+   "Verified",
+   "T-PREF-PEEK-001",
+   ""
+  ],
+  [
+   "UI-022",
+   "UI",
+   "Main window",
+   "Docking panels left and right (Document List, Map, Function List, Folder as Workspace, Projects, Character Panel, Clipboard History)",
+   "Verified",
+   "T-PANEL-001, T-PANEL-002, T-PANEL-006, T-UI-LAYOUT-002",
+   "Docked left, right, top or bottom, or floating (each panel header has a dock menu)"
+  ],
+  [
+   "UI-023",
+   "UI",
+   "Main window",
+   "Menu bar extra for Minimize / Close to system tray, with the upstream tray menu",
+   "Verified",
+   "T-PREF-TRAY-001",
+   ""
+  ],
+  [
+   "UI-024",
+   "UI",
+   "Search",
+   "Incremental Search bar",
+   "Verified",
+   "T-SRCH-INC-001",
+   ""
+  ],
+  [
+   "EXT-004",
+   "Extensions",
+   "Updates",
+   "Over-the-air updates: GUP XML feed, signed zip (SHA-256 + ECDSA P-256), in-place replace and relaunch, install at quit, proxy, auto-check every 15 days",
+   "Verified",
+   "T-UPD-001, T-UPD-002",
+   "Needs UPDATE_URL at build time"
+  ],
+  [
+   "UI-025",
+   "UI",
+   "Main window",
+   "Interface languages (upstream nativeLang files): menus, sub-menus, command labels",
+   "Verified",
+   "T-L10N-001",
+   "Dialog texts stay English"
+  ],
+  [
+   "UI-026",
+   "UI",
+   "Main window",
+   "In-window menu bar keyboard access: F10 menu mode, arrows, mnemonic letters, Esc",
+   "Verified",
+   "T-UI-MENUBAR-001",
+   "⌥ + letter is not used: on macOS it types accented characters"
+  ],
+  [
+   "UI-027",
+   "UI",
+   "Main window",
+   "No upstream product name anywhere in the application (menus, dialogs, data files, binary)",
+   "Verified",
+   "T-BRAND-001, T-L10N-001",
+   "Copyright notices of the original authors are kept, as the GPL requires"
+  ],
+  [
+   "EXT-005",
+   "Extensions",
+   "Plugins",
+   "Plugins Admin online list: download, SHA-256 check, install, updates",
+   "Verified",
+   "T-PLUG-004",
+   "The list address comes with UPDATE_URL at build time"
+  ],
+  [
+   "CMD-001",
+   "Command line",
+   "Options",
+   "-qn=\"Quoter\" quotes (random too)",
+   "Verified",
+   "T-CMD-QN-001",
+   "Quotes by named people only"
+  ],
+  [
+   "EXT-006",
+   "Extensions",
+   "Plugins",
+   "JSON Tools (built in): Format, Compress, Validate with line/column errors, Sort Keys, Escape/Unescape string, JSON to CSV, Decode JWT",
+   "Verified",
+   "T-JSON-001, T-DEV-001, T-DEV-002, JSON_001, JSON_002",
+   "Upstream needs a plugin for this"
+  ],
+  [
+   "UI-028",
+   "UI",
+   "Toolbar",
+   "Toolbar tooltips: name, shortcut and a one-line description of each button",
+   "Verified",
+   "T-UI-TIPS-001",
+   ""
+  ],
+  [
+   "EXT-007",
+   "Extensions",
+   "Plugins",
+   "XML Tools (built in): Pretty Print, Compress, well-formedness check with line/column, XPath Query",
+   "Verified",
+   "T-DEV-001, T-DEV-002",
+   ""
+  ],
+  [
+   "EXT-008",
+   "Extensions",
+   "Plugins",
+   "Encode - Decode (built in): Base64, URL, HTML entities, Unicode \\uXXXX, hex bytes",
+   "Verified",
+   "T-DEV-001, T-DEV-002",
+   "Upstream ships MIME Tools / Converter plugins for part of this"
+  ],
+  [
+   "EXT-009",
+   "Extensions",
+   "Plugins",
+   "Text Tools (built in): camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, dot.case, Align on = / :, Sort Lines by Length, Escape for Regex",
+   "Verified",
+   "T-DEV-001, T-DEV-002",
+   ""
+  ],
+  [
+   "EXT-010",
+   "Extensions",
+   "Plugins",
+   "Convert (built in): CSV to JSON, CSV to Markdown table, JSON to CSV, Unix time <-> date, decimal <-> hex",
+   "Verified",
+   "T-DEV-001, T-DEV-002, CSV_001",
+   ""
+  ],
+  [
+   "EXT-011",
+   "Extensions",
+   "Plugins",
+   "Insert (built in): UUID, Unix timestamp, ISO 8601 date-time, Lorem ipsum, random password",
+   "Verified",
+   "T-DEV-001, T-DEV-002",
+   ""
+  ],
+  [
+   "UI-029",
+   "UI",
+   "Dialogs",
+   "Long pop-up texts scroll in a fixed-size box that fits a 13-inch screen; the command audit flags any window taller than 820 pt",
+   "Verified",
+   "T-UI-ALERT-001",
+   ""
+  ],
+  [
+   "UI-030",
+   "UI",
+   "Dialogs",
+   "Escape closes pop-ups and dialogs (Cancel / Close / OK / the only button; tool windows); the editor keeps its own Escape",
+   "Verified",
+   "T-ESC-001",
+   ""
+  ],
+  [
+   "EXT-012",
+   "Extensions",
+   "Live Preview",
+   "Markdown Live Preview beside the text, editable in place (edits written back as Markdown), task boxes, links, scroll sync; HTML page preview; asked when a .md file opens",
+   "Verified",
+   "T-MD-001, T-MD-002",
+   "Markdown rendering is Textpad++'s own (CommonMark subset + GFM tables, task lists, strikethrough)"
+  ],
+  [
+   "EXT-013",
+   "Extensions",
+   "Compare",
+   "View > Compare: side by side, changed / added / deleted lines and changed characters marked, aligned with blank space, synchronized scrolling, next / previous difference, live re-compare",
+   "Verified",
+   "T-CMP-001, DIFF_001",
+   "Upstream needs the Compare plugin"
+  ],
+  [
+   "UI-031",
+   "UI",
+   "Main window",
+   "Command Palette (⇧⌘A): every menu command, plugin, macro and Run command by name, with path and shortcut",
+   "Verified",
+   "T-PAL-001",
+   ""
+  ],
+  [
+   "UI-032",
+   "UI",
+   "Main window",
+   "Modern Look: rounded tabs, title bar in the toolbar colour, hover highlights, macOS Light / Dark themes",
+   "Verified",
+   "T-UI-MODERN-001",
+   "View > Modern Look turns it off"
+  ],
+  [
+   "EXT-014",
+   "Extensions",
+   "Git",
+   "Git change markers in the margin (added / changed / deleted since the last commit), next / previous change",
+   "Verified",
+   "T-GIT-001",
+   "Needs git from Homebrew, the Command Line Tools or Xcode"
+  ],
+  [
+   "EXT-015",
+   "Extensions",
+   "CSV",
+   "CSV Rainbow Columns (visible lines only, fast on big files); Align / Shrink Columns",
+   "Verified",
+   "T-CSV-001, CSV_002",
+   ""
+  ],
+  [
+   "EXT-016",
+   "Extensions",
+   "Plugins",
+   "Code Formatter: Format Document by language, Format SQL / HTML / CSS, Minify CSS",
+   "Verified",
+   "T-FMT-002, FMT_001",
+   ""
+  ],
+  [
+   "EXT-017",
+   "Extensions",
+   "Snippets",
+   "Snippets: trigger + Tab, fields with Tab / ⇧Tab, built-in sets for 15 languages, user snippets.json",
+   "Verified",
+   "T-SNIP-001",
+   ""
+  ],
+  [
+   "UI-034",
+   "UI",
+   "Main window",
+   "Dialogs translated with the interface language (strings matched through english.xml)",
+   "Verified",
+   "T-L10N-002",
+   "Only strings that exist in the language files; Textpad++'s own new dialogs stay English"
+  ],
+  [
+   "UI-035",
+   "UI",
+   "Preferences",
+   "Textpad++ Features page: Markdown opening, look, snippets, Git markers, CSV colours, Compare spaces",
+   "Verified",
+   "T-PREF-001, T-FEAT-001",
+   ""
+  ]
+ ],
+ "gaps": [
+  [
+   "Plugins",
+   "Windows .dll plugins",
+   "Windows code cannot run on macOS; native .tpplugin plugins instead"
+  ],
+  [
+   "Main window",
+   "Alt + letter opens a menu",
+   "On macOS ⌥ + letter types accented characters; F10 menu mode and the mnemonic letters work instead"
+  ],
+  [
+   "Preferences",
+   "Rendering mode (DirectWrite / GDI)",
+   "Scintilla on macOS has one renderer (Core Graphics)"
+  ],
+  [
+   "Preferences",
+   "Disable advanced scrolling (touchpad issue)",
+   "A Windows touchpad driver workaround; macOS scrolling has no such issue"
+  ]
+ ]
+}

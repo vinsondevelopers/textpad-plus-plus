@@ -1,0 +1,8861 @@
+{
+ "langs": [
+  {
+   "name": "normal",
+   "short": "Normal text",
+   "long": "Normal text file",
+   "langType": "L_TEXT",
+   "lexer": "null",
+   "idm": 46016,
+   "idmName": "IDM_LANG_TEXT"
+  },
+  {
+   "name": "php",
+   "short": "PHP",
+   "long": "PHP Hypertext Preprocessor file",
+   "langType": "L_PHP",
+   "lexer": "phpscript",
+   "idm": 46008,
+   "idmName": "IDM_LANG_PHP"
+  },
+  {
+   "name": "c",
+   "short": "C",
+   "long": "C source file",
+   "langType": "L_C",
+   "lexer": "cpp",
+   "idm": 46002,
+   "idmName": "IDM_LANG_C"
+  },
+  {
+   "name": "cpp",
+   "short": "C++",
+   "long": "C++ source file",
+   "langType": "L_CPP",
+   "lexer": "cpp",
+   "idm": 46003,
+   "idmName": "IDM_LANG_CPP"
+  },
+  {
+   "name": "cs",
+   "short": "C#",
+   "long": "C# source file",
+   "langType": "L_CS",
+   "lexer": "cpp",
+   "idm": 46023,
+   "idmName": "IDM_LANG_CS"
+  },
+  {
+   "name": "objc",
+   "short": "Objective-C",
+   "long": "Objective-C source file",
+   "langType": "L_OBJC",
+   "lexer": "objc",
+   "idm": 46014,
+   "idmName": "IDM_LANG_OBJC"
+  },
+  {
+   "name": "java",
+   "short": "Java",
+   "long": "Java source file",
+   "langType": "L_JAVA",
+   "lexer": "cpp",
+   "idm": 46004,
+   "idmName": "IDM_LANG_JAVA"
+  },
+  {
+   "name": "rc",
+   "short": "RC",
+   "long": "Windows Resource file",
+   "langType": "L_RC",
+   "lexer": "cpp",
+   "idm": 46017,
+   "idmName": "IDM_LANG_RC"
+  },
+  {
+   "name": "html",
+   "short": "HTML",
+   "long": "Hyper Text Markup Language file",
+   "langType": "L_HTML",
+   "lexer": "hypertext",
+   "idm": 46005,
+   "idmName": "IDM_LANG_HTML"
+  },
+  {
+   "name": "xml",
+   "short": "XML",
+   "long": "eXtensible Markup Language file",
+   "langType": "L_XML",
+   "lexer": "xml",
+   "idm": 46006,
+   "idmName": "IDM_LANG_XML"
+  },
+  {
+   "name": "makefile",
+   "short": "Makefile",
+   "long": "Makefile",
+   "langType": "L_MAKEFILE",
+   "lexer": "makefile",
+   "idm": 46018,
+   "idmName": "IDM_LANG_MAKEFILE"
+  },
+  {
+   "name": "pascal",
+   "short": "Pascal",
+   "long": "Pascal source file",
+   "langType": "L_PASCAL",
+   "lexer": "pascal",
+   "idm": 46011,
+   "idmName": "IDM_LANG_PASCAL"
+  },
+  {
+   "name": "batch",
+   "short": "Batch",
+   "long": "Batch file",
+   "langType": "L_BATCH",
+   "lexer": "batch",
+   "idm": 46022,
+   "idmName": "IDM_LANG_BATCH"
+  },
+  {
+   "name": "ini",
+   "short": "ini",
+   "long": "MS ini file",
+   "langType": "L_INI",
+   "lexer": "props",
+   "idm": 46019,
+   "idmName": "IDM_LANG_INI"
+  },
+  {
+   "name": "nfo",
+   "short": "NFO",
+   "long": "MSDOS Style/ASCII Art",
+   "langType": "L_ASCII",
+   "lexer": "null",
+   "idm": 46015,
+   "idmName": "IDM_LANG_ASCII"
+  },
+  {
+   "name": "udf",
+   "short": "udf",
+   "long": "User Defined language file",
+   "langType": "L_USER",
+   "lexer": "user",
+   "idm": 46180,
+   "idmName": "IDM_LANG_USER"
+  },
+  {
+   "name": "asp",
+   "short": "ASP",
+   "long": "Active Server Pages script file",
+   "langType": "L_ASP",
+   "lexer": "hypertext",
+   "idm": 46009,
+   "idmName": "IDM_LANG_ASP"
+  },
+  {
+   "name": "sql",
+   "short": "SQL",
+   "long": "Structured Query Language file",
+   "langType": "L_SQL",
+   "lexer": "sql",
+   "idm": 46020,
+   "idmName": "IDM_LANG_SQL"
+  },
+  {
+   "name": "vb",
+   "short": "Visual Basic",
+   "long": "Visual Basic file",
+   "langType": "L_VB",
+   "lexer": "vb",
+   "idm": 46021,
+   "idmName": "IDM_LANG_VB"
+  },
+  {
+   "name": "javascript",
+   "short": "Embedded JS",
+   "long": "Embedded JavaScript",
+   "langType": "L_JS_EMBEDDED",
+   "lexer": "cpp",
+   "idm": 0,
+   "idmName": ""
+  },
+  {
+   "name": "css",
+   "short": "CSS",
+   "long": "Cascade Style Sheets File",
+   "langType": "L_CSS",
+   "lexer": "css",
+   "idm": 46010,
+   "idmName": "IDM_LANG_CSS"
+  },
+  {
+   "name": "perl",
+   "short": "Perl",
+   "long": "Perl source file",
+   "langType": "L_PERL",
+   "lexer": "perl",
+   "idm": 46013,
+   "idmName": "IDM_LANG_PERL"
+  },
+  {
+   "name": "python",
+   "short": "Python",
+   "long": "Python file",
+   "langType": "L_PYTHON",
+   "lexer": "python",
+   "idm": 46012,
+   "idmName": "IDM_LANG_PYTHON"
+  },
+  {
+   "name": "lua",
+   "short": "Lua",
+   "long": "Lua source File",
+   "langType": "L_LUA",
+   "lexer": "lua",
+   "idm": 46024,
+   "idmName": "IDM_LANG_LUA"
+  },
+  {
+   "name": "tex",
+   "short": "TeX",
+   "long": "TeX file",
+   "langType": "L_TEX",
+   "lexer": "tex",
+   "idm": 46025,
+   "idmName": "IDM_LANG_TEX"
+  },
+  {
+   "name": "fortran",
+   "short": "Fortran free form",
+   "long": "Fortran free form source file",
+   "langType": "L_FORTRAN",
+   "lexer": "fortran",
+   "idm": 46026,
+   "idmName": "IDM_LANG_FORTRAN"
+  },
+  {
+   "name": "bash",
+   "short": "Shell",
+   "long": "Unix script file",
+   "langType": "L_BASH",
+   "lexer": "bash",
+   "idm": 46027,
+   "idmName": "IDM_LANG_BASH"
+  },
+  {
+   "name": "actionscript",
+   "short": "ActionScript",
+   "long": "Flash ActionScript file",
+   "langType": "L_FLASH",
+   "lexer": "cpp",
+   "idm": 46028,
+   "idmName": "IDM_LANG_FLASH"
+  },
+  {
+   "name": "nsis",
+   "short": "NSIS",
+   "long": "Nullsoft Scriptable Install System script file",
+   "langType": "L_NSIS",
+   "lexer": "nsis",
+   "idm": 46029,
+   "idmName": "IDM_LANG_NSIS"
+  },
+  {
+   "name": "tcl",
+   "short": "TCL",
+   "long": "Tool Command Language file",
+   "langType": "L_TCL",
+   "lexer": "tcl",
+   "idm": 46030,
+   "idmName": "IDM_LANG_TCL"
+  },
+  {
+   "name": "lisp",
+   "short": "Lisp",
+   "long": "List Processing language file",
+   "langType": "L_LISP",
+   "lexer": "lisp",
+   "idm": 46031,
+   "idmName": "IDM_LANG_LISP"
+  },
+  {
+   "name": "scheme",
+   "short": "Scheme",
+   "long": "Scheme file",
+   "langType": "L_SCHEME",
+   "lexer": "lisp",
+   "idm": 46032,
+   "idmName": "IDM_LANG_SCHEME"
+  },
+  {
+   "name": "asm",
+   "short": "Assembly",
+   "long": "Assembly language source file",
+   "langType": "L_ASM",
+   "lexer": "asm",
+   "idm": 46033,
+   "idmName": "IDM_LANG_ASM"
+  },
+  {
+   "name": "diff",
+   "short": "Diff",
+   "long": "Diff file",
+   "langType": "L_DIFF",
+   "lexer": "diff",
+   "idm": 46034,
+   "idmName": "IDM_LANG_DIFF"
+  },
+  {
+   "name": "props",
+   "short": "Properties file",
+   "long": "Properties file",
+   "langType": "L_PROPS",
+   "lexer": "props",
+   "idm": 46035,
+   "idmName": "IDM_LANG_PROPS"
+  },
+  {
+   "name": "postscript",
+   "short": "PostScript",
+   "long": "PostScript file",
+   "langType": "L_PS",
+   "lexer": "ps",
+   "idm": 46036,
+   "idmName": "IDM_LANG_PS"
+  },
+  {
+   "name": "ruby",
+   "short": "Ruby",
+   "long": "Ruby file",
+   "langType": "L_RUBY",
+   "lexer": "ruby",
+   "idm": 46037,
+   "idmName": "IDM_LANG_RUBY"
+  },
+  {
+   "name": "smalltalk",
+   "short": "Smalltalk",
+   "long": "Smalltalk file",
+   "langType": "L_SMALLTALK",
+   "lexer": "smalltalk",
+   "idm": 46038,
+   "idmName": "IDM_LANG_SMALLTALK"
+  },
+  {
+   "name": "vhdl",
+   "short": "VHDL",
+   "long": "VHSIC Hardware Description Language file",
+   "langType": "L_VHDL",
+   "lexer": "vhdl",
+   "idm": 46039,
+   "idmName": "IDM_LANG_VHDL"
+  },
+  {
+   "name": "kix",
+   "short": "KiXtart",
+   "long": "KiXtart file",
+   "langType": "L_KIX",
+   "lexer": "kix",
+   "idm": 46041,
+   "idmName": "IDM_LANG_KIX"
+  },
+  {
+   "name": "autoit",
+   "short": "AutoIt",
+   "long": "AutoIt",
+   "langType": "L_AU3",
+   "lexer": "au3",
+   "idm": 46044,
+   "idmName": "IDM_LANG_AU3"
+  },
+  {
+   "name": "caml",
+   "short": "CAML",
+   "long": "Categorical Abstract Machine Language",
+   "langType": "L_CAML",
+   "lexer": "caml",
+   "idm": 46040,
+   "idmName": "IDM_LANG_CAML"
+  },
+  {
+   "name": "ada",
+   "short": "Ada",
+   "long": "Ada file",
+   "langType": "L_ADA",
+   "lexer": "ada",
+   "idm": 46042,
+   "idmName": "IDM_LANG_ADA"
+  },
+  {
+   "name": "verilog",
+   "short": "Verilog",
+   "long": "Verilog file",
+   "langType": "L_VERILOG",
+   "lexer": "verilog",
+   "idm": 46043,
+   "idmName": "IDM_LANG_VERILOG"
+  },
+  {
+   "name": "matlab",
+   "short": "MATLAB",
+   "long": "MATrix LABoratory",
+   "langType": "L_MATLAB",
+   "lexer": "matlab",
+   "idm": 46045,
+   "idmName": "IDM_LANG_MATLAB"
+  },
+  {
+   "name": "haskell",
+   "short": "Haskell",
+   "long": "Haskell",
+   "langType": "L_HASKELL",
+   "lexer": "haskell",
+   "idm": 46046,
+   "idmName": "IDM_LANG_HASKELL"
+  },
+  {
+   "name": "inno",
+   "short": "Inno Setup",
+   "long": "Inno Setup script",
+   "langType": "L_INNO",
+   "lexer": "inno",
+   "idm": 46047,
+   "idmName": "IDM_LANG_INNO"
+  },
+  {
+   "name": "searchResult",
+   "short": "Internal Search",
+   "long": "Internal Search",
+   "langType": "L_SEARCHRESULT",
+   "lexer": "searchResult",
+   "idm": 0,
+   "idmName": ""
+  },
+  {
+   "name": "cmake",
+   "short": "CMake",
+   "long": "CMake file",
+   "langType": "L_CMAKE",
+   "lexer": "cmake",
+   "idm": 46048,
+   "idmName": "IDM_LANG_CMAKE"
+  },
+  {
+   "name": "yaml",
+   "short": "YAML",
+   "long": "YAML Ain't Markup Language",
+   "langType": "L_YAML",
+   "lexer": "yaml",
+   "idm": 46049,
+   "idmName": "IDM_LANG_YAML"
+  },
+  {
+   "name": "cobol",
+   "short": "COBOL",
+   "long": "COmmon Business Oriented Language",
+   "langType": "L_COBOL",
+   "lexer": "COBOL",
+   "idm": 46050,
+   "idmName": "IDM_LANG_COBOL"
+  },
+  {
+   "name": "gui4cli",
+   "short": "Gui4Cli",
+   "long": "Gui4Cli file",
+   "langType": "L_GUI4CLI",
+   "lexer": "gui4cli",
+   "idm": 46052,
+   "idmName": "IDM_LANG_GUI4CLI"
+  },
+  {
+   "name": "d",
+   "short": "D",
+   "long": "D programming language",
+   "langType": "L_D",
+   "lexer": "d",
+   "idm": 46051,
+   "idmName": "IDM_LANG_D"
+  },
+  {
+   "name": "powershell",
+   "short": "PowerShell",
+   "long": "Windows PowerShell",
+   "langType": "L_POWERSHELL",
+   "lexer": "powershell",
+   "idm": 46053,
+   "idmName": "IDM_LANG_POWERSHELL"
+  },
+  {
+   "name": "r",
+   "short": "R",
+   "long": "R programming language",
+   "langType": "L_R",
+   "lexer": "r",
+   "idm": 46054,
+   "idmName": "IDM_LANG_R"
+  },
+  {
+   "name": "jsp",
+   "short": "JSP",
+   "long": "JavaServer Pages script file",
+   "langType": "L_JSP",
+   "lexer": "hypertext",
+   "idm": 46055,
+   "idmName": "IDM_LANG_JSP"
+  },
+  {
+   "name": "coffeescript",
+   "short": "CoffeeScript",
+   "long": "CoffeeScript file",
+   "langType": "L_COFFEESCRIPT",
+   "lexer": "coffeescript",
+   "idm": 46056,
+   "idmName": "IDM_LANG_COFFEESCRIPT"
+  },
+  {
+   "name": "json",
+   "short": "json",
+   "long": "JSON file",
+   "langType": "L_JSON",
+   "lexer": "json",
+   "idm": 46057,
+   "idmName": "IDM_LANG_JSON"
+  },
+  {
+   "name": "javascript.js",
+   "short": "JavaScript",
+   "long": "JavaScript file",
+   "langType": "L_JAVASCRIPT",
+   "lexer": "cpp",
+   "idm": 46007,
+   "idmName": "IDM_LANG_JS"
+  },
+  {
+   "name": "fortran77",
+   "short": "Fortran fixed form",
+   "long": "Fortran fixed form source file",
+   "langType": "L_FORTRAN_77",
+   "lexer": "f77",
+   "idm": 46058,
+   "idmName": "IDM_LANG_FORTRAN_77"
+  },
+  {
+   "name": "baanc",
+   "short": "BaanC",
+   "long": "BaanC File",
+   "langType": "L_BAANC",
+   "lexer": "baan",
+   "idm": 46059,
+   "idmName": "IDM_LANG_BAANC"
+  },
+  {
+   "name": "srec",
+   "short": "S-Record",
+   "long": "Motorola S-Record binary data",
+   "langType": "L_SREC",
+   "lexer": "srec",
+   "idm": 46060,
+   "idmName": "IDM_LANG_SREC"
+  },
+  {
+   "name": "ihex",
+   "short": "Intel HEX",
+   "long": "Intel HEX binary data",
+   "langType": "L_IHEX",
+   "lexer": "ihex",
+   "idm": 46061,
+   "idmName": "IDM_LANG_IHEX"
+  },
+  {
+   "name": "tehex",
+   "short": "Tektronix extended HEX",
+   "long": "Tektronix extended HEX binary data",
+   "langType": "L_TEHEX",
+   "lexer": "tehex",
+   "idm": 46062,
+   "idmName": "IDM_LANG_TEHEX"
+  },
+  {
+   "name": "swift",
+   "short": "Swift",
+   "long": "Swift file",
+   "langType": "L_SWIFT",
+   "lexer": "cpp",
+   "idm": 46063,
+   "idmName": "IDM_LANG_SWIFT"
+  },
+  {
+   "name": "asn1",
+   "short": "ASN.1",
+   "long": "Abstract Syntax Notation One file",
+   "langType": "L_ASN1",
+   "lexer": "asn1",
+   "idm": 46064,
+   "idmName": "IDM_LANG_ASN1"
+  },
+  {
+   "name": "avs",
+   "short": "AviSynth",
+   "long": "AviSynth scripts files",
+   "langType": "L_AVS",
+   "lexer": "avs",
+   "idm": 46065,
+   "idmName": "IDM_LANG_AVS"
+  },
+  {
+   "name": "blitzbasic",
+   "short": "BlitzBasic",
+   "long": "BlitzBasic file",
+   "langType": "L_BLITZBASIC",
+   "lexer": "blitzbasic",
+   "idm": 46066,
+   "idmName": "IDM_LANG_BLITZBASIC"
+  },
+  {
+   "name": "purebasic",
+   "short": "PureBasic",
+   "long": "PureBasic file",
+   "langType": "L_PUREBASIC",
+   "lexer": "purebasic",
+   "idm": 46067,
+   "idmName": "IDM_LANG_PUREBASIC"
+  },
+  {
+   "name": "freebasic",
+   "short": "FreeBasic",
+   "long": "FreeBasic file",
+   "langType": "L_FREEBASIC",
+   "lexer": "freebasic",
+   "idm": 46068,
+   "idmName": "IDM_LANG_FREEBASIC"
+  },
+  {
+   "name": "csound",
+   "short": "Csound",
+   "long": "Csound file",
+   "langType": "L_CSOUND",
+   "lexer": "csound",
+   "idm": 46069,
+   "idmName": "IDM_LANG_CSOUND"
+  },
+  {
+   "name": "erlang",
+   "short": "Erlang",
+   "long": "Erlang file",
+   "langType": "L_ERLANG",
+   "lexer": "erlang",
+   "idm": 46070,
+   "idmName": "IDM_LANG_ERLANG"
+  },
+  {
+   "name": "escript",
+   "short": "ESCRIPT",
+   "long": "ESCRIPT file",
+   "langType": "L_ESCRIPT",
+   "lexer": "escript",
+   "idm": 46071,
+   "idmName": "IDM_LANG_ESCRIPT"
+  },
+  {
+   "name": "forth",
+   "short": "Forth",
+   "long": "Forth file",
+   "langType": "L_FORTH",
+   "lexer": "forth",
+   "idm": 46072,
+   "idmName": "IDM_LANG_FORTH"
+  },
+  {
+   "name": "latex",
+   "short": "LaTeX",
+   "long": "LaTeX file",
+   "langType": "L_LATEX",
+   "lexer": "latex",
+   "idm": 46073,
+   "idmName": "IDM_LANG_LATEX"
+  },
+  {
+   "name": "mmixal",
+   "short": "MMIXAL",
+   "long": "MMIXAL file",
+   "langType": "L_MMIXAL",
+   "lexer": "mmixal",
+   "idm": 46074,
+   "idmName": "IDM_LANG_MMIXAL"
+  },
+  {
+   "name": "nim",
+   "short": "Nim",
+   "long": "Nim file",
+   "langType": "L_NIM",
+   "lexer": "nimrod",
+   "idm": 46075,
+   "idmName": "IDM_LANG_NIM"
+  },
+  {
+   "name": "nncrontab",
+   "short": "Nncrontab",
+   "long": "extended crontab file",
+   "langType": "L_NNCRONTAB",
+   "lexer": "nncrontab",
+   "idm": 46076,
+   "idmName": "IDM_LANG_NNCRONTAB"
+  },
+  {
+   "name": "oscript",
+   "short": "OScript",
+   "long": "OScript source file",
+   "langType": "L_OSCRIPT",
+   "lexer": "oscript",
+   "idm": 46077,
+   "idmName": "IDM_LANG_OSCRIPT"
+  },
+  {
+   "name": "rebol",
+   "short": "REBOL",
+   "long": "REBOL file",
+   "langType": "L_REBOL",
+   "lexer": "rebol",
+   "idm": 46078,
+   "idmName": "IDM_LANG_REBOL"
+  },
+  {
+   "name": "registry",
+   "short": "registry",
+   "long": "registry file",
+   "langType": "L_REGISTRY",
+   "lexer": "registry",
+   "idm": 46079,
+   "idmName": "IDM_LANG_REGISTRY"
+  },
+  {
+   "name": "rust",
+   "short": "Rust",
+   "long": "Rust file",
+   "langType": "L_RUST",
+   "lexer": "rust",
+   "idm": 46080,
+   "idmName": "IDM_LANG_RUST"
+  },
+  {
+   "name": "spice",
+   "short": "Spice",
+   "long": "spice file",
+   "langType": "L_SPICE",
+   "lexer": "spice",
+   "idm": 46081,
+   "idmName": "IDM_LANG_SPICE"
+  },
+  {
+   "name": "txt2tags",
+   "short": "txt2tags",
+   "long": "txt2tags file",
+   "langType": "L_TXT2TAGS",
+   "lexer": "txt2tags",
+   "idm": 46082,
+   "idmName": "IDM_LANG_TXT2TAGS"
+  },
+  {
+   "name": "visualprolog",
+   "short": "Visual Prolog",
+   "long": "Visual Prolog file",
+   "langType": "L_VISUALPROLOG",
+   "lexer": "visualprolog",
+   "idm": 46083,
+   "idmName": "IDM_LANG_VISUALPROLOG"
+  },
+  {
+   "name": "typescript",
+   "short": "TypeScript",
+   "long": "TypeScript file",
+   "langType": "L_TYPESCRIPT",
+   "lexer": "cpp",
+   "idm": 46084,
+   "idmName": "IDM_LANG_TYPESCRIPT"
+  },
+  {
+   "name": "json5",
+   "short": "json5",
+   "long": "JSON5 file",
+   "langType": "L_JSON5",
+   "lexer": "json",
+   "idm": 46085,
+   "idmName": "IDM_LANG_JSON5"
+  },
+  {
+   "name": "mssql",
+   "short": "mssql",
+   "long": "Microsoft Transact-SQL (SQL Server) file",
+   "langType": "L_MSSQL",
+   "lexer": "mssql",
+   "idm": 46086,
+   "idmName": "IDM_LANG_MSSQL"
+  },
+  {
+   "name": "gdscript",
+   "short": "GDScript",
+   "long": "GDScript file",
+   "langType": "L_GDSCRIPT",
+   "lexer": "gdscript",
+   "idm": 46087,
+   "idmName": "IDM_LANG_GDSCRIPT"
+  },
+  {
+   "name": "hollywood",
+   "short": "Hollywood",
+   "long": "Hollywood script",
+   "langType": "L_HOLLYWOOD",
+   "lexer": "hollywood",
+   "idm": 46088,
+   "idmName": "IDM_LANG_HOLLYWOOD"
+  },
+  {
+   "name": "go",
+   "short": "Go",
+   "long": "Go source file",
+   "langType": "L_GOLANG",
+   "lexer": "cpp",
+   "idm": 46089,
+   "idmName": "IDM_LANG_GOLANG"
+  },
+  {
+   "name": "raku",
+   "short": "Raku",
+   "long": "Raku source file",
+   "langType": "L_RAKU",
+   "lexer": "raku",
+   "idm": 46090,
+   "idmName": "IDM_LANG_RAKU"
+  },
+  {
+   "name": "toml",
+   "short": "TOML",
+   "long": "Tom's Obvious Minimal Language file",
+   "langType": "L_TOML",
+   "lexer": "toml",
+   "idm": 46091,
+   "idmName": "IDM_LANG_TOML"
+  },
+  {
+   "name": "sas",
+   "short": "SAS",
+   "long": "SAS file",
+   "langType": "L_SAS",
+   "lexer": "sas",
+   "idm": 46092,
+   "idmName": "IDM_LANG_SAS"
+  },
+  {
+   "name": "errorlist",
+   "short": "ErrorList",
+   "long": "ErrorList file",
+   "langType": "L_ERRORLIST",
+   "lexer": "errorlist",
+   "idm": 46093,
+   "idmName": "IDM_LANG_ERRORLIST"
+  },
+  {
+   "name": "escseq",
+   "short": "EscapeSequence (ANSI)",
+   "long": "Escape Sequence (ANSI) file",
+   "langType": "L_ESCSEQ",
+   "lexer": "escseq",
+   "idm": 46094,
+   "idmName": "IDM_LANG_ESCSEQ"
+  },
+  {
+   "name": "fcST",
+   "short": "Structured Text",
+   "long": "IEC 61131-3 Structured Text file",
+   "langType": "L_STTXT",
+   "lexer": "fcST",
+   "idm": 46095,
+   "idmName": "IDM_LANG_STTXT"
+  },
+  {
+   "name": "ext",
+   "short": "External",
+   "long": "External",
+   "langType": "L_EXTERNAL",
+   "lexer": "null",
+   "idm": 0,
+   "idmName": ""
+  }
+ ],
+ "menu": [
+  {
+   "type": "popup",
+   "label": "&File",
+   "children": [
+    {
+     "type": "item",
+     "label": "&New",
+     "id": "IDM_FILE_NEW",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Open...",
+     "id": "IDM_FILE_OPEN",
+     "flags": ""
+    },
+    {
+     "type": "popup",
+     "label": "Open Containing &Folder",
+     "children": [
+      {
+       "type": "item",
+       "label": "Explorer",
+       "id": "IDM_FILE_OPEN_FOLDER",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "cmd",
+       "id": "IDM_FILE_OPEN_CMD",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "PowerShell",
+       "id": "IDM_FILE_OPEN_POWERSHELL",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Folder as Workspace",
+       "id": "IDM_FILE_CONTAININGFOLDERASWORKSPACE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "Open in &Default Viewer",
+     "id": "IDM_FILE_OPEN_DEFAULT_VIEWER",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Open Folder as &Workspace...",
+     "id": "IDM_FILE_OPENFOLDERASWORKSPACE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Re&load from Disk",
+     "id": "IDM_FILE_RELOAD",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Save",
+     "id": "IDM_FILE_SAVE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Save &As...",
+     "id": "IDM_FILE_SAVEAS",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Save a Cop&y As...",
+     "id": "IDM_FILE_SAVECOPYAS",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Sa&ve All",
+     "id": "IDM_FILE_SAVEALL",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Rename...",
+     "id": "IDM_FILE_RENAME",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Close",
+     "id": "IDM_FILE_CLOSE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Clos&e All",
+     "id": "IDM_FILE_CLOSEALL",
+     "flags": ""
+    },
+    {
+     "type": "popup",
+     "label": "Close &Multiple Documents",
+     "children": [
+      {
+       "type": "item",
+       "label": "Close All but Active Document",
+       "id": "IDM_FILE_CLOSEALL_BUT_CURRENT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Close All but Pinned Documents",
+       "id": "IDM_FILE_CLOSEALL_BUT_PINNED",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Close All to the Left",
+       "id": "IDM_FILE_CLOSEALL_TOLEFT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Close All to the Right",
+       "id": "IDM_FILE_CLOSEALL_TORIGHT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Close All Unchanged",
+       "id": "IDM_FILE_CLOSEALL_UNCHANGED",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "Move to Recycle &Bin",
+     "id": "IDM_FILE_DELETE",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Load Sess&ion...",
+     "id": "IDM_FILE_LOADSESSION",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Save Sess&ion...",
+     "id": "IDM_FILE_SAVESESSION",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "&Print...",
+     "id": "IDM_FILE_PRINT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Print No&w",
+     "id": "IDM_FILE_PRINTNOW",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "E&xit",
+     "id": "IDM_FILE_EXIT",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Edit",
+   "children": [
+    {
+     "type": "item",
+     "label": "&Undo",
+     "id": "IDM_EDIT_UNDO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Redo",
+     "id": "IDM_EDIT_REDO",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Cu&t",
+     "id": "IDM_EDIT_CUT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Copy",
+     "id": "IDM_EDIT_COPY",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Paste",
+     "id": "IDM_EDIT_PASTE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Delete",
+     "id": "IDM_EDIT_DELETE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Select All",
+     "id": "IDM_EDIT_SELECTALL",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Begin/End &Select",
+     "id": "IDM_EDIT_BEGINENDSELECT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Begin/End Select in Column Mode",
+     "id": "IDM_EDIT_BEGINENDSELECT_COLUMNMODE",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Insert",
+     "children": [
+      {
+       "type": "item",
+       "label": "Date Time (short)",
+       "id": "IDM_EDIT_INSERT_DATETIME_SHORT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Date Time (long)",
+       "id": "IDM_EDIT_INSERT_DATETIME_LONG",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Date Time (customized)",
+       "id": "IDM_EDIT_INSERT_DATETIME_CUSTOMIZED",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Cop&y to Clipboard",
+     "children": [
+      {
+       "type": "item",
+       "label": "Copy Current Full File path",
+       "id": "IDM_EDIT_FULLPATHTOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Copy Current Filename",
+       "id": "IDM_EDIT_FILENAMETOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Copy Current Dir. Path",
+       "id": "IDM_EDIT_CURRENTDIRTOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Copy All Filenames",
+       "id": "IDM_EDIT_COPY_ALL_NAMES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Copy All File Paths",
+       "id": "IDM_EDIT_COPY_ALL_PATHS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Indent",
+     "children": [
+      {
+       "type": "item",
+       "label": "Increase Line Indent",
+       "id": "IDM_EDIT_INS_TAB",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Decrease Line Indent",
+       "id": "IDM_EDIT_RMV_TAB",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Con&vert Case to",
+     "children": [
+      {
+       "type": "item",
+       "label": "&UPPERCASE",
+       "id": "IDM_EDIT_UPPERCASE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&lowercase",
+       "id": "IDM_EDIT_LOWERCASE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Proper Case",
+       "id": "IDM_EDIT_PROPERCASE_FORCE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Proper Case (blend)",
+       "id": "IDM_EDIT_PROPERCASE_BLEND",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Sentence case",
+       "id": "IDM_EDIT_SENTENCECASE_FORCE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sentence case (blend)",
+       "id": "IDM_EDIT_SENTENCECASE_BLEND",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&iNVERT cASE",
+       "id": "IDM_EDIT_INVERTCASE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&ranDOm CasE",
+       "id": "IDM_EDIT_RANDOMCASE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Line Operations",
+     "children": [
+      {
+       "type": "item",
+       "label": "Duplicate Current Line",
+       "id": "IDM_EDIT_DUP_LINE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Duplicate Lines",
+       "id": "IDM_EDIT_REMOVE_ANY_DUP_LINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Consecutive Duplicate Lines",
+       "id": "IDM_EDIT_REMOVE_CONSECUTIVE_DUP_LINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Split Lines",
+       "id": "IDM_EDIT_SPLIT_LINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Join Lines",
+       "id": "IDM_EDIT_JOIN_LINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Move Up Current Line",
+       "id": "IDM_EDIT_LINE_UP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Move Down Current Line",
+       "id": "IDM_EDIT_LINE_DOWN",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Empty Lines",
+       "id": "IDM_EDIT_REMOVEEMPTYLINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Empty Lines (Containing Blank characters)",
+       "id": "IDM_EDIT_REMOVEEMPTYLINESWITHBLANK",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Insert Blank Line Above Current",
+       "id": "IDM_EDIT_BLANKLINEABOVECURRENT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Insert Blank Line Below Current",
+       "id": "IDM_EDIT_BLANKLINEBELOWCURRENT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Reverse Line Order",
+       "id": "IDM_EDIT_SORTLINES_REVERSE_ORDER",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Randomize Line Order",
+       "id": "IDM_EDIT_SORTLINES_RANDOMLY",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines Lexicographically Ascending",
+       "id": "IDM_EDIT_SORTLINES_LEXICOGRAPHIC_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines Lex. Ascending Ignoring Case",
+       "id": "IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines In Locale Order Ascending",
+       "id": "IDM_EDIT_SORTLINES_LOCALE_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines As Integers Ascending",
+       "id": "IDM_EDIT_SORTLINES_INTEGER_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines As Decimals (Comma) Ascending",
+       "id": "IDM_EDIT_SORTLINES_DECIMALCOMMA_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines As Decimals (Dot) Ascending",
+       "id": "IDM_EDIT_SORTLINES_DECIMALDOT_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines By Length Ascending",
+       "id": "IDM_EDIT_SORTLINES_LENGTH_ASCENDING",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines Lexicographically Descending",
+       "id": "IDM_EDIT_SORTLINES_LEXICOGRAPHIC_DESCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines Lex. Descending Ignoring Case",
+       "id": "IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_DESCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines In Locale Order Descending",
+       "id": "IDM_EDIT_SORTLINES_LOCALE_DESCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines As Integers Descending",
+       "id": "IDM_EDIT_SORTLINES_INTEGER_DESCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines As Decimals (Comma) Descending",
+       "id": "IDM_EDIT_SORTLINES_DECIMALCOMMA_DESCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines As Decimals (Dot) Descending",
+       "id": "IDM_EDIT_SORTLINES_DECIMALDOT_DESCENDING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Sort Lines By Length Descending",
+       "id": "IDM_EDIT_SORTLINES_LENGTH_DESCENDING",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Co&mment/Uncomment",
+     "children": [
+      {
+       "type": "item",
+       "label": "Toggle Single Line Comment",
+       "id": "IDM_EDIT_BLOCK_COMMENT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Single Line Comment",
+       "id": "IDM_EDIT_BLOCK_COMMENT_SET",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Single Line Uncomment",
+       "id": "IDM_EDIT_BLOCK_UNCOMMENT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Block Comment",
+       "id": "IDM_EDIT_STREAM_COMMENT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Block Uncomment",
+       "id": "IDM_EDIT_STREAM_UNCOMMENT",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Auto-Completion",
+     "children": [
+      {
+       "type": "item",
+       "label": "Function Completion",
+       "id": "IDM_EDIT_AUTOCOMPLETE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Word Completion",
+       "id": "IDM_EDIT_AUTOCOMPLETE_CURRENTFILE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Function Parameters Hint",
+       "id": "IDM_EDIT_FUNCCALLTIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Function Parameters Previous Hint",
+       "id": "IDM_EDIT_FUNCCALLTIP_PREVIOUS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Function Parameters Next Hint",
+       "id": "IDM_EDIT_FUNCCALLTIP_NEXT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Path Completion",
+       "id": "IDM_EDIT_AUTOCOMPLETE_PATH",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&EOL Conversion",
+     "children": [
+      {
+       "type": "item",
+       "label": "Windows (CR LF)",
+       "id": "IDM_FORMAT_TODOS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Unix (LF)",
+       "id": "IDM_FORMAT_TOUNIX",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Macintosh (CR)",
+       "id": "IDM_FORMAT_TOMAC",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Blank Operations",
+     "children": [
+      {
+       "type": "item",
+       "label": "Trim Trailing Space",
+       "id": "IDM_EDIT_TRIMTRAILING",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Trim Leading Space",
+       "id": "IDM_EDIT_TRIMLINEHEAD",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Trim Leading and Trailing Space",
+       "id": "IDM_EDIT_TRIM_BOTH",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "EOL to Space",
+       "id": "IDM_EDIT_EOL2WS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Trim both and EOL to Space",
+       "id": "IDM_EDIT_TRIMALL",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "TAB to Space",
+       "id": "IDM_EDIT_TAB2SW",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Space to TAB (All)",
+       "id": "IDM_EDIT_SW2TAB_ALL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Space to TAB (Leading)",
+       "id": "IDM_EDIT_SW2TAB_LEADING",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Paste Special",
+     "children": [
+      {
+       "type": "item",
+       "label": "Paste HTML Content",
+       "id": "IDM_EDIT_PASTE_AS_HTML",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Paste RTF Content",
+       "id": "IDM_EDIT_PASTE_AS_RTF",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Copy Binary Content",
+       "id": "IDM_EDIT_COPY_BINARY",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Cut Binary Content",
+       "id": "IDM_EDIT_CUT_BINARY",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Paste Binary Content",
+       "id": "IDM_EDIT_PASTE_BINARY",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&On Selection",
+     "children": [
+      {
+       "type": "item",
+       "label": "Open File",
+       "id": "IDM_EDIT_OPENSELECTEDFILETOEDIT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Open Containing Folder in Explorer",
+       "id": "IDM_EDIT_OPENSELECTEDFILEFOLDERINEXPLORER",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "&Redact Selection █ (Shift: ●)",
+       "id": "IDM_EDIT_REDACT_SELECTION",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Search on Internet",
+       "id": "IDM_EDIT_SEARCHONINTERNET",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Change Search Engine...",
+       "id": "IDM_EDIT_CHANGESEARCHENGINE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Multi-select All",
+     "children": [
+      {
+       "type": "item",
+       "label": "Ignore Case && Whole Word",
+       "id": "IDM_EDIT_MULTISELECTALL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Match Case Only",
+       "id": "IDM_EDIT_MULTISELECTALLMATCHCASE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Match Whole Word Only",
+       "id": "IDM_EDIT_MULTISELECTALLWHOLEWORD",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Match Case && Whole Word",
+       "id": "IDM_EDIT_MULTISELECTALLMATCHCASEWHOLEWORD",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Multi-select Next",
+     "children": [
+      {
+       "type": "item",
+       "label": "Ignore Case && Whole Word",
+       "id": "IDM_EDIT_MULTISELECTNEXT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Match Case Only",
+       "id": "IDM_EDIT_MULTISELECTNEXTMATCHCASE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Match Whole Word Only",
+       "id": "IDM_EDIT_MULTISELECTNEXTWHOLEWORD",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Match Case && Whole Word",
+       "id": "IDM_EDIT_MULTISELECTNEXTMATCHCASEWHOLEWORD",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "Undo the Latest Added Multi-Select",
+     "id": "IDM_EDIT_MULTISELECTUNDO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Skip Current && Go to Next Multi-select",
+     "id": "IDM_EDIT_MULTISELECTSSKIP",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Column Mode...",
+     "id": "IDM_EDIT_COLUMNMODETIP",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Colum&n Editor...",
+     "id": "IDM_EDIT_COLUMNMODE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Character &Panel",
+     "id": "IDM_EDIT_CHAR_PANEL",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Clipboard &History",
+     "id": "IDM_EDIT_CLIPBOARDHISTORY_PANEL",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Read-&Only in Notepad++",
+     "children": [
+      {
+       "type": "item",
+       "label": "Read-Only on Current Document",
+       "id": "IDM_EDIT_TOGGLEREADONLY",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Read-Only for All Documents",
+       "id": "IDM_EDIT_SETREADONLYFORALLDOCS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear Read-Only for All Documents",
+       "id": "IDM_EDIT_CLEARREADONLYFORALLDOCS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "Read-Only Attribute in Windows",
+     "id": "IDM_EDIT_TOGGLESYSTEMREADONLY",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Search",
+   "children": [
+    {
+     "type": "item",
+     "label": "&Find...",
+     "id": "IDM_SEARCH_FIND",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Find in Fi&les...",
+     "id": "IDM_SEARCH_FINDINFILES",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Find &Next",
+     "id": "IDM_SEARCH_FINDNEXT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Find &Previous",
+     "id": "IDM_SEARCH_FINDPREV",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Select and Find Next",
+     "id": "IDM_SEARCH_SETANDFINDNEXT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Select and Find Previous",
+     "id": "IDM_SEARCH_SETANDFINDPREV",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Find (&Volatile) Next",
+     "id": "IDM_SEARCH_VOLATILE_FINDNEXT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Find (&Volatile) Previous",
+     "id": "IDM_SEARCH_VOLATILE_FINDPREV",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Replace...",
+     "id": "IDM_SEARCH_REPLACE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Incremental Search",
+     "id": "IDM_SEARCH_FINDINCREMENT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Search Results &Window",
+     "id": "IDM_FOCUS_ON_FOUND_RESULTS",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Next Search Resul&t",
+     "id": "IDM_SEARCH_GOTONEXTFOUND",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Previous Search Resul&t",
+     "id": "IDM_SEARCH_GOTOPREVFOUND",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Go to...",
+     "id": "IDM_SEARCH_GOTOLINE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Go to &Matching Brace",
+     "id": "IDM_SEARCH_GOTOMATCHINGBRACE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Select All In-betw&een {} [] or ()",
+     "id": "IDM_SEARCH_SELECTMATCHINGBRACES",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Mar&k...",
+     "id": "IDM_SEARCH_MARK",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Change History",
+     "children": [
+      {
+       "type": "item",
+       "label": "Go to Next Change",
+       "id": "IDM_SEARCH_CHANGED_NEXT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Go to Previous Change",
+       "id": "IDM_SEARCH_CHANGED_PREV",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear Change History",
+       "id": "IDM_SEARCH_CLEAR_CHANGE_HISTORY",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Style &All Occurrences of Token",
+     "children": [
+      {
+       "type": "item",
+       "label": "Using 1st Style",
+       "id": "IDM_SEARCH_MARKALLEXT1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 2nd Style",
+       "id": "IDM_SEARCH_MARKALLEXT2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 3rd Style",
+       "id": "IDM_SEARCH_MARKALLEXT3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 4th Style",
+       "id": "IDM_SEARCH_MARKALLEXT4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 5th Style",
+       "id": "IDM_SEARCH_MARKALLEXT5",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Style &One Token",
+     "children": [
+      {
+       "type": "item",
+       "label": "Using 1st Style",
+       "id": "IDM_SEARCH_MARKONEEXT1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 2nd Style",
+       "id": "IDM_SEARCH_MARKONEEXT2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 3rd Style",
+       "id": "IDM_SEARCH_MARKONEEXT3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 4th Style",
+       "id": "IDM_SEARCH_MARKONEEXT4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Using 5th Style",
+       "id": "IDM_SEARCH_MARKONEEXT5",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Clear Style",
+     "children": [
+      {
+       "type": "item",
+       "label": "Clear 1st Style",
+       "id": "IDM_SEARCH_UNMARKALLEXT1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear 2nd Style",
+       "id": "IDM_SEARCH_UNMARKALLEXT2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear 3rd Style",
+       "id": "IDM_SEARCH_UNMARKALLEXT3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear 4th Style",
+       "id": "IDM_SEARCH_UNMARKALLEXT4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear 5th Style",
+       "id": "IDM_SEARCH_UNMARKALLEXT5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear all Styles",
+       "id": "IDM_SEARCH_CLEARALLMARKS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Jump Up",
+     "children": [
+      {
+       "type": "item",
+       "label": "1st Style",
+       "id": "IDM_SEARCH_GOPREVMARKER1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "2nd Style",
+       "id": "IDM_SEARCH_GOPREVMARKER2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "3rd Style",
+       "id": "IDM_SEARCH_GOPREVMARKER3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "4th Style",
+       "id": "IDM_SEARCH_GOPREVMARKER4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "5th Style",
+       "id": "IDM_SEARCH_GOPREVMARKER5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Find Mark Style",
+       "id": "IDM_SEARCH_GOPREVMARKER_DEF",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Jump &Down",
+     "children": [
+      {
+       "type": "item",
+       "label": "1st Style",
+       "id": "IDM_SEARCH_GONEXTMARKER1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "2nd Style",
+       "id": "IDM_SEARCH_GONEXTMARKER2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "3rd Style",
+       "id": "IDM_SEARCH_GONEXTMARKER3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "4th Style",
+       "id": "IDM_SEARCH_GONEXTMARKER4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "5th Style",
+       "id": "IDM_SEARCH_GONEXTMARKER5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Find Mark Style",
+       "id": "IDM_SEARCH_GONEXTMARKER_DEF",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Copy Styled Text",
+     "children": [
+      {
+       "type": "item",
+       "label": "1st Style",
+       "id": "IDM_SEARCH_STYLE1TOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "2nd Style",
+       "id": "IDM_SEARCH_STYLE2TOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "3rd Style",
+       "id": "IDM_SEARCH_STYLE3TOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "4th Style",
+       "id": "IDM_SEARCH_STYLE4TOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "5th Style",
+       "id": "IDM_SEARCH_STYLE5TOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "All Styles",
+       "id": "IDM_SEARCH_ALLSTYLESTOCLIP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Find Mark Style",
+       "id": "IDM_SEARCH_MARKEDTOCLIP",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "&Bookmark",
+     "children": [
+      {
+       "type": "item",
+       "label": "Toggle Bookmark",
+       "id": "IDM_SEARCH_TOGGLE_BOOKMARK",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Next Bookmark",
+       "id": "IDM_SEARCH_NEXT_BOOKMARK",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Previous Bookmark",
+       "id": "IDM_SEARCH_PREV_BOOKMARK",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Clear All Bookmarks",
+       "id": "IDM_SEARCH_CLEAR_BOOKMARKS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Cut Bookmarked Lines",
+       "id": "IDM_SEARCH_CUTMARKEDLINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Copy Bookmarked Lines",
+       "id": "IDM_SEARCH_COPYMARKEDLINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Paste to (Replace) Bookmarked Lines",
+       "id": "IDM_SEARCH_PASTEMARKEDLINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Bookmarked Lines",
+       "id": "IDM_SEARCH_DELETEMARKEDLINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Non-Bookmarked Lines",
+       "id": "IDM_SEARCH_DELETEUNMARKEDLINES",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Inverse Bookmarks",
+       "id": "IDM_SEARCH_INVERSEMARKS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Find characters in rang&e...",
+     "id": "IDM_SEARCH_FINDCHARINRANGE",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&View",
+   "children": [
+    {
+     "type": "item",
+     "label": "Always on &Top",
+     "id": "IDM_VIEW_ALWAYSONTOP",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "To&ggle Full Screen Mode",
+     "id": "IDM_VIEW_FULLSCREENTOGGLE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Post-It",
+     "id": "IDM_VIEW_POSTIT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "D&istraction Free Mode",
+     "id": "IDM_VIEW_DISTRACTIONFREE",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "&View Current File in",
+     "children": [
+      {
+       "type": "item",
+       "label": "&Firefox",
+       "id": "IDM_VIEW_IN_FIREFOX",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Chrome",
+       "id": "IDM_VIEW_IN_CHROME",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Edge",
+       "id": "IDM_VIEW_IN_EDGE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&IE",
+       "id": "IDM_VIEW_IN_IE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Show S&ymbol",
+     "children": [
+      {
+       "type": "item",
+       "label": "Show Space and Tab",
+       "id": "IDM_VIEW_TAB_SPACE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Show End of Line",
+       "id": "IDM_VIEW_EOL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Show Non-Printing Characters",
+       "id": "IDM_VIEW_NPC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Show Control Characters && Unicode EOL",
+       "id": "IDM_VIEW_NPC_CCUNIEOL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Show All Characters",
+       "id": "IDM_VIEW_ALL_CHARACTERS",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Show Indent Guide",
+       "id": "IDM_VIEW_INDENT_GUIDE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Show Wrap Symbol",
+       "id": "IDM_VIEW_WRAP_SYMBOL",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Zoom",
+     "children": [
+      {
+       "type": "item",
+       "label": "Zoom &In (Ctrl+Mouse Wheel Up)",
+       "id": "IDM_VIEW_ZOOMIN",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Zoom &Out (Ctrl+Mouse Wheel Down)",
+       "id": "IDM_VIEW_ZOOMOUT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Restore Default Zoom",
+       "id": "IDM_VIEW_ZOOMRESTORE",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "&Synchronize Across Views",
+       "id": "IDM_VIEW_ZOOM_SYNC",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "&Move/Clone Current Document",
+     "children": [
+      {
+       "type": "item",
+       "label": "&Move to Other View",
+       "id": "IDM_VIEW_GOTO_ANOTHER_VIEW",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Clone to Other View",
+       "id": "IDM_VIEW_CLONE_TO_ANOTHER_VIEW",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Mo&ve to New Instance",
+       "id": "IDM_VIEW_GOTO_NEW_INSTANCE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "&Open in New Instance",
+       "id": "IDM_VIEW_LOAD_IN_NEW_INSTANCE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Ta&b",
+     "children": [
+      {
+       "type": "item",
+       "label": "1st Tab",
+       "id": "IDM_VIEW_TAB1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "2nd Tab",
+       "id": "IDM_VIEW_TAB2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "3rd Tab",
+       "id": "IDM_VIEW_TAB3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "4th Tab",
+       "id": "IDM_VIEW_TAB4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "5th Tab",
+       "id": "IDM_VIEW_TAB5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "6th Tab",
+       "id": "IDM_VIEW_TAB6",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "7th Tab",
+       "id": "IDM_VIEW_TAB7",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "8th Tab",
+       "id": "IDM_VIEW_TAB8",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "9th Tab",
+       "id": "IDM_VIEW_TAB9",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "First Tab",
+       "id": "IDM_VIEW_TAB_START",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Last Tab",
+       "id": "IDM_VIEW_TAB_END",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Next Tab",
+       "id": "IDM_VIEW_TAB_NEXT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Previous Tab",
+       "id": "IDM_VIEW_TAB_PREV",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Move to Start",
+       "id": "IDM_VIEW_GOTO_START",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Move to End",
+       "id": "IDM_VIEW_GOTO_END",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Move Tab Forward",
+       "id": "IDM_VIEW_TAB_MOVEFORWARD",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Move Tab Backward",
+       "id": "IDM_VIEW_TAB_MOVEBACKWARD",
+       "flags": ""
+      },
+      {
+       "type": "separator"
+      },
+      {
+       "type": "item",
+       "label": "Apply Color 1",
+       "id": "IDM_VIEW_TAB_COLOUR_1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Apply Color 2",
+       "id": "IDM_VIEW_TAB_COLOUR_2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Apply Color 3",
+       "id": "IDM_VIEW_TAB_COLOUR_3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Apply Color 4",
+       "id": "IDM_VIEW_TAB_COLOUR_4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Apply Color 5",
+       "id": "IDM_VIEW_TAB_COLOUR_5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Remove Color",
+       "id": "IDM_VIEW_TAB_COLOUR_NONE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "&Word wrap",
+     "id": "IDM_VIEW_WRAP",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Focus on &Another View",
+     "id": "IDM_VIEW_SWITCHTO_OTHER_VIEW",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Hide Lines",
+     "id": "IDM_VIEW_HIDELINES",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Fold All",
+     "id": "IDM_VIEW_FOLDALL",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Unfold All",
+     "id": "IDM_VIEW_UNFOLDALL",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Fold Current Level",
+     "id": "IDM_VIEW_FOLD_CURRENT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Unfold Current Level",
+     "id": "IDM_VIEW_UNFOLD_CURRENT",
+     "flags": ""
+    },
+    {
+     "type": "popup",
+     "label": "Fold Level",
+     "children": [
+      {
+       "type": "item",
+       "label": "1",
+       "id": "IDM_VIEW_FOLD_1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "2",
+       "id": "IDM_VIEW_FOLD_2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "3",
+       "id": "IDM_VIEW_FOLD_3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "4",
+       "id": "IDM_VIEW_FOLD_4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "5",
+       "id": "IDM_VIEW_FOLD_5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "6",
+       "id": "IDM_VIEW_FOLD_6",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "7",
+       "id": "IDM_VIEW_FOLD_7",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "8",
+       "id": "IDM_VIEW_FOLD_8",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "Unfold Level",
+     "children": [
+      {
+       "type": "item",
+       "label": "1",
+       "id": "IDM_VIEW_UNFOLD_1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "2",
+       "id": "IDM_VIEW_UNFOLD_2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "3",
+       "id": "IDM_VIEW_UNFOLD_3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "4",
+       "id": "IDM_VIEW_UNFOLD_4",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "5",
+       "id": "IDM_VIEW_UNFOLD_5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "6",
+       "id": "IDM_VIEW_UNFOLD_6",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "7",
+       "id": "IDM_VIEW_UNFOLD_7",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "8",
+       "id": "IDM_VIEW_UNFOLD_8",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "&Summary...",
+     "id": "IDM_VIEW_SUMMARY",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Pro&ject Panels",
+     "children": [
+      {
+       "type": "item",
+       "label": "Project Panel &1",
+       "id": "IDM_VIEW_PROJECT_PANEL_1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Project Panel &2",
+       "id": "IDM_VIEW_PROJECT_PANEL_2",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Project Panel &3",
+       "id": "IDM_VIEW_PROJECT_PANEL_3",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "Folder as Wor&kspace",
+     "id": "IDM_VIEW_FILEBROWSER",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Document Map",
+     "id": "IDM_VIEW_DOC_MAP",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "D&ocument List",
+     "id": "IDM_VIEW_DOCLIST",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Function &List",
+     "id": "IDM_VIEW_FUNC_LIST",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Sy&nchronize Vertical Scrolling",
+     "id": "IDM_VIEW_SYNSCROLLV",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Syn&chronize Horizontal Scrolling",
+     "id": "IDM_VIEW_SYNSCROLLH",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "T&ext Direction RTL",
+     "id": "IDM_EDIT_RTL",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Te&xt Direction LTR",
+     "id": "IDM_EDIT_LTR",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Monito&ring (tail -f)",
+     "id": "IDM_VIEW_MONITORING",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "E&ncoding",
+   "children": [
+    {
+     "type": "item",
+     "label": "ANSI",
+     "id": "IDM_FORMAT_ANSI",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "UTF-8",
+     "id": "IDM_FORMAT_AS_UTF_8",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "UTF-8-BOM",
+     "id": "IDM_FORMAT_UTF_8",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "UTF-16 BE BOM",
+     "id": "IDM_FORMAT_UTF_16BE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "UTF-16 LE BOM",
+     "id": "IDM_FORMAT_UTF_16LE",
+     "flags": ""
+    },
+    {
+     "type": "popup",
+     "label": "Character sets",
+     "children": [
+      {
+       "type": "popup",
+       "label": "Arabic",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-6",
+         "id": "IDM_FORMAT_ISO_8859_6",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 720",
+         "id": "IDM_FORMAT_DOS_720",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1256",
+         "id": "IDM_FORMAT_WIN_1256",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Baltic",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-4",
+         "id": "IDM_FORMAT_ISO_8859_4",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "ISO 8859-13",
+         "id": "IDM_FORMAT_ISO_8859_13",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 775",
+         "id": "IDM_FORMAT_DOS_775",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1257",
+         "id": "IDM_FORMAT_WIN_1257",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Celtic",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-14",
+         "id": "IDM_FORMAT_ISO_8859_14",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Cyrillic",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-5",
+         "id": "IDM_FORMAT_ISO_8859_5",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "KOI8-R",
+         "id": "IDM_FORMAT_KOI8R_CYRILLIC",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "KOI8-U",
+         "id": "IDM_FORMAT_KOI8U_CYRILLIC",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Macintosh",
+         "id": "IDM_FORMAT_MAC_CYRILLIC",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 855",
+         "id": "IDM_FORMAT_DOS_855",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 866",
+         "id": "IDM_FORMAT_DOS_866",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1251",
+         "id": "IDM_FORMAT_WIN_1251",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Central European",
+       "children": [
+        {
+         "type": "item",
+         "label": "OEM 852",
+         "id": "IDM_FORMAT_DOS_852",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1250",
+         "id": "IDM_FORMAT_WIN_1250",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Chinese",
+       "children": [
+        {
+         "type": "item",
+         "label": "Big5 (Traditional)",
+         "id": "IDM_FORMAT_BIG5",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "GB2312 (Simplified)",
+         "id": "IDM_FORMAT_GB2312",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Eastern European",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-2",
+         "id": "IDM_FORMAT_ISO_8859_2",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Greek",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-7",
+         "id": "IDM_FORMAT_ISO_8859_7",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 737",
+         "id": "IDM_FORMAT_DOS_737",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 869",
+         "id": "IDM_FORMAT_DOS_869",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1253",
+         "id": "IDM_FORMAT_WIN_1253",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Hebrew",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-8",
+         "id": "IDM_FORMAT_ISO_8859_8",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 862",
+         "id": "IDM_FORMAT_DOS_862",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1255",
+         "id": "IDM_FORMAT_WIN_1255",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Japanese",
+       "children": [
+        {
+         "type": "item",
+         "label": "Shift-JIS",
+         "id": "IDM_FORMAT_SHIFT_JIS",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Korean",
+       "children": [
+        {
+         "type": "item",
+         "label": "Windows 949",
+         "id": "IDM_FORMAT_KOREAN_WIN",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "EUC-KR",
+         "id": "IDM_FORMAT_EUC_KR",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "North European",
+       "children": [
+        {
+         "type": "item",
+         "label": "OEM 861 : Icelandic",
+         "id": "IDM_FORMAT_DOS_861",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 865 : Nordic",
+         "id": "IDM_FORMAT_DOS_865",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Thai",
+       "children": [
+        {
+         "type": "item",
+         "label": "TIS-620",
+         "id": "IDM_FORMAT_TIS_620",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Turkish",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-3",
+         "id": "IDM_FORMAT_ISO_8859_3",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "ISO 8859-9",
+         "id": "IDM_FORMAT_ISO_8859_9",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 857",
+         "id": "IDM_FORMAT_DOS_857",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1254",
+         "id": "IDM_FORMAT_WIN_1254",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Western European",
+       "children": [
+        {
+         "type": "item",
+         "label": "ISO 8859-1",
+         "id": "IDM_FORMAT_ISO_8859_1",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "ISO 8859-15",
+         "id": "IDM_FORMAT_ISO_8859_15",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 850",
+         "id": "IDM_FORMAT_DOS_850",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 858",
+         "id": "IDM_FORMAT_DOS_858",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 860 : Portuguese",
+         "id": "IDM_FORMAT_DOS_860",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM 863 : French",
+         "id": "IDM_FORMAT_DOS_863",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "OEM-US : CP437",
+         "id": "IDM_FORMAT_DOS_437",
+         "flags": ""
+        },
+        {
+         "type": "item",
+         "label": "Windows-1252",
+         "id": "IDM_FORMAT_WIN_1252",
+         "flags": ""
+        }
+       ]
+      },
+      {
+       "type": "popup",
+       "label": "Vietnamese",
+       "children": [
+        {
+         "type": "item",
+         "label": "Windows-1258",
+         "id": "IDM_FORMAT_WIN_1258",
+         "flags": ""
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Convert to ANSI",
+     "id": "IDM_FORMAT_CONV2_ANSI",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Convert to UTF-8",
+     "id": "IDM_FORMAT_CONV2_AS_UTF_8",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Convert to UTF-8-BOM",
+     "id": "IDM_FORMAT_CONV2_UTF_8",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Convert to UTF-16 BE BOM",
+     "id": "IDM_FORMAT_CONV2_UTF_16BE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Convert to UTF-16 LE BOM",
+     "id": "IDM_FORMAT_CONV2_UTF_16LE",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Language",
+   "children": [
+    {
+     "type": "item",
+     "label": "None (Normal Text)",
+     "id": "IDM_LANG_TEXT",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "A",
+     "children": [
+      {
+       "type": "item",
+       "label": "ActionScript",
+       "id": "IDM_LANG_FLASH",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Ada",
+       "id": "IDM_LANG_ADA",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "ASN.1",
+       "id": "IDM_LANG_ASN1",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "ASP",
+       "id": "IDM_LANG_ASP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Assembly",
+       "id": "IDM_LANG_ASM",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "AutoIt",
+       "id": "IDM_LANG_AU3",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "AviSynth",
+       "id": "IDM_LANG_AVS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "B",
+     "children": [
+      {
+       "type": "item",
+       "label": "BaanC",
+       "id": "IDM_LANG_BAANC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Batch",
+       "id": "IDM_LANG_BATCH",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Blitzbasic",
+       "id": "IDM_LANG_BLITZBASIC",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "C",
+     "children": [
+      {
+       "type": "item",
+       "label": "C",
+       "id": "IDM_LANG_C",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "C#",
+       "id": "IDM_LANG_CS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "C++",
+       "id": "IDM_LANG_CPP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Caml",
+       "id": "IDM_LANG_CAML",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "CMake",
+       "id": "IDM_LANG_CMAKE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "COBOL",
+       "id": "IDM_LANG_COBOL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "CSound",
+       "id": "IDM_LANG_CSOUND",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "CoffeeScript",
+       "id": "IDM_LANG_COFFEESCRIPT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "CSS",
+       "id": "IDM_LANG_CSS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "D",
+     "children": [
+      {
+       "type": "item",
+       "label": "D",
+       "id": "IDM_LANG_D",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Diff",
+       "id": "IDM_LANG_DIFF",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "E",
+     "children": [
+      {
+       "type": "item",
+       "label": "Erlang",
+       "id": "IDM_LANG_ERLANG",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "ErrorList",
+       "id": "IDM_LANG_ERRORLIST",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Escape Sequence (ANSI)",
+       "id": "IDM_LANG_ESCSEQ",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "ESCRIPT",
+       "id": "IDM_LANG_ESCRIPT",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "F",
+     "children": [
+      {
+       "type": "item",
+       "label": "Forth",
+       "id": "IDM_LANG_FORTH",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Fortran (free form)",
+       "id": "IDM_LANG_FORTRAN",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Fortran (fixed form)",
+       "id": "IDM_LANG_FORTRAN_77",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Freebasic",
+       "id": "IDM_LANG_FREEBASIC",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "G",
+     "children": [
+      {
+       "type": "item",
+       "label": "GDScript",
+       "id": "IDM_LANG_GDSCRIPT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Go",
+       "id": "IDM_LANG_GOLANG",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Gui4Cli",
+       "id": "IDM_LANG_GUI4CLI",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "H",
+     "children": [
+      {
+       "type": "item",
+       "label": "Haskell",
+       "id": "IDM_LANG_HASKELL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Hollywood",
+       "id": "IDM_LANG_HOLLYWOOD",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "HTML",
+       "id": "IDM_LANG_HTML",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "I",
+     "children": [
+      {
+       "type": "item",
+       "label": "INI file",
+       "id": "IDM_LANG_INI",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Inno Setup",
+       "id": "IDM_LANG_INNO",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Intel HEX",
+       "id": "IDM_LANG_IHEX",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "J",
+     "children": [
+      {
+       "type": "item",
+       "label": "Java",
+       "id": "IDM_LANG_JAVA",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "JavaScript",
+       "id": "IDM_LANG_JS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "JSON",
+       "id": "IDM_LANG_JSON",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "JSON5",
+       "id": "IDM_LANG_JSON5",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "JSP",
+       "id": "IDM_LANG_JSP",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "KIXtart",
+     "id": "IDM_LANG_KIX",
+     "flags": ""
+    },
+    {
+     "type": "popup",
+     "label": "L",
+     "children": [
+      {
+       "type": "item",
+       "label": "LaTeX",
+       "id": "IDM_LANG_LATEX",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "LISP",
+       "id": "IDM_LANG_LISP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Lua",
+       "id": "IDM_LANG_LUA",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "M",
+     "children": [
+      {
+       "type": "item",
+       "label": "Makefile",
+       "id": "IDM_LANG_MAKEFILE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Matlab",
+       "id": "IDM_LANG_MATLAB",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Microsoft Transact-SQL",
+       "id": "IDM_LANG_MSSQL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "MMIXAL",
+       "id": "IDM_LANG_MMIXAL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "MS-DOS Style",
+       "id": "IDM_LANG_ASCII",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "N",
+     "children": [
+      {
+       "type": "item",
+       "label": "Nim",
+       "id": "IDM_LANG_NIM",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Nncrontab",
+       "id": "IDM_LANG_NNCRONTAB",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "NSIS",
+       "id": "IDM_LANG_NSIS",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "O",
+     "children": [
+      {
+       "type": "item",
+       "label": "Objective-C",
+       "id": "IDM_LANG_OBJC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "OScript",
+       "id": "IDM_LANG_OSCRIPT",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "P",
+     "children": [
+      {
+       "type": "item",
+       "label": "Pascal",
+       "id": "IDM_LANG_PASCAL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Perl",
+       "id": "IDM_LANG_PERL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "PHP",
+       "id": "IDM_LANG_PHP",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "PostScript",
+       "id": "IDM_LANG_PS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "PowerShell",
+       "id": "IDM_LANG_POWERSHELL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Properties",
+       "id": "IDM_LANG_PROPS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Purebasic",
+       "id": "IDM_LANG_PUREBASIC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Python",
+       "id": "IDM_LANG_PYTHON",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "R",
+     "children": [
+      {
+       "type": "item",
+       "label": "R",
+       "id": "IDM_LANG_R",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Raku",
+       "id": "IDM_LANG_RAKU",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "REBOL",
+       "id": "IDM_LANG_REBOL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Registry",
+       "id": "IDM_LANG_REGISTRY",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Resource file",
+       "id": "IDM_LANG_RC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Ruby",
+       "id": "IDM_LANG_RUBY",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Rust",
+       "id": "IDM_LANG_RUST",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "S",
+     "children": [
+      {
+       "type": "item",
+       "label": "SAS",
+       "id": "IDM_LANG_SAS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Shell",
+       "id": "IDM_LANG_BASH",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Scheme",
+       "id": "IDM_LANG_SCHEME",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Smalltalk",
+       "id": "IDM_LANG_SMALLTALK",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Spice",
+       "id": "IDM_LANG_SPICE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "SQL",
+       "id": "IDM_LANG_SQL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Structured Text",
+       "id": "IDM_LANG_STTXT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Swift",
+       "id": "IDM_LANG_SWIFT",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "S-Record",
+       "id": "IDM_LANG_SREC",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "T",
+     "children": [
+      {
+       "type": "item",
+       "label": "TCL",
+       "id": "IDM_LANG_TCL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Tektronix extended HEX",
+       "id": "IDM_LANG_TEHEX",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "TeX",
+       "id": "IDM_LANG_TEX",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "TOML",
+       "id": "IDM_LANG_TOML",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "txt2tags",
+       "id": "IDM_LANG_TXT2TAGS",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "TypeScript",
+       "id": "IDM_LANG_TYPESCRIPT",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "V",
+     "children": [
+      {
+       "type": "item",
+       "label": "Visual Basic",
+       "id": "IDM_LANG_VB",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Visual Prolog",
+       "id": "IDM_LANG_VISUALPROLOG",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "VHDL",
+       "id": "IDM_LANG_VHDL",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Verilog",
+       "id": "IDM_LANG_VERILOG",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "XML",
+     "id": "IDM_LANG_XML",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "YAML",
+     "id": "IDM_LANG_YAML",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "User Defined Language",
+     "children": [
+      {
+       "type": "item",
+       "label": "Define your language...",
+       "id": "IDM_LANG_USER_DLG",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Open User Defined Language folder...",
+       "id": "IDM_LANG_OPENUDLDIR",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Notepad++ User Defined Languages Collection",
+       "id": "IDM_LANG_UDLCOLLECTION_PROJECT_SITE",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "User-Defined",
+     "id": "IDM_LANG_USER",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "Se&ttings",
+   "children": [
+    {
+     "type": "item",
+     "label": "Preferences...",
+     "id": "IDM_SETTING_PREFERENCE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Style Configurator...",
+     "id": "IDM_LANGSTYLE_CONFIG_DLG",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Shortcut Mapper...",
+     "id": "IDM_SETTING_SHORTCUT_MAPPER",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "popup",
+     "label": "Import",
+     "children": [
+      {
+       "type": "item",
+       "label": "Import plugin(s)...",
+       "id": "IDM_SETTING_IMPORTPLUGIN",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Import style theme(s)...",
+       "id": "IDM_SETTING_IMPORTSTYLETHEMES",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Edit Popup ContextMenu",
+     "id": "IDM_SETTING_EDITCONTEXTMENU",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "T&ools",
+   "children": [
+    {
+     "type": "popup",
+     "label": "MD5",
+     "children": [
+      {
+       "type": "item",
+       "label": "Generate...",
+       "id": "IDM_TOOL_MD5_GENERATE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from files...",
+       "id": "IDM_TOOL_MD5_GENERATEFROMFILE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from selection into clipboard",
+       "id": "IDM_TOOL_MD5_GENERATEINTOCLIPBOARD",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "SHA-1",
+     "children": [
+      {
+       "type": "item",
+       "label": "Generate...",
+       "id": "IDM_TOOL_SHA1_GENERATE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from files...",
+       "id": "IDM_TOOL_SHA1_GENERATEFROMFILE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from selection into clipboard",
+       "id": "IDM_TOOL_SHA1_GENERATEINTOCLIPBOARD",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "SHA-256",
+     "children": [
+      {
+       "type": "item",
+       "label": "Generate...",
+       "id": "IDM_TOOL_SHA256_GENERATE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from files...",
+       "id": "IDM_TOOL_SHA256_GENERATEFROMFILE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from selection into clipboard",
+       "id": "IDM_TOOL_SHA256_GENERATEINTOCLIPBOARD",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "popup",
+     "label": "SHA-512",
+     "children": [
+      {
+       "type": "item",
+       "label": "Generate...",
+       "id": "IDM_TOOL_SHA512_GENERATE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from files...",
+       "id": "IDM_TOOL_SHA512_GENERATEFROMFILE",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Generate from selection into clipboard",
+       "id": "IDM_TOOL_SHA512_GENERATEINTOCLIPBOARD",
+       "flags": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Macro",
+   "children": [
+    {
+     "type": "item",
+     "label": "Start Re&cording",
+     "id": "IDM_MACRO_STARTRECORDINGMACRO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "S&top Recording",
+     "id": "IDM_MACRO_STOPRECORDINGMACRO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Playback",
+     "id": "IDM_MACRO_PLAYBACKRECORDEDMACRO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Save Current Recorded Macro...",
+     "id": "IDM_MACRO_SAVECURRENTMACRO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "&Run a Macro Multiple Times...",
+     "id": "IDM_MACRO_RUNMULTIMACRODLG",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Run",
+   "children": [
+    {
+     "type": "item",
+     "label": "&Run...",
+     "id": "IDM_EXECUTE",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Validate shortcuts.xml",
+     "id": "IDM_EXECUTE_VALIDATE_SHORTCUTSXML",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Plugins",
+   "children": [
+    {
+     "type": "item",
+     "label": "Open Plugins Folder...",
+     "id": "IDM_SETTING_OPENPLUGINSDIR",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&Window",
+   "children": [
+    {
+     "type": "popup",
+     "label": "Sort By",
+     "children": [
+      {
+       "type": "item",
+       "label": "Name A to Z",
+       "id": "IDM_WINDOW_SORT_FN_ASC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Name Z to A",
+       "id": "IDM_WINDOW_SORT_FN_DSC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Path A to Z",
+       "id": "IDM_WINDOW_SORT_FP_ASC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Path Z to A",
+       "id": "IDM_WINDOW_SORT_FP_DSC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Type A to Z",
+       "id": "IDM_WINDOW_SORT_FT_ASC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Type Z to A",
+       "id": "IDM_WINDOW_SORT_FT_DSC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Content Length Ascending",
+       "id": "IDM_WINDOW_SORT_FS_ASC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Content Length Descending",
+       "id": "IDM_WINDOW_SORT_FS_DSC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Modified Time Ascending",
+       "id": "IDM_WINDOW_SORT_FD_ASC",
+       "flags": ""
+      },
+      {
+       "type": "item",
+       "label": "Modified Time Descending",
+       "id": "IDM_WINDOW_SORT_FD_DSC",
+       "flags": ""
+      }
+     ]
+    },
+    {
+     "type": "item",
+     "label": "&Windows...",
+     "id": "IDM_WINDOW_WINDOWS",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Recent Window",
+     "id": "IDM_WINDOW_MRU_FIRST",
+     "flags": "GRAYED"
+    }
+   ]
+  },
+  {
+   "type": "popup",
+   "label": "&?",
+   "children": [
+    {
+     "type": "item",
+     "label": "Command Line Arguments...",
+     "id": "IDM_CMDLINEARGUMENTS",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Notepad++ Home",
+     "id": "IDM_HOMESWEETHOME",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Notepad++ Project Page",
+     "id": "IDM_PROJECTPAGE",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Notepad++ Online User Manual",
+     "id": "IDM_ONLINEDOCUMENT",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Notepad++ Community (Forum)",
+     "id": "IDM_FORUM",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Update Notepad++",
+     "id": "IDM_UPDATE_NPP",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "Set Updater Proxy...",
+     "id": "IDM_CONFUPDATERPROXY",
+     "flags": ""
+    },
+    {
+     "type": "separator"
+    },
+    {
+     "type": "item",
+     "label": "Debug Info...",
+     "id": "IDM_DEBUGINFO",
+     "flags": ""
+    },
+    {
+     "type": "item",
+     "label": "About Notepad++",
+     "id": "IDM_ABOUT",
+     "flags": ""
+    }
+   ]
+  },
+  {
+   "type": "item",
+   "label": "＋",
+   "id": "IDM_FILE_NEW",
+   "flags": "HELP"
+  },
+  {
+   "type": "item",
+   "label": "✕",
+   "id": "IDM_FILE_CLOSE",
+   "flags": "HELP"
+  }
+ ],
+ "ids": {
+  "IDC_AUTHOR_NAME": 1705,
+  "IDC_BUILD_DATETIME": 1706,
+  "IDC_BUTTON_SERVERWHITELIST_NOTE": 1772,
+  "IDC_COMMANDLINEARGS_EDIT": 1756,
+  "IDC_DEBUGINFO_COPYLINK": 1752,
+  "IDC_DEBUGINFO_EDIT": 1751,
+  "IDC_DOSAVEALLTEXT": 1766,
+  "IDC_DOSAVEORNOTTEXT": 1761,
+  "IDC_DRAG_INTERDIT_TAB": 1405,
+  "IDC_DRAG_OUT_TAB": 1407,
+  "IDC_DRAG_PLUS_TAB": 1406,
+  "IDC_DRAG_TAB": 1404,
+  "IDC_EDIT_INPUT_VALUE": 1201,
+  "IDC_EDIT_NEW_FOLDER": 1102,
+  "IDC_EDIT_TOGGLEMACRORECORDING": 50005,
+  "IDC_EMAIL_ADDR": 1703,
+  "IDC_HOME_ADDR": 1702,
+  "IDC_ICON_INPUT_ICON": 1203,
+  "IDC_LICENCE_EDIT": 1701,
+  "IDC_MACRO_RECORDING": 1408,
+  "IDC_MY_CUR": 1402,
+  "IDC_NETWORKPATHWARNINGTEXT": 1771,
+  "IDC_NEXT_DOC": 50004,
+  "IDC_NEXT_TAB": 50004,
+  "IDC_ONLINEHELP_ADDR": 1704,
+  "IDC_PREV_DOC": 50003,
+  "IDC_PREV_TAB": 50003,
+  "IDC_RADIO_GOTOLINE": 2007,
+  "IDC_RADIO_GOTOOFFSET": 2008,
+  "IDC_RESTORE_BUTTON": 2411,
+  "IDC_STATIC": -1,
+  "IDC_STATIC_CURRENT_FOLDER": 1101,
+  "IDC_STATIC_INPUT_TITLE": 1202,
+  "IDC_UP_ARROW": 1403,
+  "IDC_VERSION_BIT": 1707,
+  "IDM_ABOUT": 47000,
+  "IDM_CLEAN_RECENT_FILE_LIST": 42041,
+  "IDM_CMDLINEARGUMENTS": 47010,
+  "IDM_CONFUPDATERPROXY": 47009,
+  "IDM_DEBUGINFO": 47012,
+  "IDM_DOCLIST_COPYNAMES": 43503,
+  "IDM_DOCLIST_COPYPATHS": 43504,
+  "IDM_DOCLIST_FILESCLOSE": 43501,
+  "IDM_DOCLIST_FILESCLOSEOTHERS": 43502,
+  "IDM_DROPLIST_LIST": 14001,
+  "IDM_DROPLIST_MRU_FIRST": 14020,
+  "IDM_EDIT": 42000,
+  "IDM_EDIT_AUTOCOMPLETE": 50000,
+  "IDM_EDIT_AUTOCOMPLETE_CURRENTFILE": 50001,
+  "IDM_EDIT_AUTOCOMPLETE_PATH": 50006,
+  "IDM_EDIT_BEGINENDSELECT": 42020,
+  "IDM_EDIT_BEGINENDSELECT_COLUMNMODE": 42089,
+  "IDM_EDIT_BLANKLINEABOVECURRENT": 42057,
+  "IDM_EDIT_BLANKLINEBELOWCURRENT": 42058,
+  "IDM_EDIT_BLOCK_COMMENT": 42022,
+  "IDM_EDIT_BLOCK_COMMENT_SET": 42035,
+  "IDM_EDIT_BLOCK_UNCOMMENT": 42036,
+  "IDM_EDIT_CHANGESEARCHENGINE": 42076,
+  "IDM_EDIT_CHAR_PANEL": 42051,
+  "IDM_EDIT_CLEARREADONLYFORALLDOCS": 42103,
+  "IDM_EDIT_CLIPBOARDHISTORY_PANEL": 42052,
+  "IDM_EDIT_COLUMNMODE": 42034,
+  "IDM_EDIT_COLUMNMODETIP": 42037,
+  "IDM_EDIT_COPY": 42002,
+  "IDM_EDIT_COPY_ALL_NAMES": 42087,
+  "IDM_EDIT_COPY_ALL_PATHS": 42088,
+  "IDM_EDIT_COPY_BINARY": 42048,
+  "IDM_EDIT_COPY_LINK": 42082,
+  "IDM_EDIT_CURRENTDIRTOCLIP": 42031,
+  "IDM_EDIT_CUT": 42001,
+  "IDM_EDIT_CUT_BINARY": 42049,
+  "IDM_EDIT_DELETE": 42006,
+  "IDM_EDIT_DUP_LINE": 42010,
+  "IDM_EDIT_EOL2WS": 42044,
+  "IDM_EDIT_FILENAMETOCLIP": 42030,
+  "IDM_EDIT_FULLPATHTOCLIP": 42029,
+  "IDM_EDIT_FUNCCALLTIP": 50002,
+  "IDM_EDIT_FUNCCALLTIP_NEXT": 50011,
+  "IDM_EDIT_FUNCCALLTIP_PREVIOUS": 50010,
+  "IDM_EDIT_INSERT_DATETIME_CUSTOMIZED": 42086,
+  "IDM_EDIT_INSERT_DATETIME_LONG": 42085,
+  "IDM_EDIT_INSERT_DATETIME_SHORT": 42084,
+  "IDM_EDIT_INS_TAB": 42008,
+  "IDM_EDIT_INVERTCASE": 42071,
+  "IDM_EDIT_JOIN_LINES": 42013,
+  "IDM_EDIT_LINE_DOWN": 42015,
+  "IDM_EDIT_LINE_UP": 42014,
+  "IDM_EDIT_LOWERCASE": 42017,
+  "IDM_EDIT_LTR": 42027,
+  "IDM_EDIT_MULTISELECTALL": 42090,
+  "IDM_EDIT_MULTISELECTALLMATCHCASE": 42091,
+  "IDM_EDIT_MULTISELECTALLMATCHCASEWHOLEWORD": 42093,
+  "IDM_EDIT_MULTISELECTALLWHOLEWORD": 42092,
+  "IDM_EDIT_MULTISELECTNEXT": 42094,
+  "IDM_EDIT_MULTISELECTNEXTMATCHCASE": 42095,
+  "IDM_EDIT_MULTISELECTNEXTMATCHCASEWHOLEWORD": 42097,
+  "IDM_EDIT_MULTISELECTNEXTWHOLEWORD": 42096,
+  "IDM_EDIT_MULTISELECTSSKIP": 42099,
+  "IDM_EDIT_MULTISELECTUNDO": 42098,
+  "IDM_EDIT_OPENSELECTEDFILEFOLDERINEXPLORER": 42074,
+  "IDM_EDIT_OPENSELECTEDFILETOEDIT": 42073,
+  "IDM_EDIT_PASTE": 42005,
+  "IDM_EDIT_PASTE_AS_HTML": 42038,
+  "IDM_EDIT_PASTE_AS_RTF": 42039,
+  "IDM_EDIT_PASTE_BINARY": 42050,
+  "IDM_EDIT_PROPERCASE_BLEND": 42068,
+  "IDM_EDIT_PROPERCASE_FORCE": 42067,
+  "IDM_EDIT_RANDOMCASE": 42072,
+  "IDM_EDIT_REDACT_SELECTION": 42106,
+  "IDM_EDIT_REDO": 42004,
+  "IDM_EDIT_REMOVEEMPTYLINES": 42055,
+  "IDM_EDIT_REMOVEEMPTYLINESWITHBLANK": 42056,
+  "IDM_EDIT_REMOVE_ANY_DUP_LINES": 42079,
+  "IDM_EDIT_REMOVE_CONSECUTIVE_DUP_LINES": 42077,
+  "IDM_EDIT_RMV_TAB": 42009,
+  "IDM_EDIT_RTL": 42026,
+  "IDM_EDIT_SEARCHONINTERNET": 42075,
+  "IDM_EDIT_SELECTALL": 42007,
+  "IDM_EDIT_SENTENCECASE_BLEND": 42070,
+  "IDM_EDIT_SENTENCECASE_FORCE": 42069,
+  "IDM_EDIT_SETREADONLYFORALLDOCS": 42102,
+  "IDM_EDIT_SORTLINES_DECIMALCOMMA_ASCENDING": 42063,
+  "IDM_EDIT_SORTLINES_DECIMALCOMMA_DESCENDING": 42064,
+  "IDM_EDIT_SORTLINES_DECIMALDOT_ASCENDING": 42065,
+  "IDM_EDIT_SORTLINES_DECIMALDOT_DESCENDING": 42066,
+  "IDM_EDIT_SORTLINES_INTEGER_ASCENDING": 42061,
+  "IDM_EDIT_SORTLINES_INTEGER_DESCENDING": 42062,
+  "IDM_EDIT_SORTLINES_LENGTH_ASCENDING": 42104,
+  "IDM_EDIT_SORTLINES_LENGTH_DESCENDING": 42105,
+  "IDM_EDIT_SORTLINES_LEXICOGRAPHIC_ASCENDING": 42059,
+  "IDM_EDIT_SORTLINES_LEXICOGRAPHIC_DESCENDING": 42060,
+  "IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_ASCENDING": 42080,
+  "IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_DESCENDING": 42081,
+  "IDM_EDIT_SORTLINES_LOCALE_ASCENDING": 42100,
+  "IDM_EDIT_SORTLINES_LOCALE_DESCENDING": 42101,
+  "IDM_EDIT_SORTLINES_RANDOMLY": 42078,
+  "IDM_EDIT_SORTLINES_REVERSE_ORDER": 42083,
+  "IDM_EDIT_SPLIT_LINES": 42012,
+  "IDM_EDIT_STREAM_COMMENT": 42023,
+  "IDM_EDIT_STREAM_UNCOMMENT": 42047,
+  "IDM_EDIT_SW2TAB_ALL": 42054,
+  "IDM_EDIT_SW2TAB_LEADING": 42053,
+  "IDM_EDIT_TAB2SW": 42046,
+  "IDM_EDIT_TOGGLEREADONLY": 42028,
+  "IDM_EDIT_TOGGLESYSTEMREADONLY": 42033,
+  "IDM_EDIT_TRANSPOSE_LINE": 42011,
+  "IDM_EDIT_TRIMALL": 42045,
+  "IDM_EDIT_TRIMLINEHEAD": 42042,
+  "IDM_EDIT_TRIMTRAILING": 42024,
+  "IDM_EDIT_TRIM_BOTH": 42043,
+  "IDM_EDIT_UNDO": 42003,
+  "IDM_EDIT_UPPERCASE": 42016,
+  "IDM_EXECUTE": 49000,
+  "IDM_EXECUTE_VALIDATE_SHORTCUTSXML": 49001,
+  "IDM_EXPORT_FUNC_LIST_AND_QUIT": 44073,
+  "IDM_FILE": 41000,
+  "IDM_FILEMENU_EXISTCMDPOSITION": 22,
+  "IDM_FILEMENU_LASTONE": 41027,
+  "IDM_FILE_CLOSE": 41003,
+  "IDM_FILE_CLOSEALL": 41004,
+  "IDM_FILE_CLOSEALL_BUT_CURRENT": 41005,
+  "IDM_FILE_CLOSEALL_BUT_PINNED": 41026,
+  "IDM_FILE_CLOSEALL_TOLEFT": 41009,
+  "IDM_FILE_CLOSEALL_TORIGHT": 41018,
+  "IDM_FILE_CLOSEALL_UNCHANGED": 41024,
+  "IDM_FILE_CONTAININGFOLDERASWORKSPACE": 41025,
+  "IDM_FILE_DELETE": 41016,
+  "IDM_FILE_EXIT": 41011,
+  "IDM_FILE_LOADSESSION": 41012,
+  "IDM_FILE_NEW": 41001,
+  "IDM_FILE_OPEN": 41002,
+  "IDM_FILE_OPENFOLDERASWORKSPACE": 41022,
+  "IDM_FILE_OPEN_CMD": 41020,
+  "IDM_FILE_OPEN_DEFAULT_VIEWER": 41023,
+  "IDM_FILE_OPEN_FOLDER": 41019,
+  "IDM_FILE_OPEN_POWERSHELL": 41027,
+  "IDM_FILE_PRINT": 41010,
+  "IDM_FILE_PRINTNOW": 1001,
+  "IDM_FILE_RELOAD": 41014,
+  "IDM_FILE_RENAME": 41017,
+  "IDM_FILE_RESTORELASTCLOSEDFILE": 41021,
+  "IDM_FILE_SAVE": 41006,
+  "IDM_FILE_SAVEALL": 41007,
+  "IDM_FILE_SAVEAS": 41008,
+  "IDM_FILE_SAVECOPYAS": 41015,
+  "IDM_FILE_SAVESESSION": 41013,
+  "IDM_FOCUS_ON_FOUND_RESULTS": 43045,
+  "IDM_FORMAT": 45000,
+  "IDM_FORMAT_ANSI": 45004,
+  "IDM_FORMAT_AS_UTF_8": 45008,
+  "IDM_FORMAT_BIG5": 45060,
+  "IDM_FORMAT_CONV2_ANSI": 45009,
+  "IDM_FORMAT_CONV2_AS_UTF_8": 45010,
+  "IDM_FORMAT_CONV2_UTF_16BE": 45012,
+  "IDM_FORMAT_CONV2_UTF_16LE": 45013,
+  "IDM_FORMAT_CONV2_UTF_8": 45011,
+  "IDM_FORMAT_DOS_437": 45044,
+  "IDM_FORMAT_DOS_720": 45045,
+  "IDM_FORMAT_DOS_737": 45046,
+  "IDM_FORMAT_DOS_775": 45047,
+  "IDM_FORMAT_DOS_850": 45048,
+  "IDM_FORMAT_DOS_852": 45049,
+  "IDM_FORMAT_DOS_855": 45050,
+  "IDM_FORMAT_DOS_857": 45051,
+  "IDM_FORMAT_DOS_858": 45052,
+  "IDM_FORMAT_DOS_860": 45053,
+  "IDM_FORMAT_DOS_861": 45054,
+  "IDM_FORMAT_DOS_862": 45055,
+  "IDM_FORMAT_DOS_863": 45056,
+  "IDM_FORMAT_DOS_865": 45057,
+  "IDM_FORMAT_DOS_866": 45058,
+  "IDM_FORMAT_DOS_869": 45059,
+  "IDM_FORMAT_ENCODE": 45020,
+  "IDM_FORMAT_ENCODE_END": 45068,
+  "IDM_FORMAT_EUC_KR": 45064,
+  "IDM_FORMAT_GB2312": 45061,
+  "IDM_FORMAT_ISO_8859_1": 45029,
+  "IDM_FORMAT_ISO_8859_13": 45040,
+  "IDM_FORMAT_ISO_8859_14": 45041,
+  "IDM_FORMAT_ISO_8859_15": 45042,
+  "IDM_FORMAT_ISO_8859_2": 45030,
+  "IDM_FORMAT_ISO_8859_3": 45031,
+  "IDM_FORMAT_ISO_8859_4": 45032,
+  "IDM_FORMAT_ISO_8859_5": 45033,
+  "IDM_FORMAT_ISO_8859_6": 45034,
+  "IDM_FORMAT_ISO_8859_7": 45035,
+  "IDM_FORMAT_ISO_8859_8": 45036,
+  "IDM_FORMAT_ISO_8859_9": 45037,
+  "IDM_FORMAT_KOI8R_CYRILLIC": 45068,
+  "IDM_FORMAT_KOI8U_CYRILLIC": 45067,
+  "IDM_FORMAT_KOREAN_WIN": 45063,
+  "IDM_FORMAT_MAC_CYRILLIC": 45066,
+  "IDM_FORMAT_SHIFT_JIS": 45062,
+  "IDM_FORMAT_TIS_620": 45065,
+  "IDM_FORMAT_TODOS": 45001,
+  "IDM_FORMAT_TOMAC": 45003,
+  "IDM_FORMAT_TOUNIX": 45002,
+  "IDM_FORMAT_UTF_16BE": 45006,
+  "IDM_FORMAT_UTF_16LE": 45007,
+  "IDM_FORMAT_UTF_8": 45005,
+  "IDM_FORMAT_WIN_1250": 45020,
+  "IDM_FORMAT_WIN_1251": 45021,
+  "IDM_FORMAT_WIN_1252": 45022,
+  "IDM_FORMAT_WIN_1253": 45023,
+  "IDM_FORMAT_WIN_1254": 45024,
+  "IDM_FORMAT_WIN_1255": 45025,
+  "IDM_FORMAT_WIN_1256": 45026,
+  "IDM_FORMAT_WIN_1257": 45027,
+  "IDM_FORMAT_WIN_1258": 45028,
+  "IDM_FORUM": 47004,
+  "IDM_HOMESWEETHOME": 47001,
+  "IDM_LANG": 46000,
+  "IDM_LANGSTYLE_CONFIG_DLG": 46001,
+  "IDM_LANG_ADA": 46042,
+  "IDM_LANG_ASCII": 46015,
+  "IDM_LANG_ASM": 46033,
+  "IDM_LANG_ASN1": 46064,
+  "IDM_LANG_ASP": 46009,
+  "IDM_LANG_AU3": 46044,
+  "IDM_LANG_AVS": 46065,
+  "IDM_LANG_BAANC": 46059,
+  "IDM_LANG_BASH": 46027,
+  "IDM_LANG_BATCH": 46022,
+  "IDM_LANG_BLITZBASIC": 46066,
+  "IDM_LANG_C": 46002,
+  "IDM_LANG_CAML": 46040,
+  "IDM_LANG_CMAKE": 46048,
+  "IDM_LANG_COBOL": 46050,
+  "IDM_LANG_COFFEESCRIPT": 46056,
+  "IDM_LANG_CPP": 46003,
+  "IDM_LANG_CS": 46023,
+  "IDM_LANG_CSOUND": 46069,
+  "IDM_LANG_CSS": 46010,
+  "IDM_LANG_D": 46051,
+  "IDM_LANG_DIFF": 46034,
+  "IDM_LANG_ERLANG": 46070,
+  "IDM_LANG_ERRORLIST": 46093,
+  "IDM_LANG_ESCRIPT": 46071,
+  "IDM_LANG_ESCSEQ": 46094,
+  "IDM_LANG_EXTERNAL": 46165,
+  "IDM_LANG_EXTERNAL_LIMIT": 46179,
+  "IDM_LANG_FLASH": 46028,
+  "IDM_LANG_FORTH": 46072,
+  "IDM_LANG_FORTRAN": 46026,
+  "IDM_LANG_FORTRAN_77": 46058,
+  "IDM_LANG_FREEBASIC": 46068,
+  "IDM_LANG_GDSCRIPT": 46087,
+  "IDM_LANG_GOLANG": 46089,
+  "IDM_LANG_GUI4CLI": 46052,
+  "IDM_LANG_HASKELL": 46046,
+  "IDM_LANG_HOLLYWOOD": 46088,
+  "IDM_LANG_HTML": 46005,
+  "IDM_LANG_IHEX": 46061,
+  "IDM_LANG_INI": 46019,
+  "IDM_LANG_INNO": 46047,
+  "IDM_LANG_JAVA": 46004,
+  "IDM_LANG_JS": 46007,
+  "IDM_LANG_JSON": 46057,
+  "IDM_LANG_JSON5": 46085,
+  "IDM_LANG_JSP": 46055,
+  "IDM_LANG_KIX": 46041,
+  "IDM_LANG_LATEX": 46073,
+  "IDM_LANG_LISP": 46031,
+  "IDM_LANG_LUA": 46024,
+  "IDM_LANG_MAKEFILE": 46018,
+  "IDM_LANG_MATLAB": 46045,
+  "IDM_LANG_MMIXAL": 46074,
+  "IDM_LANG_MSSQL": 46086,
+  "IDM_LANG_NIM": 46075,
+  "IDM_LANG_NNCRONTAB": 46076,
+  "IDM_LANG_NSIS": 46029,
+  "IDM_LANG_OBJC": 46014,
+  "IDM_LANG_OPENUDLDIR": 46300,
+  "IDM_LANG_OSCRIPT": 46077,
+  "IDM_LANG_PASCAL": 46011,
+  "IDM_LANG_PERL": 46013,
+  "IDM_LANG_PHP": 46008,
+  "IDM_LANG_POWERSHELL": 46053,
+  "IDM_LANG_PROPS": 46035,
+  "IDM_LANG_PS": 46036,
+  "IDM_LANG_PUREBASIC": 46067,
+  "IDM_LANG_PYTHON": 46012,
+  "IDM_LANG_R": 46054,
+  "IDM_LANG_RAKU": 46090,
+  "IDM_LANG_RC": 46017,
+  "IDM_LANG_REBOL": 46078,
+  "IDM_LANG_REGISTRY": 46079,
+  "IDM_LANG_RUBY": 46037,
+  "IDM_LANG_RUST": 46080,
+  "IDM_LANG_SAS": 46092,
+  "IDM_LANG_SCHEME": 46032,
+  "IDM_LANG_SMALLTALK": 46038,
+  "IDM_LANG_SPICE": 46081,
+  "IDM_LANG_SQL": 46020,
+  "IDM_LANG_SREC": 46060,
+  "IDM_LANG_STTXT": 46095,
+  "IDM_LANG_SWIFT": 46063,
+  "IDM_LANG_TCL": 46030,
+  "IDM_LANG_TEHEX": 46062,
+  "IDM_LANG_TEX": 46025,
+  "IDM_LANG_TEXT": 46016,
+  "IDM_LANG_TOML": 46091,
+  "IDM_LANG_TXT2TAGS": 46082,
+  "IDM_LANG_TYPESCRIPT": 46084,
+  "IDM_LANG_UDLCOLLECTION_PROJECT_SITE": 46301,
+  "IDM_LANG_USER": 46180,
+  "IDM_LANG_USER_DLG": 46250,
+  "IDM_LANG_USER_LIMIT": 46210,
+  "IDM_LANG_VB": 46021,
+  "IDM_LANG_VERILOG": 46043,
+  "IDM_LANG_VHDL": 46039,
+  "IDM_LANG_VISUALPROLOG": 46083,
+  "IDM_LANG_XML": 46006,
+  "IDM_LANG_YAML": 46049,
+  "IDM_MACRO_PLAYBACKRECORDEDMACRO": 42021,
+  "IDM_MACRO_RUNMULTIMACRODLG": 42032,
+  "IDM_MACRO_SAVECURRENTMACRO": 42025,
+  "IDM_MACRO_STARTRECORDINGMACRO": 42018,
+  "IDM_MACRO_STOPRECORDINGMACRO": 42019,
+  "IDM_MISC": 43500,
+  "IDM_ONLINEDOCUMENT": 47003,
+  "IDM_OPEN_ALL_RECENT_FILE": 42040,
+  "IDM_PINTAB": 44048,
+  "IDM_PROJECTPAGE": 47002,
+  "IDM_SEARCH": 43000,
+  "IDM_SEARCH_ALLSTYLESTOCLIP": 43060,
+  "IDM_SEARCH_CHANGED_NEXT": 43067,
+  "IDM_SEARCH_CHANGED_PREV": 43068,
+  "IDM_SEARCH_CLEARALLMARKS": 43032,
+  "IDM_SEARCH_CLEAR_BOOKMARKS": 43008,
+  "IDM_SEARCH_CLEAR_CHANGE_HISTORY": 43069,
+  "IDM_SEARCH_COPYMARKEDLINES": 43019,
+  "IDM_SEARCH_CUTMARKEDLINES": 43018,
+  "IDM_SEARCH_DELETEMARKEDLINES": 43021,
+  "IDM_SEARCH_DELETEUNMARKEDLINES": 43051,
+  "IDM_SEARCH_FIND": 43001,
+  "IDM_SEARCH_FINDCHARINRANGE": 43052,
+  "IDM_SEARCH_FINDINCREMENT": 43011,
+  "IDM_SEARCH_FINDINFILES": 43013,
+  "IDM_SEARCH_FINDNEXT": 43002,
+  "IDM_SEARCH_FINDPREV": 43010,
+  "IDM_SEARCH_GONEXTMARKER1": 43039,
+  "IDM_SEARCH_GONEXTMARKER2": 43040,
+  "IDM_SEARCH_GONEXTMARKER3": 43041,
+  "IDM_SEARCH_GONEXTMARKER4": 43042,
+  "IDM_SEARCH_GONEXTMARKER5": 43043,
+  "IDM_SEARCH_GONEXTMARKER_DEF": 43044,
+  "IDM_SEARCH_GOPREVMARKER1": 43033,
+  "IDM_SEARCH_GOPREVMARKER2": 43034,
+  "IDM_SEARCH_GOPREVMARKER3": 43035,
+  "IDM_SEARCH_GOPREVMARKER4": 43036,
+  "IDM_SEARCH_GOPREVMARKER5": 43037,
+  "IDM_SEARCH_GOPREVMARKER_DEF": 43038,
+  "IDM_SEARCH_GOTOLINE": 43004,
+  "IDM_SEARCH_GOTOMATCHINGBRACE": 43009,
+  "IDM_SEARCH_GOTONEXTFOUND": 43046,
+  "IDM_SEARCH_GOTOPREVFOUND": 43047,
+  "IDM_SEARCH_INVERSEMARKS": 43050,
+  "IDM_SEARCH_MARK": 43054,
+  "IDM_SEARCH_MARKALLEXT1": 43022,
+  "IDM_SEARCH_MARKALLEXT2": 43024,
+  "IDM_SEARCH_MARKALLEXT3": 43026,
+  "IDM_SEARCH_MARKALLEXT4": 43028,
+  "IDM_SEARCH_MARKALLEXT5": 43030,
+  "IDM_SEARCH_MARKEDTOCLIP": 43061,
+  "IDM_SEARCH_MARKONEEXT1": 43062,
+  "IDM_SEARCH_MARKONEEXT2": 43063,
+  "IDM_SEARCH_MARKONEEXT3": 43064,
+  "IDM_SEARCH_MARKONEEXT4": 43065,
+  "IDM_SEARCH_MARKONEEXT5": 43066,
+  "IDM_SEARCH_NEXT_BOOKMARK": 43006,
+  "IDM_SEARCH_PASTEMARKEDLINES": 43020,
+  "IDM_SEARCH_PREV_BOOKMARK": 43007,
+  "IDM_SEARCH_REPLACE": 43003,
+  "IDM_SEARCH_SELECTMATCHINGBRACES": 43053,
+  "IDM_SEARCH_SETANDFINDNEXT": 43048,
+  "IDM_SEARCH_SETANDFINDPREV": 43049,
+  "IDM_SEARCH_STYLE1TOCLIP": 43055,
+  "IDM_SEARCH_STYLE2TOCLIP": 43056,
+  "IDM_SEARCH_STYLE3TOCLIP": 43057,
+  "IDM_SEARCH_STYLE4TOCLIP": 43058,
+  "IDM_SEARCH_STYLE5TOCLIP": 43059,
+  "IDM_SEARCH_TOGGLE_BOOKMARK": 43005,
+  "IDM_SEARCH_UNMARKALLEXT1": 43023,
+  "IDM_SEARCH_UNMARKALLEXT2": 43025,
+  "IDM_SEARCH_UNMARKALLEXT3": 43027,
+  "IDM_SEARCH_UNMARKALLEXT4": 43029,
+  "IDM_SEARCH_UNMARKALLEXT5": 43031,
+  "IDM_SEARCH_VOLATILE_FINDNEXT": 43014,
+  "IDM_SEARCH_VOLATILE_FINDPREV": 43015,
+  "IDM_SETTING": 48000,
+  "IDM_SETTING_EDITCONTEXTMENU": 48018,
+  "IDM_SETTING_IMPORTPLUGIN": 48005,
+  "IDM_SETTING_IMPORTSTYLETHEMES": 48006,
+  "IDM_SETTING_OPENPLUGINSDIR": 48014,
+  "IDM_SETTING_PLUGINADM": 48015,
+  "IDM_SETTING_PREFERENCE": 48011,
+  "IDM_SETTING_REMEMBER_LAST_SESSION": 48010,
+  "IDM_SETTING_SHORTCUT_MAPPER": 48009,
+  "IDM_SETTING_SHORTCUT_MAPPER_MACRO": 48016,
+  "IDM_SETTING_SHORTCUT_MAPPER_RUN": 48017,
+  "IDM_SETTING_TRAYICON": 48008,
+  "IDM_SYSTRAYPOPUP": 43100,
+  "IDM_SYSTRAYPOPUP_ACTIVATE": 43101,
+  "IDM_SYSTRAYPOPUP_CLOSE": 43105,
+  "IDM_SYSTRAYPOPUP_NEWDOC": 43102,
+  "IDM_SYSTRAYPOPUP_NEW_AND_PASTE": 43103,
+  "IDM_SYSTRAYPOPUP_OPENFILE": 43104,
+  "IDM_TOOL": 48500,
+  "IDM_TOOL_MD5_GENERATE": 48501,
+  "IDM_TOOL_MD5_GENERATEFROMFILE": 48502,
+  "IDM_TOOL_MD5_GENERATEINTOCLIPBOARD": 48503,
+  "IDM_TOOL_SHA1_GENERATE": 48507,
+  "IDM_TOOL_SHA1_GENERATEFROMFILE": 48508,
+  "IDM_TOOL_SHA1_GENERATEINTOCLIPBOARD": 48509,
+  "IDM_TOOL_SHA256_GENERATE": 48504,
+  "IDM_TOOL_SHA256_GENERATEFROMFILE": 48505,
+  "IDM_TOOL_SHA256_GENERATEINTOCLIPBOARD": 48506,
+  "IDM_TOOL_SHA512_GENERATE": 48510,
+  "IDM_TOOL_SHA512_GENERATEFROMFILE": 48511,
+  "IDM_TOOL_SHA512_GENERATEINTOCLIPBOARD": 48512,
+  "IDM_UPDATE_NPP": 47006,
+  "IDM_VIEW": 44000,
+  "IDM_VIEW_ALL_CHARACTERS": 44019,
+  "IDM_VIEW_ALWAYSONTOP": 44034,
+  "IDM_VIEW_CLONE_TO_ANOTHER_VIEW": 10002,
+  "IDM_VIEW_DISTRACTIONFREE": 44011,
+  "IDM_VIEW_DOCLIST": 44070,
+  "IDM_VIEW_DOC_MAP": 44080,
+  "IDM_VIEW_EOL": 44026,
+  "IDM_VIEW_FILEBROWSER": 44085,
+  "IDM_VIEW_FOLD": 44050,
+  "IDM_VIEW_FOLDALL": 44010,
+  "IDM_VIEW_FOLD_1": 44051,
+  "IDM_VIEW_FOLD_2": 44052,
+  "IDM_VIEW_FOLD_3": 44053,
+  "IDM_VIEW_FOLD_4": 44054,
+  "IDM_VIEW_FOLD_5": 44055,
+  "IDM_VIEW_FOLD_6": 44056,
+  "IDM_VIEW_FOLD_7": 44057,
+  "IDM_VIEW_FOLD_8": 44058,
+  "IDM_VIEW_FOLD_CURRENT": 44030,
+  "IDM_VIEW_FULLSCREENTOGGLE": 44032,
+  "IDM_VIEW_FUNC_LIST": 44084,
+  "IDM_VIEW_GOTO_ANOTHER_VIEW": 10001,
+  "IDM_VIEW_GOTO_END": 10006,
+  "IDM_VIEW_GOTO_NEW_INSTANCE": 10003,
+  "IDM_VIEW_GOTO_START": 10005,
+  "IDM_VIEW_HIDELINES": 44042,
+  "IDM_VIEW_INDENT_GUIDE": 44020,
+  "IDM_VIEW_IN_CHROME": 44101,
+  "IDM_VIEW_IN_EDGE": 44102,
+  "IDM_VIEW_IN_FIREFOX": 44100,
+  "IDM_VIEW_IN_IE": 44103,
+  "IDM_VIEW_LOAD_IN_NEW_INSTANCE": 10004,
+  "IDM_VIEW_MONITORING": 44097,
+  "IDM_VIEW_NPC": 44130,
+  "IDM_VIEW_NPC_CCUNIEOL": 44131,
+  "IDM_VIEW_POSTIT": 44009,
+  "IDM_VIEW_PROJECT_PANEL_1": 44081,
+  "IDM_VIEW_PROJECT_PANEL_2": 44082,
+  "IDM_VIEW_PROJECT_PANEL_3": 44083,
+  "IDM_VIEW_SUMMARY": 44049,
+  "IDM_VIEW_SWITCHTO_DOCLIST": 44109,
+  "IDM_VIEW_SWITCHTO_FILEBROWSER": 44107,
+  "IDM_VIEW_SWITCHTO_FUNC_LIST": 44108,
+  "IDM_VIEW_SWITCHTO_OTHER_VIEW": 44072,
+  "IDM_VIEW_SWITCHTO_PROJECT_PANEL_1": 44104,
+  "IDM_VIEW_SWITCHTO_PROJECT_PANEL_2": 44105,
+  "IDM_VIEW_SWITCHTO_PROJECT_PANEL_3": 44106,
+  "IDM_VIEW_SYNSCROLLH": 44036,
+  "IDM_VIEW_SYNSCROLLV": 44035,
+  "IDM_VIEW_TAB1": 44086,
+  "IDM_VIEW_TAB2": 44087,
+  "IDM_VIEW_TAB3": 44088,
+  "IDM_VIEW_TAB4": 44089,
+  "IDM_VIEW_TAB5": 44090,
+  "IDM_VIEW_TAB6": 44091,
+  "IDM_VIEW_TAB7": 44092,
+  "IDM_VIEW_TAB8": 44093,
+  "IDM_VIEW_TAB9": 44094,
+  "IDM_VIEW_TAB_COLOUR_1": 44111,
+  "IDM_VIEW_TAB_COLOUR_2": 44112,
+  "IDM_VIEW_TAB_COLOUR_3": 44113,
+  "IDM_VIEW_TAB_COLOUR_4": 44114,
+  "IDM_VIEW_TAB_COLOUR_5": 44115,
+  "IDM_VIEW_TAB_COLOUR_NONE": 44110,
+  "IDM_VIEW_TAB_END": 44117,
+  "IDM_VIEW_TAB_MOVEBACKWARD": 44099,
+  "IDM_VIEW_TAB_MOVEFORWARD": 44098,
+  "IDM_VIEW_TAB_NEXT": 44095,
+  "IDM_VIEW_TAB_PREV": 44096,
+  "IDM_VIEW_TAB_SPACE": 44025,
+  "IDM_VIEW_TAB_START": 44116,
+  "IDM_VIEW_UNFOLD": 44060,
+  "IDM_VIEW_UNFOLDALL": 44029,
+  "IDM_VIEW_UNFOLD_1": 44061,
+  "IDM_VIEW_UNFOLD_2": 44062,
+  "IDM_VIEW_UNFOLD_3": 44063,
+  "IDM_VIEW_UNFOLD_4": 44064,
+  "IDM_VIEW_UNFOLD_5": 44065,
+  "IDM_VIEW_UNFOLD_6": 44066,
+  "IDM_VIEW_UNFOLD_7": 44067,
+  "IDM_VIEW_UNFOLD_8": 44068,
+  "IDM_VIEW_UNFOLD_CURRENT": 44031,
+  "IDM_VIEW_WRAP": 44022,
+  "IDM_VIEW_WRAP_SYMBOL": 44041,
+  "IDM_VIEW_ZOOMIN": 44023,
+  "IDM_VIEW_ZOOMOUT": 44024,
+  "IDM_VIEW_ZOOMRESTORE": 44033,
+  "IDM_VIEW_ZOOM_SYNC": 44027,
+  "IDM_WINDOW_COPY_NAME": 11060,
+  "IDM_WINDOW_COPY_PATH": 11061,
+  "IDM_WINDOW_MRU_FIRST": 11020,
+  "IDM_WINDOW_MRU_LIMIT": 11059,
+  "IDM_WINDOW_SORT_FD_ASC": 11010,
+  "IDM_WINDOW_SORT_FD_DSC": 11011,
+  "IDM_WINDOW_SORT_FN_ASC": 11002,
+  "IDM_WINDOW_SORT_FN_DSC": 11003,
+  "IDM_WINDOW_SORT_FP_ASC": 11004,
+  "IDM_WINDOW_SORT_FP_DSC": 11005,
+  "IDM_WINDOW_SORT_FS_ASC": 11008,
+  "IDM_WINDOW_SORT_FS_DSC": 11009,
+  "IDM_WINDOW_SORT_FT_ASC": 11006,
+  "IDM_WINDOW_SORT_FT_DSC": 11007,
+  "IDM_WINDOW_WINDOWS": 11001
+ },
+ "winKeys": [
+  {
+   "vk": "VK_N",
+   "id": "IDM_FILE_NEW",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_O",
+   "id": "IDM_FILE_OPEN",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_OPEN_FOLDER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Open containing folder in Explorer"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_OPEN_CMD",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Open containing folder in Command Prompt"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_OPEN_POWERSHELL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Open containing folder in PowerShell"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_OPEN_DEFAULT_VIEWER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_OPENFOLDERASWORKSPACE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_R",
+   "id": "IDM_FILE_RELOAD",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_S",
+   "id": "IDM_FILE_SAVE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_S",
+   "id": "IDM_FILE_SAVEAS",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_SAVECOPYAS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_S",
+   "id": "IDM_FILE_SAVEALL",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_RENAME",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_W",
+   "id": "IDM_FILE_CLOSE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_W",
+   "id": "IDM_FILE_CLOSEALL",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_CLOSEALL_BUT_CURRENT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_CLOSEALL_BUT_PINNED",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_CLOSEALL_TOLEFT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_CLOSEALL_TORIGHT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_CLOSEALL_UNCHANGED",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_DELETE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_LOADSESSION",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_SAVESESSION",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_P",
+   "id": "IDM_FILE_PRINT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FILE_PRINTNOW",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_T",
+   "id": "IDM_FILE_RESTORELASTCLOSEDFILE",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Restore Recent Closed File"
+  },
+  {
+   "vk": "VK_F4",
+   "id": "IDM_FILE_EXIT",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_DELETE",
+   "id": "IDM_EDIT_CUT",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_X",
+   "id": "IDM_EDIT_CUT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_INSERT",
+   "id": "IDM_EDIT_COPY",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_C",
+   "id": "IDM_EDIT_COPY",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_INSERT",
+   "id": "IDM_EDIT_PASTE",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_V",
+   "id": "IDM_EDIT_PASTE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_B",
+   "id": "IDM_EDIT_BEGINENDSELECT",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_B",
+   "id": "IDM_EDIT_BEGINENDSELECT_COLUMNMODE",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_FULLPATHTOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_FILENAMETOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_CURRENTDIRTOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_COPY_ALL_NAMES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_COPY_ALL_PATHS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_INS_TAB",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_RMV_TAB",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_U",
+   "id": "IDM_EDIT_UPPERCASE",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_U",
+   "id": "IDM_EDIT_LOWERCASE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_U",
+   "id": "IDM_EDIT_PROPERCASE_FORCE",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_U",
+   "id": "IDM_EDIT_PROPERCASE_BLEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_U",
+   "id": "IDM_EDIT_SENTENCECASE_FORCE",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_U",
+   "id": "IDM_EDIT_SENTENCECASE_BLEND",
+   "ctrl": true,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_INVERTCASE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_RANDOMCASE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_REMOVE_CONSECUTIVE_DUP_LINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_REMOVE_ANY_DUP_LINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_I",
+   "id": "IDM_EDIT_SPLIT_LINES",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_J",
+   "id": "IDM_EDIT_JOIN_LINES",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_UP",
+   "id": "IDM_EDIT_LINE_UP",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_DOWN",
+   "id": "IDM_EDIT_LINE_DOWN",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_REMOVEEMPTYLINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_REMOVEEMPTYLINESWITHBLANK",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_RETURN",
+   "id": "IDM_EDIT_BLANKLINEABOVECURRENT",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_RETURN",
+   "id": "IDM_EDIT_BLANKLINEBELOWCURRENT",
+   "ctrl": true,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LENGTH_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LENGTH_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LEXICOGRAPHIC_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LEXICOGRAPHIC_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LEXICO_CASE_INSENS_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LOCALE_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_LOCALE_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_INTEGER_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_INTEGER_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_DECIMALCOMMA_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_DECIMALCOMMA_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_DECIMALDOT_ASCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_DECIMALDOT_DESCENDING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_REVERSE_ORDER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SORTLINES_RANDOMLY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_Q",
+   "id": "IDM_EDIT_BLOCK_COMMENT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_K",
+   "id": "IDM_EDIT_BLOCK_COMMENT_SET",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_K",
+   "id": "IDM_EDIT_BLOCK_UNCOMMENT",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_Q",
+   "id": "IDM_EDIT_STREAM_COMMENT",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_STREAM_UNCOMMENT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_SPACE",
+   "id": "IDM_EDIT_AUTOCOMPLETE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_SPACE",
+   "id": "IDM_EDIT_AUTOCOMPLETE_PATH",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_RETURN",
+   "id": "IDM_EDIT_AUTOCOMPLETE_CURRENTFILE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_SPACE",
+   "id": "IDM_EDIT_FUNCCALLTIP",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_UP",
+   "id": "IDM_EDIT_FUNCCALLTIP_PREVIOUS",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_DOWN",
+   "id": "IDM_EDIT_FUNCCALLTIP_NEXT",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_INSERT_DATETIME_SHORT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_INSERT_DATETIME_LONG",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_INSERT_DATETIME_CUSTOMIZED",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_TODOS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "EOL Conversion to Windows (CR LF)"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_TOUNIX",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "EOL Conversion to Unix (LF)"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_TOMAC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "EOL Conversion to Macintosh (CR)"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TRIMTRAILING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TRIMLINEHEAD",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TRIM_BOTH",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_EOL2WS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TRIMALL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TAB2SW",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SW2TAB_ALL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SW2TAB_LEADING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_PASTE_AS_HTML",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_PASTE_AS_RTF",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_COPY_BINARY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_CUT_BINARY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_PASTE_BINARY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_OPENSELECTEDFILETOEDIT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_OPENSELECTEDFILEFOLDERINEXPLORER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SEARCHONINTERNET",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_CHANGESEARCHENGINE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTALL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select All: Ignore Case and Whole Word"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTALLMATCHCASE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select All: Match Case Only"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTALLWHOLEWORD",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select All: Match Whole Word Only"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTALLMATCHCASEWHOLEWORD",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select All: Match Case and Whole Word"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTNEXT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select Next: Ignore Case and Whole Word"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTNEXTMATCHCASE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select Next: Match Case Only"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTNEXTWHOLEWORD",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select Next: Match Whole Word Only"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTNEXTMATCHCASEWHOLEWORD",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Multi-select Next: Match Case and Whole Word"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTUNDO",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_MULTISELECTSSKIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_C",
+   "id": "IDM_EDIT_COLUMNMODE",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_CHAR_PANEL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Character Panel"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_CLIPBOARDHISTORY_PANEL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Clipboard History"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TOGGLEREADONLY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_SETREADONLYFORALLDOCS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_CLEARREADONLYFORALLDOCS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EDIT_TOGGLESYSTEMREADONLY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F",
+   "id": "IDM_SEARCH_FIND",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F",
+   "id": "IDM_SEARCH_FINDINFILES",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_F3",
+   "id": "IDM_SEARCH_FINDNEXT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F3",
+   "id": "IDM_SEARCH_FINDPREV",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_F3",
+   "id": "IDM_SEARCH_SETANDFINDNEXT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F3",
+   "id": "IDM_SEARCH_SETANDFINDPREV",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_F3",
+   "id": "IDM_SEARCH_VOLATILE_FINDNEXT",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F3",
+   "id": "IDM_SEARCH_VOLATILE_FINDPREV",
+   "ctrl": true,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_H",
+   "id": "IDM_SEARCH_REPLACE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_I",
+   "id": "IDM_SEARCH_FINDINCREMENT",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F7",
+   "id": "IDM_FOCUS_ON_FOUND_RESULTS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F4",
+   "id": "IDM_SEARCH_GOTOPREVFOUND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_F4",
+   "id": "IDM_SEARCH_GOTONEXTFOUND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_G",
+   "id": "IDM_SEARCH_GOTOLINE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_B",
+   "id": "IDM_SEARCH_GOTOMATCHINGBRACE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_B",
+   "id": "IDM_SEARCH_SELECTMATCHINGBRACES",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_CHANGED_PREV",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_CHANGED_NEXT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_CLEAR_CHANGE_HISTORY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_M",
+   "id": "IDM_SEARCH_MARK",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKALLEXT1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style all using 1st style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKALLEXT2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style all using 2nd style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKALLEXT3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style all using 3rd style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKALLEXT4",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style all using 4th style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKALLEXT5",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style all using 5th style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKONEEXT1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style one using 1st style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKONEEXT2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style one using 2nd style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKONEEXT3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style one using 3rd style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKONEEXT4",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style one using 4th style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKONEEXT5",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Style one using 5th style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_UNMARKALLEXT1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Clear 1st style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_UNMARKALLEXT2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Clear 2nd style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_UNMARKALLEXT3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Clear 3rd style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_UNMARKALLEXT4",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Clear 4th style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_UNMARKALLEXT5",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Clear 5th style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_CLEARALLMARKS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Clear all styles"
+  },
+  {
+   "vk": "VK_1",
+   "id": "IDM_SEARCH_GOPREVMARKER1",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Previous style of 1st style"
+  },
+  {
+   "vk": "VK_2",
+   "id": "IDM_SEARCH_GOPREVMARKER2",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Previous style of 2nd style"
+  },
+  {
+   "vk": "VK_3",
+   "id": "IDM_SEARCH_GOPREVMARKER3",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Previous style of 3rd style"
+  },
+  {
+   "vk": "VK_4",
+   "id": "IDM_SEARCH_GOPREVMARKER4",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Previous style of 4th style"
+  },
+  {
+   "vk": "VK_5",
+   "id": "IDM_SEARCH_GOPREVMARKER5",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Previous style of 5th style"
+  },
+  {
+   "vk": "VK_0",
+   "id": "IDM_SEARCH_GOPREVMARKER_DEF",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Previous style of Find Mark style"
+  },
+  {
+   "vk": "VK_1",
+   "id": "IDM_SEARCH_GONEXTMARKER1",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Next style of 1st style"
+  },
+  {
+   "vk": "VK_2",
+   "id": "IDM_SEARCH_GONEXTMARKER2",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Next style of 2nd style"
+  },
+  {
+   "vk": "VK_3",
+   "id": "IDM_SEARCH_GONEXTMARKER3",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Next style of 3rd style"
+  },
+  {
+   "vk": "VK_4",
+   "id": "IDM_SEARCH_GONEXTMARKER4",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Next style of 4th style"
+  },
+  {
+   "vk": "VK_5",
+   "id": "IDM_SEARCH_GONEXTMARKER5",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Next style of 5th style"
+  },
+  {
+   "vk": "VK_0",
+   "id": "IDM_SEARCH_GONEXTMARKER_DEF",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Next style of Find Mark style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_STYLE1TOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of 1st Style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_STYLE2TOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of 2nd Style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_STYLE3TOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of 3rd Style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_STYLE4TOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of 4th Style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_STYLE5TOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of 5th Style"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_ALLSTYLESTOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of All Styles"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_MARKEDTOCLIP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Copy Styled Text of Find Mark style"
+  },
+  {
+   "vk": "VK_F2",
+   "id": "IDM_SEARCH_TOGGLE_BOOKMARK",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F2",
+   "id": "IDM_SEARCH_NEXT_BOOKMARK",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F2",
+   "id": "IDM_SEARCH_PREV_BOOKMARK",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_CLEAR_BOOKMARKS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_CUTMARKEDLINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_COPYMARKEDLINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_PASTEMARKEDLINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_DELETEMARKEDLINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_DELETEUNMARKEDLINES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_INVERSEMARKS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SEARCH_FINDCHARINRANGE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_ALWAYSONTOP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F11",
+   "id": "IDM_VIEW_FULLSCREENTOGGLE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F12",
+   "id": "IDM_VIEW_POSTIT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_DISTRACTIONFREE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_IN_FIREFOX",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "View current file in Firefox"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_IN_CHROME",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "View current file in Chrome"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_IN_IE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "View current file in IE"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_IN_EDGE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "View current file in Edge"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_SPACE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_EOL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_ALL_CHARACTERS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_NPC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_NPC_CCUNIEOL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_INDENT_GUIDE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_WRAP_SYMBOL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_GOTO_START",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_GOTO_END",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_GOTO_ANOTHER_VIEW",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_CLONE_TO_ANOTHER_VIEW",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_GOTO_NEW_INSTANCE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_LOAD_IN_NEW_INSTANCE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD1",
+   "id": "IDM_VIEW_TAB1",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD2",
+   "id": "IDM_VIEW_TAB2",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD3",
+   "id": "IDM_VIEW_TAB3",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD4",
+   "id": "IDM_VIEW_TAB4",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD5",
+   "id": "IDM_VIEW_TAB5",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD6",
+   "id": "IDM_VIEW_TAB6",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD7",
+   "id": "IDM_VIEW_TAB7",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD8",
+   "id": "IDM_VIEW_TAB8",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NUMPAD9",
+   "id": "IDM_VIEW_TAB9",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_START",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_END",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NEXT",
+   "id": "IDM_VIEW_TAB_NEXT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_PRIOR",
+   "id": "IDM_VIEW_TAB_PREV",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NEXT",
+   "id": "IDM_VIEW_TAB_MOVEFORWARD",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_PRIOR",
+   "id": "IDM_VIEW_TAB_MOVEBACKWARD",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_TAB",
+   "id": "IDC_PREV_DOC",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Switch to previous document"
+  },
+  {
+   "vk": "VK_TAB",
+   "id": "IDC_NEXT_DOC",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to next document"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_WRAP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_H",
+   "id": "IDM_VIEW_HIDELINES",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F8",
+   "id": "IDM_VIEW_SWITCHTO_OTHER_VIEW",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_0",
+   "id": "IDM_VIEW_FOLDALL",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_0",
+   "id": "IDM_VIEW_UNFOLDALL",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_F",
+   "id": "IDM_VIEW_FOLD_CURRENT",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F",
+   "id": "IDM_VIEW_UNFOLD_CURRENT",
+   "ctrl": true,
+   "alt": true,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_1",
+   "id": "IDM_VIEW_FOLD_1",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 1"
+  },
+  {
+   "vk": "VK_2",
+   "id": "IDM_VIEW_FOLD_2",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 2"
+  },
+  {
+   "vk": "VK_3",
+   "id": "IDM_VIEW_FOLD_3",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 3"
+  },
+  {
+   "vk": "VK_4",
+   "id": "IDM_VIEW_FOLD_4",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 4"
+  },
+  {
+   "vk": "VK_5",
+   "id": "IDM_VIEW_FOLD_5",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 5"
+  },
+  {
+   "vk": "VK_6",
+   "id": "IDM_VIEW_FOLD_6",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 6"
+  },
+  {
+   "vk": "VK_7",
+   "id": "IDM_VIEW_FOLD_7",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 7"
+  },
+  {
+   "vk": "VK_8",
+   "id": "IDM_VIEW_FOLD_8",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "name": "Fold Level 8"
+  },
+  {
+   "vk": "VK_1",
+   "id": "IDM_VIEW_UNFOLD_1",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 1"
+  },
+  {
+   "vk": "VK_2",
+   "id": "IDM_VIEW_UNFOLD_2",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 2"
+  },
+  {
+   "vk": "VK_3",
+   "id": "IDM_VIEW_UNFOLD_3",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 3"
+  },
+  {
+   "vk": "VK_4",
+   "id": "IDM_VIEW_UNFOLD_4",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 4"
+  },
+  {
+   "vk": "VK_5",
+   "id": "IDM_VIEW_UNFOLD_5",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 5"
+  },
+  {
+   "vk": "VK_6",
+   "id": "IDM_VIEW_UNFOLD_6",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 6"
+  },
+  {
+   "vk": "VK_7",
+   "id": "IDM_VIEW_UNFOLD_7",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 7"
+  },
+  {
+   "vk": "VK_8",
+   "id": "IDM_VIEW_UNFOLD_8",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "name": "Unfold Level 8"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SUMMARY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_PROJECT_PANEL_1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Project Panel 1"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_PROJECT_PANEL_2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Project Panel 2"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_PROJECT_PANEL_3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Project Panel 3"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_FILEBROWSER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Folder as Workspace"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_DOC_MAP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Document Map"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_DOCLIST",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Document List"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_FUNC_LIST",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Toggle Function List"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SWITCHTO_PROJECT_PANEL_1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to Project Panel 1"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SWITCHTO_PROJECT_PANEL_2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to Project Panel 2"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SWITCHTO_PROJECT_PANEL_3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to Project Panel 3"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SWITCHTO_FILEBROWSER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to Folder as Workspace"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SWITCHTO_FUNC_LIST",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to Function List"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SWITCHTO_DOCLIST",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Switch to Document List"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_COLOUR_NONE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Remove Tab Colour"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_COLOUR_1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Apply Tab Colour 1"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_COLOUR_2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Apply Tab Colour 2"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_COLOUR_3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Apply Tab Colour 3"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_COLOUR_4",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Apply Tab Colour 4"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_TAB_COLOUR_5",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Apply Tab Colour 5"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SYNSCROLLV",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_SYNSCROLLH",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_R",
+   "id": "IDM_EDIT_RTL",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_L",
+   "id": "IDM_EDIT_LTR",
+   "ctrl": true,
+   "alt": true,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_VIEW_MONITORING",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ANSI",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_AS_UTF_8",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_UTF_8",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_UTF_16BE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_UTF_16LE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_6",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1256",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_13",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1257",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_14",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_5",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_MAC_CYRILLIC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_KOI8R_CYRILLIC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_KOI8U_CYRILLIC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1251",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1250",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_437",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_720",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_737",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_775",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_850",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_852",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_855",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_857",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_858",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_860",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_861",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_862",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_863",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_865",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_866",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_DOS_869",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_BIG5",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_GB2312",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_2",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_7",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1253",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_8",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1255",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_SHIFT_JIS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_EUC_KR",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_15",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_4",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_3",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_TIS_620",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_9",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1254",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1252",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_ISO_8859_1",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_WIN_1258",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_CONV2_ANSI",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_CONV2_AS_UTF_8",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_CONV2_UTF_8",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_CONV2_UTF_16BE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORMAT_CONV2_UTF_16LE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_LANG_USER_DLG",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_LANG_USER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_LANG_OPENUDLDIR",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SETTING_PREFERENCE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_LANGSTYLE_CONFIG_DLG",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SETTING_SHORTCUT_MAPPER",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SETTING_IMPORTPLUGIN",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SETTING_IMPORTSTYLETHEMES",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_SETTING_EDITCONTEXTMENU",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_R",
+   "id": "IDC_EDIT_TOGGLEMACRORECORDING",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": "Toggle macro recording"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_MACRO_STARTRECORDINGMACRO",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_MACRO_STOPRECORDINGMACRO",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_P",
+   "id": "IDM_MACRO_PLAYBACKRECORDEDMACRO",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_MACRO_SAVECURRENTMACRO",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_MACRO_RUNMULTIMACRODLG",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F5",
+   "id": "IDM_EXECUTE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_EXECUTE_VALIDATE_SHORTCUTSXML",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_WINDOWS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FN_ASC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Name A to Z"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FN_DSC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Name Z to A"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FP_ASC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Path A to Z"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FP_DSC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Path Z to A"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FT_ASC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Type A to Z"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FT_DSC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Type Z to A"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FS_ASC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Content Length Ascending"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_WINDOW_SORT_FS_DSC",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Sort by Content Length Descending"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_CMDLINEARGUMENTS",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_HOMESWEETHOME",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_PROJECTPAGE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_ONLINEDOCUMENT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_FORUM",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_UPDATE_NPP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Update Notepad++"
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_CONFUPDATERPROXY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": "Set Updater Proxy..."
+  },
+  {
+   "vk": "VK_NULL",
+   "id": "IDM_DEBUGINFO",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  },
+  {
+   "vk": "VK_F1",
+   "id": "IDM_ABOUT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "name": null
+  }
+ ],
+ "scintKeys": [
+  {
+   "name": "SCI_SELECTALL",
+   "sci": "SCI_SELECTALL",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_A",
+   "menu": "IDM_EDIT_SELECTALL"
+  },
+  {
+   "name": "SCI_CLEAR",
+   "sci": "SCI_CLEAR",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_DELETE",
+   "menu": "IDM_EDIT_DELETE"
+  },
+  {
+   "name": "SCI_CLEARALL",
+   "sci": "SCI_CLEARALL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_UNDO",
+   "sci": "SCI_UNDO",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_Z",
+   "menu": "IDM_EDIT_UNDO"
+  },
+  {
+   "name": "",
+   "sci": "SCI_UNDO",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "vk": "VK_BACK",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_REDO",
+   "sci": "SCI_REDO",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_Y",
+   "menu": "IDM_EDIT_REDO"
+  },
+  {
+   "name": "",
+   "sci": "SCI_REDO",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_Z",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_NEWLINE",
+   "sci": "SCI_NEWLINE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_RETURN",
+   "menu": "0"
+  },
+  {
+   "name": "",
+   "sci": "SCI_NEWLINE",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_RETURN",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_TAB",
+   "sci": "SCI_TAB",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_TAB",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_BACKTAB",
+   "sci": "SCI_BACKTAB",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_TAB",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_FORMFEED",
+   "sci": "SCI_FORMFEED",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_ZOOMIN",
+   "sci": "SCI_ZOOMIN",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_ADD",
+   "menu": "IDM_VIEW_ZOOMIN"
+  },
+  {
+   "name": "SCI_ZOOMOUT",
+   "sci": "SCI_ZOOMOUT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_SUBTRACT",
+   "menu": "IDM_VIEW_ZOOMOUT"
+  },
+  {
+   "name": "SCI_SETZOOM",
+   "sci": "SCI_SETZOOM",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_DIVIDE",
+   "menu": "IDM_VIEW_ZOOMRESTORE"
+  },
+  {
+   "name": "SCI_SELECTIONDUPLICATE",
+   "sci": "SCI_SELECTIONDUPLICATE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_D",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINESJOIN",
+   "sci": "SCI_LINESJOIN",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_SCROLLCARET",
+   "sci": "SCI_SCROLLCARET",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_EDITTOGGLEOVERTYPE",
+   "sci": "SCI_EDITTOGGLEOVERTYPE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_INSERT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_MOVECARETINSIDEVIEW",
+   "sci": "SCI_MOVECARETINSIDEVIEW",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEDOWN",
+   "sci": "SCI_LINEDOWN",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_DOWN",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEDOWNEXTEND",
+   "sci": "SCI_LINEDOWNEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_DOWN",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEDOWNRECTEXTEND",
+   "sci": "SCI_LINEDOWNRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_DOWN",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINESCROLLDOWN",
+   "sci": "SCI_LINESCROLLDOWN",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_DOWN",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEUP",
+   "sci": "SCI_LINEUP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_UP",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEUPEXTEND",
+   "sci": "SCI_LINEUPEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_UP",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEUPRECTEXTEND",
+   "sci": "SCI_LINEUPRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_UP",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINESCROLLUP",
+   "sci": "SCI_LINESCROLLUP",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_UP",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PARADOWN",
+   "sci": "SCI_PARADOWN",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_OEM_6",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PARADOWNEXTEND",
+   "sci": "SCI_PARADOWNEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_OEM_6",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PARAUP",
+   "sci": "SCI_PARAUP",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_OEM_4",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PARAUPEXTEND",
+   "sci": "SCI_PARAUPEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_OEM_4",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_CHARLEFT",
+   "sci": "SCI_CHARLEFT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_LEFT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_CHARLEFTEXTEND",
+   "sci": "SCI_CHARLEFTEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_LEFT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_CHARLEFTRECTEXTEND",
+   "sci": "SCI_CHARLEFTRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_LEFT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_CHARRIGHT",
+   "sci": "SCI_CHARRIGHT",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_RIGHT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_CHARRIGHTEXTEND",
+   "sci": "SCI_CHARRIGHTEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_RIGHT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_CHARRIGHTRECTEXTEND",
+   "sci": "SCI_CHARRIGHTRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_RIGHT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDLEFT",
+   "sci": "SCI_WORDLEFT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_LEFT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDLEFTEXTEND",
+   "sci": "SCI_WORDLEFTEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_LEFT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDRIGHT",
+   "sci": "SCI_WORDRIGHT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_RIGHT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDRIGHTEXTEND",
+   "sci": "SCI_WORDRIGHTEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDLEFTEND",
+   "sci": "SCI_WORDLEFTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDLEFTENDEXTEND",
+   "sci": "SCI_WORDLEFTENDEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDRIGHTEND",
+   "sci": "SCI_WORDRIGHTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDRIGHTENDEXTEND",
+   "sci": "SCI_WORDRIGHTENDEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_RIGHT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDPARTLEFT",
+   "sci": "SCI_WORDPARTLEFT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_OEM_2",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDPARTLEFTEXTEND",
+   "sci": "SCI_WORDPARTLEFTEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_OEM_2",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDPARTRIGHT",
+   "sci": "SCI_WORDPARTRIGHT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_OEM_5",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_WORDPARTRIGHTEXTEND",
+   "sci": "SCI_WORDPARTRIGHTEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_OEM_5",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOME",
+   "sci": "SCI_HOME",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOMEEXTEND",
+   "sci": "SCI_HOMEEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOMERECTEXTEND",
+   "sci": "SCI_HOMERECTEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOMEDISPLAY",
+   "sci": "SCI_HOMEDISPLAY",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "vk": "VK_HOME",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOMEDISPLAYEXTEND",
+   "sci": "SCI_HOMEDISPLAYEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOMEWRAP",
+   "sci": "SCI_HOMEWRAP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_HOMEWRAPEXTEND",
+   "sci": "SCI_HOMEWRAPEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOME",
+   "sci": "SCI_VCHOME",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOMEEXTEND",
+   "sci": "SCI_VCHOMEEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOMERECTEXTEND",
+   "sci": "SCI_VCHOMERECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_HOME",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOMEDISPLAY",
+   "sci": "SCI_VCHOMEDISPLAY",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOMEDISPLAYEXTEND",
+   "sci": "SCI_VCHOMEDISPLAYEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOMEWRAP",
+   "sci": "SCI_VCHOMEWRAP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_HOME",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_VCHOMEWRAPEXTEND",
+   "sci": "SCI_VCHOMEWRAPEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_HOME",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEEND",
+   "sci": "SCI_LINEEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEENDWRAPEXTEND",
+   "sci": "SCI_LINEENDWRAPEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_END",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEENDRECTEXTEND",
+   "sci": "SCI_LINEENDRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_END",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEENDDISPLAY",
+   "sci": "SCI_LINEENDDISPLAY",
+   "ctrl": false,
+   "alt": true,
+   "shift": false,
+   "vk": "VK_END",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEENDDISPLAYEXTEND",
+   "sci": "SCI_LINEENDDISPLAYEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEENDWRAP",
+   "sci": "SCI_LINEENDWRAP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_END",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEENDEXTEND",
+   "sci": "SCI_LINEENDEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DOCUMENTSTART",
+   "sci": "SCI_DOCUMENTSTART",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_HOME",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DOCUMENTSTARTEXTEND",
+   "sci": "SCI_DOCUMENTSTARTEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_HOME",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DOCUMENTEND",
+   "sci": "SCI_DOCUMENTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_END",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DOCUMENTENDEXTEND",
+   "sci": "SCI_DOCUMENTENDEXTEND",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_END",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PAGEUP",
+   "sci": "SCI_PAGEUP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_PRIOR",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PAGEUPEXTEND",
+   "sci": "SCI_PAGEUPEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_PRIOR",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PAGEUPRECTEXTEND",
+   "sci": "SCI_PAGEUPRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_PRIOR",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PAGEDOWN",
+   "sci": "SCI_PAGEDOWN",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_NEXT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PAGEDOWNEXTEND",
+   "sci": "SCI_PAGEDOWNEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_NEXT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_PAGEDOWNRECTEXTEND",
+   "sci": "SCI_PAGEDOWNRECTEXTEND",
+   "ctrl": false,
+   "alt": true,
+   "shift": true,
+   "vk": "VK_NEXT",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_STUTTEREDPAGEUP",
+   "sci": "SCI_STUTTEREDPAGEUP",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_STUTTEREDPAGEUPEXTEND",
+   "sci": "SCI_STUTTEREDPAGEUPEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_STUTTEREDPAGEDOWN",
+   "sci": "SCI_STUTTEREDPAGEDOWN",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_STUTTEREDPAGEDOWNEXTEND",
+   "sci": "SCI_STUTTEREDPAGEDOWNEXTEND",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DELETEBACK",
+   "sci": "SCI_DELETEBACK",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_BACK",
+   "menu": "0"
+  },
+  {
+   "name": "",
+   "sci": "SCI_DELETEBACK",
+   "ctrl": false,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_BACK",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DELETEBACKNOTLINE",
+   "sci": "SCI_DELETEBACKNOTLINE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DELWORDLEFT",
+   "sci": "SCI_DELWORDLEFT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_BACK",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DELWORDRIGHT",
+   "sci": "SCI_DELWORDRIGHT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_DELETE",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DELLINELEFT",
+   "sci": "SCI_DELLINELEFT",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_BACK",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_DELLINERIGHT",
+   "sci": "SCI_DELLINERIGHT",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_DELETE",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEDELETE",
+   "sci": "SCI_LINEDELETE",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_L",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINECUT",
+   "sci": "SCI_LINECUT",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_L",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINECOPY",
+   "sci": "SCI_LINECOPY",
+   "ctrl": true,
+   "alt": false,
+   "shift": true,
+   "vk": "VK_X",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINETRANSPOSE",
+   "sci": "SCI_LINETRANSPOSE",
+   "ctrl": true,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_T",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_LINEDUPLICATE",
+   "sci": "SCI_LINEDUPLICATE",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "IDM_EDIT_DUP_LINE"
+  },
+  {
+   "name": "SCI_CANCEL",
+   "sci": "SCI_CANCEL",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "VK_ESCAPE",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_SWAPMAINANCHORCARET",
+   "sci": "SCI_SWAPMAINANCHORCARET",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  },
+  {
+   "name": "SCI_ROTATESELECTION",
+   "sci": "SCI_ROTATESELECTION",
+   "ctrl": false,
+   "alt": false,
+   "shift": false,
+   "vk": "0",
+   "menu": "0"
+  }
+ ]
+}

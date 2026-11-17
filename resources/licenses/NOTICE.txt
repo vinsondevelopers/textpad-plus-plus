@@ -1,0 +1,19 @@
+Textpad++ — licence notices
+
+Textpad++ is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation, version 3 or (at your option) any later version
+(Textpad++-GPL-3.0.txt). It is distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Components and copyright holders
+- Portions of the program code and data (menus and command tables, language and style definitions, themes,
+  function-list rules, auto-completion files, algorithms): (C) Don Ho and contributors, GNU GPL v3.
+- Scintilla and Lexilla (C) Neil Hodgson — Scintilla-License.txt, Lexilla-License.txt.
+- Boost.Regex — Boost Software License 1.0 (Boost-License.txt).
+- uchardet — MPL 1.1 / GPL 2+ / LGPL 2.1+, used under the GPL (uchardet-LICENSE.txt).
+- Markdown User Defined Languages (C) Edditoria — MIT (markdown-plus-plus-MIT.txt).
+- Each bundled theme keeps its author's notice in its own file (Resources/data/themes).
+- Interface language files (Resources/data/nativeLang) and quotes: (C) Don Ho and contributors and their translators, GNU GPL v3.
+- Toolbar "Colourful" icons are Apple SF Symbols drawn by macOS at run time.
+
+The complete corresponding source code is available from the publisher of this copy of Textpad++.
